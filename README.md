@@ -2,7 +2,7 @@
 
 ![Project Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.5.0-orange?style=for-the-badge)
 
 > **"Насмешил придурка в зеркале."**
 

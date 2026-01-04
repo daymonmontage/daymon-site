@@ -110,15 +110,19 @@ function renderSpaceBackground() {
 function setupEasterEgg() {
     const avatar = document.querySelector('.avatar-container img');
     if (!avatar) return;
-    const sound = new Audio('assets/avatar_click.mp3'); sound.volume = 0.4;
+    
+    const sound = new Audio('assets/avatar_click.mp3'); 
+    sound.volume = 0.4;
 
     avatar.addEventListener('click', () => {
         avatar.style.transition = '0.1s';
         avatar.style.transform = 'scale(1.1) rotate(15deg)';
-        if(!localStorage.getItem('sfx_muted')) {
+        
+        if (localStorage.getItem('sfx_muted') !== 'true') {
             sound.currentTime = 0;
             sound.play().catch(()=>{});
         }
+
         setTimeout(() => { avatar.style.transform = 'scale(1.1) rotate(-15deg)'; }, 100);
         setTimeout(() => { 
             avatar.style.transition = '0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
