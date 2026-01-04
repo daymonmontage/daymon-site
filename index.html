@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Основная информация -->
+<!-- === МЕТА-ТЕГИ ДЛЯ СОЦСЕТЕЙ (Open Graph) === -->
+    <meta name="title" content="DaymonMontage | Hub">
+    <meta name="description" content="Официальный хаб: стримы, конфиг ПК, донаты и рыжий кот.">
+    
+    <!-- Open Graph (Основные настройки) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itservicepgatk.github.io/daymon-site/">
+    <meta property="og:title" content="DaymonMontage | Hub">
+    <meta property="og:description" content="Официальный хаб: стримы, конфиг ПК, донаты и рыжий кот.">
+    
+    <!-- ВАЖНО: Полная ссылка на картинку -->
+    <meta property="og:image" content="https://itservicepgatk.github.io/daymon-site/assets/preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card (Чтобы картинка была БОЛЬШОЙ) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://itservicepgatk.github.io/daymon-site/">
+    <meta name="twitter:title" content="DaymonMontage | Hub">
+    <meta name="twitter:description" content="Официальный хаб: стримы, конфиг ПК, донаты и рыжий кот.">
+    <meta name="twitter:image" content="https://itservicepgatk.github.io/daymon-site/assets/preview.png">
+    
+    <!-- Цвет полоски в Discord -->
+    <meta name="theme-color" content="#f97316">
+    <!-- ============================================ -->
+    
+    <!-- Подключение шрифтов и иконок -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Twitch Embed API -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+</head>
+<body>
+
+    <!-- Экран загрузки -->
+    <div id="preloader">
+        <div class="loader-wrap">
+            <img src="assets/avatar.png" class="loader-logo" alt="Loading...">
+            <p class="loader-text">SEARCHING SIGNAL...</p>
+        </div>
+    </div>
+
+    <!-- Фоновые персонажи (параллакс эффект) -->
+    <div class="character-layer left-guard">
+        <img src="assets/hero-left.png" alt="" class="char-img">
+        <div class="fade-gradient"></div>
+    </div>
+
+    <div class="character-layer right-guard">
+        <img src="assets/hero-right.png" alt="" class="char-img">
+        <div class="fade-gradient"></div>
+    </div>
+
+    <!-- Фоновые эффекты -->
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+
+    <!-- Основной контент -->
+    <main class="main-container">
+        
+        <!-- Шапка профиля -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <img src="assets/avatar.png" alt="DaymonMontage" class="avatar-img">
+            </div>
+            
+            <h1 class="glitch-title" data-text="DaymonMontage">DaymonMontage</h1>
+            <p class="status-quote">"Насмешил придурка в зеркале."</p>
+            
+            <div class="info-badges">
+                <span class="badge location"><i class="fas fa-map-marker-alt"></i> Витебск, Беларусь</span>
+                <!-- Статус стрима (обновляется через JS) -->
+                <span id="stream-status" class="badge stream-check">
+                    <i class="fas fa-circle"></i> <span class="status-text">Связь с базой...</span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Плеер Twitch (Скрыт, если офлайн) -->
+        <div id="live-box" class="twitch-wrapper" style="display: none;">
+            <div class="live-indicator">
+                <i class="fas fa-satellite-dish"></i> В ЭФИРЕ
+            </div>
+            <div id="twitch-embed"></div>
+        </div>
+
+        <!-- Секция: Соцсети -->
+        <section class="content-card tilt-effect">
+            <h2 class="section-title">Медиа & Связь</h2>
+            <nav class="social-links">
+                <a href="https://twitch.tv/daymonmontage" target="_blank" class="s-btn twitch">
+                    <i class="fab fa-twitch"></i> <span>Twitch</span>
+                </a>
+                <a href="https://t.me/+0uVZZdwvZ0UwMDEy" target="_blank" class="s-btn telegram">
+                    <i class="fab fa-telegram"></i> <span>Telegram</span>
+                </a>
+                <a href="https://www.youtube.com/@daymon_montage/videos" target="_blank" class="s-btn youtube">
+                    <i class="fab fa-youtube"></i> <span>YouTube</span>
+                </a>
+                <a href="https://www.tiktok.com/@daymon.montage" target="_blank" class="s-btn tiktok">
+                    <i class="fab fa-tiktok"></i> <span>TikTok</span>
+                </a>
+                <a href="https://vk.com/daymon_montage" target="_blank" class="s-btn vk">
+                    <i class="fab fa-vk"></i> <span>ВКонтакте</span>
+                </a>
+                <a href="https://discord.gg/UtGPrFT2Es" target="_blank" class="s-btn discord">
+                    <i class="fab fa-discord"></i> <span>Discord</span>
+                </a>
+                <a href="https://www.instagram.com/_p_a_s_k_u_d_a_/?hl=ru" target="_blank" class="s-btn insta">
+                    <i class="fab fa-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="https://steamcommunity.com/id/DaymonMontage/" target="_blank" class="s-btn steam">
+                    <i class="fab fa-steam"></i> <span>Steam</span>
+                </a>
+                <a href="https://soundcloud.com/user-763490654-509292968" target="_blank" class="s-btn soundcloud">
+                    <i class="fab fa-soundcloud"></i> <span>SoundCloud</span>
+                </a>
+            </nav>
+        </section>
+
+        <!-- Секция: Поддержка -->
+        <section class="content-card tilt-effect">
+            <h2 class="section-title">Поддержка канала</h2>
+            
+            <div class="alert-buttons">
+                <a href="https://www.donationalerts.com/r/daymonmontage" target="_blank" class="donate-btn da">
+                    <div class="btn-icon"><i class="fas fa-donate"></i></div>
+                    <div class="btn-text">
+                        <strong>DonationAlerts</strong>
+                        <small>Основной способ</small>
+                    </div>
+                </a>
+                <a href="https://memealerts.com/daymonmontage" target="_blank" class="donate-btn ma">
+                    <div class="btn-icon"><i class="fas fa-images"></i></div>
+                    <div class="btn-text">
+                        <strong>MemeAlerts</strong>
+                        <small>Скример / Мем</small>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Реквизиты карт -->
+            <div class="direct-support">
+                <div class="warning-box">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Прямой перевод на карту - лучший способ поддержки (без комиссии сервисов).</p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Карта 1 -->
+                    <div class="plastic-card" onclick="copyToClipboard('9112380021489218')">
+                        <div class="pc-top">
+                            <span class="bank-label">Беларусбанк</span>
+                            <i class="far fa-copy copy-icon"></i>
+                        </div>
+                        <div class="pc-number">9112 3800 2148 9218</div>
+                        <div class="pc-bottom">
+                            <div class="holder">ILYA KHAMIANKOU</div>
+                            <div class="expires">10/27</div>
+                        </div>
+                    </div>
+
+                    <!-- Карта 2 -->
+                    <div class="plastic-card" onclick="copyToClipboard('5489529620373271')">
+                        <div class="pc-top">
+                            <span class="bank-label">Priorbank</span>
+                            <i class="far fa-copy copy-icon"></i>
+                        </div>
+                        <div class="pc-number">5489 5296 2037 3271</div>
+                        <div class="pc-bottom">
+                            <div class="holder">ILYA KHAMIANKOU</div>
+                            <div class="expires">05/28</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="hint">*Кликни по карте, чтобы скопировать номер</p>
+            </div>
+        </section>
+
+        <!-- Инфо и ПК -->
+        <div class="two-columns">
+            <section class="content-card tilt-effect">
+                <h2 class="section-title">Досье</h2>
+                <ul class="specs-list">
+                    <li>
+                        <span class="spec-label">Имя</span> <span class="spec-val">Илья Хоменков</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">Возраст</span> <span class="spec-val">24 года (29.04.2001)</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">Начало</span> <span class="spec-val">20 июня 2016</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">Служба</span> <span class="spec-val">11-я ОМБр, Разведка</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">Main Game</span> <span class="spec-val highlight">Voices of the Void</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content-card tilt-effect">
+                <h2 class="section-title">Setup (Железо)</h2>
+                <ul class="specs-list">
+                    <li>
+                        <span class="spec-label">CPU</span> <span class="spec-val">Ryzen 5 7500F</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">GPU</span> <span class="spec-val">RTX 4060Ti 8GB</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">RAM</span> <span class="spec-val">32GB DDR5 Fury</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">MOBO</span> <span class="spec-val">Gigabyte B650</span>
+                    </li>
+                    <li>
+                        <span class="spec-label">PSU</span> <span class="spec-val">Deepcool 750w</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <p class="copyright">&copy; 2026 DaymonMontage.</p>
+        
+        <div class="credits">
+            <span>Made with <i class="fas fa-heart heart-beat"></i> by</span>
+            <a href="https://t.me/torgasik" target="_blank" class="dev-link">
+                <span class="dev-nick">Torgovets</span>
+                <img src="assets/dev-icon.png" alt="Dev" class="dev-pic">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Всплывающее уведомление -->
+    <div id="toast-notification" class="toast">Скопировано в буфер!</div>
+
+    <!-- Логика сайта -->
+    <script src="js/main.js"></script>
+</body>
+</html>
