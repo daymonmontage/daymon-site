@@ -36,7 +36,22 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
-    
+
+<body>
+    <!-- HUD CONTROLS -->
+    <div class="hud-controls">
+        <!-- Music Toggle -->
+        <div id="music-toggle" class="hud-btn" title="Music On/Off">
+            <i class="fas fa-music"></i>
+            <span>MUSIC</span>
+        </div>
+        
+        <!-- SFX Toggle -->
+        <div id="sfx-toggle" class="hud-btn" title="SFX On/Off">
+            <i class="fas fa-volume-up"></i>
+            <span>SFX</span>
+        </div>
+    </div>
 
     <!-- Экран загрузки -->
     <div id="preloader">
@@ -254,7 +269,10 @@
 
     <!-- Подвал -->
     <footer class="site-footer">
-        <p class="copyright">&copy; 2026 DaymonMontage.</p>
+        <div class="system-trigger" onclick="toggleConsole()">
+            <span class="sys-dot"></span>
+            <span class="sys-text">SYSTEM V.1.0.4 [LOGS]</span>
+        </div>
         
         <div class="credits">
             <span>Made with <i class="fas fa-heart heart-beat"></i> by</span>
@@ -264,6 +282,23 @@
             </a>
         </div>
     </footer>
+
+    <!-- === ОКНО КОНСОЛИ (Интерактивное) === -->
+    <div id="votv-console" class="console-wrapper">
+        <div class="console-header">
+            <span>> TERMINAL_ACCESS</span>
+            <button class="close-console" onclick="toggleConsole()">[X]</button>
+        </div>
+        
+        <div id="console-output" class="console-body">
+        </div>
+
+        <!-- Поле ввода -->
+        <div class="console-input-area">
+            <span class="prompt-user">user@daymon:~$</span>
+            <input type="text" id="cmd-input" autocomplete="off" spellcheck="false" placeholder="Type 'help'...">
+        </div>
+    </div>
 
     <!-- Всплывающее уведомление -->
     <div id="toast-notification" class="toast">Скопировано в буфер!</div>

@@ -7,7 +7,7 @@
 // --- Настройки ---
 const CHANNEL_NAME = 'daymonmontage';
 const VOLUME_LEVEL = 0.4;
-const TILT_FORCE = 3; // Сила наклона карточек
+const TILT_FORCE = 3; 
 
 // Домены, где разрешен плеер Twitch
 const ALLOWED_HOSTS = [
@@ -31,164 +31,100 @@ const BEST_CLIPS = [
     "UnusualSpotlessJalapenoFUNgineer-FoO5tkxvrNTXd3Hu",
 ];
 
-// --- Инициализация при загрузке ---
+// --- Инициализация ---
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Приветствие в консоли для любопытных
     console.log(`%c DAYMON HUB %c SYSTEM ONLINE \n`, 
         'background: #f97316; color: #000; padding: 4px; font-weight: bold;', 
         'color: #f97316;'
     );
 
-    // Запуск модулей
     setupTiltEffect();
     renderSpaceBackground();
     setupEasterEgg();
     checkTwitchStatus();
+    initClipsGallery();
+    setupSoundTriggers();
+    tryPlayMusic();
 });
 
-// Убираем прелоадер после полной загрузки страницы
+// Прелоадер
 window.addEventListener('load', () => {
     const loader = document.getElementById('preloader');
     if (loader) {
-        setTimeout(() => {
-            loader.classList.add('finished');
-        }, 600);
+        setTimeout(() => loader.classList.add('finished'), 600);
     }
 });
 
-/* 
- * 1. 3D Эффект для карточек
- * Поворачивает элементы в сторону мыши
- */
+/* 1. 3D Tilt Effect */
 function setupTiltEffect() {
     const cards = document.querySelectorAll('.tilt-effect');
-
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
-            const cardRect = card.getBoundingClientRect();
-            
-            // Координаты мыши внутри карточки
-            const x = e.clientX - cardRect.left;
-            const y = e.clientY - cardRect.top;
-
-            // Центр карточки
-            const centerX = cardRect.width / 2;
-            const centerY = cardRect.height / 2;
-            
-            // Вычисляем угол поворота
-            // Делим на centerY/centerX, чтобы получить значения от -1 до 1
-            const rotateX = ((y - centerY) / centerY) * -TILT_FORCE; 
-            const rotateY = ((x - centerX) / centerX) * TILT_FORCE;
-
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const cx = rect.width / 2;
+            const cy = rect.height / 2;
+            const rx = ((y - cy) / cy) * -TILT_FORCE; 
+            const ry = ((x - cx) / cx) * TILT_FORCE;
+            card.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) scale(1.01)`;
         });
-
-        // Сброс при уходе мыши
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
         });
     });
 }
 
-/* 
- * 2. Космический фон (Canvas)
- * Рисует падающие звезды/частицы как в VotV
- */
+/* 2. Space Background */
 function renderSpaceBackground() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    
-    // Стили канваса
-    canvas.style.position = 'fixed';
-    canvas.style.top = '0';
-    canvas.style.left = '0';
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
-    canvas.style.zIndex = '-2'; // Под всем контентом
-    canvas.style.pointerEvents = 'none';
-    
+    canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;pointer-events:none;';
     document.body.appendChild(canvas);
 
-    let width, height;
-    let stars = [];
-    const STAR_COUNT = 90;
-
-    // Обновляем размеры при ресайзе окна
-    const resize = () => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-    };
-
-    // Создаем массив звезд
+    let width, height, stars = [];
+    const resize = () => { width = canvas.width = window.innerWidth; height = canvas.height = window.innerHeight; };
+    
     const initStars = () => {
         stars = [];
-        for (let i = 0; i < STAR_COUNT; i++) {
+        for (let i = 0; i < 90; i++) {
             stars.push({
                 x: Math.random() * width,
                 y: Math.random() * height,
-                size: Math.random() * 2 + 0.5, // Размер от 0.5 до 2.5
-                speed: Math.random() * 0.5 + 0.1 // Скорость падения
+                size: Math.random() * 2 + 0.5,
+                speed: Math.random() * 0.5 + 0.1
             });
         }
     };
 
-    // Главный цикл анимации
     const animate = () => {
         ctx.clearRect(0, 0, width, height);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)'; // Полупрозрачный белый
-        
-        stars.forEach(star => {
-            // Двигаем вниз
-            star.y -= star.speed;
-            
-            // Если улетела вверх (эффект полета сквозь космос), сбрасываем вниз
-            if (star.y < 0) {
-                star.y = height;
-                star.x = Math.random() * width;
-            }
-            
-            // Рисуем точку
-            ctx.beginPath();
-            ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-            ctx.fill();
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+        stars.forEach(s => {
+            s.y -= s.speed;
+            if (s.y < 0) { s.y = height; s.x = Math.random() * width; }
+            ctx.beginPath(); ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2); ctx.fill();
         });
-        
         requestAnimationFrame(animate);
     };
 
     window.addEventListener('resize', resize);
-    resize();
-    initStars();
-    animate();
+    resize(); initStars(); animate();
 }
 
-/* 
- * 3. Пасхалка (Клик по аватару)
- * Мяукает и трясется
- */
+/* 3. Easter Egg (Cat) */
 function setupEasterEgg() {
     const avatar = document.querySelector('.avatar-container img');
     if (!avatar) return;
-
-    const meowSound = new Audio('assets/meow.mp3');
-    meowSound.volume = VOLUME_LEVEL;
+    const sound = new Audio('assets/meow.mp3'); sound.volume = VOLUME_LEVEL;
 
     avatar.addEventListener('click', () => {
-        // Анимация тряски
         avatar.style.transition = '0.1s';
         avatar.style.transform = 'scale(1.1) rotate(15deg)';
-        
-        // Звук
-        // try-catch нужен, так как браузеры блокируют автоплей без взаимодействия
-        try {
-            meowSound.currentTime = 0;
-            meowSound.play().catch(() => console.log("Audio play blocked"));
-        } catch (e) {
-            console.error("Audio file missing?");
+        if(!localStorage.getItem('sfx_muted')) {
+            sound.currentTime = 0;
+            sound.play().catch(()=>{});
         }
-
-        // Возврат в исходное положение
         setTimeout(() => { avatar.style.transform = 'scale(1.1) rotate(-15deg)'; }, 100);
         setTimeout(() => { 
             avatar.style.transition = '0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
@@ -197,183 +133,360 @@ function setupEasterEgg() {
     });
 }
 
-/* 
- * 4. Проверка статуса Twitch
- * Используем API-прокси для обхода CORS
- */
+/* 4. Twitch Status & Cover */
 async function checkTwitchStatus() {
     const statusEl = document.getElementById('stream-status');
     const liveBox = document.getElementById('live-box');
-    
     if (!statusEl) return;
 
-    const ui = {
-        icon: statusEl.querySelector('i'),
-        text: statusEl.querySelector('.status-text')
-    };
-
-    const proxyUrl = `https://api.codetabs.com/v1/proxy?quest=https://decapi.me/twitch/uptime/${CHANNEL_NAME}`;
+    const ui = { icon: statusEl.querySelector('i'), text: statusEl.querySelector('.status-text') };
+    const url = `https://api.codetabs.com/v1/proxy?quest=https://decapi.me/twitch/uptime/${CHANNEL_NAME}`;
 
     try {
-        const response = await fetch(proxyUrl);
-        const data = await response.text();
-        
-        // Если ответ содержит "offline", значит стрима нет
-        const isOffline = data.toLowerCase().includes('offline');
-
-        if (isOffline) {
-            // ОФФЛАЙН
+        const res = await fetch(url);
+        const data = await res.text();
+        if (data.toLowerCase().includes('offline')) {
             ui.text.textContent = 'Offline';
             ui.icon.style.color = '#71717a';
             statusEl.classList.remove('online');
             if(liveBox) liveBox.style.display = 'none';
         } else {
-            // ОНЛАЙН
             ui.text.textContent = 'LIVE';
             statusEl.classList.add('online');
             if(liveBox) {
                 liveBox.style.display = 'block';
-                loadTwitchEmbed(); // Грузим плеер только если стрим идет
+                loadTwitchEmbed();
             }
         }
-    } catch (err) {
-        console.warn('Twitch Status API Error:', err);
-        ui.text.textContent = 'Unknown';
-    }
+    } catch (e) { console.warn('API Error'); }
 }
 
-/* 
- * 4. Twitch Cover (Вместо плеера)
- */
 function loadTwitchEmbed() {
-    const embedId = 'twitch-embed';
-    const container = document.getElementById(embedId);
-    
+    const container = document.getElementById('twitch-embed');
     if (container && container.innerHTML === "") {
-        
-        const thumbnailUrl = `https://static-cdn.jtvnw.net/previews-ttv/live_user_${CHANNEL_NAME}-1280x720.jpg?t=${Date.now()}`;
-        
+        const thumb = `https://static-cdn.jtvnw.net/previews-ttv/live_user_${CHANNEL_NAME}-1280x720.jpg?t=${Date.now()}`;
         container.innerHTML = `
-            <a href="https://twitch.tv/${CHANNEL_NAME}" target="_blank" class="stream-preview" 
-               style="background-image: url('${thumbnailUrl}');">
-                
-                <div class="play-btn">
-                    <i class="fas fa-play"></i>
-                </div>
-                
-                <div class="watch-label">
-                    Перейти на трансляцию <i class="fas fa-external-link-alt"></i>
-                </div>
-            </a>
-        `;
+            <a href="https://twitch.tv/${CHANNEL_NAME}" target="_blank" class="stream-preview" style="background-image: url('${thumb}');">
+                <div class="play-btn"><i class="fas fa-play"></i></div>
+                <div class="watch-label">Перейти на трансляцию <i class="fas fa-external-link-alt"></i></div>
+            </a>`;
     }
 }
 
-/* 
- * 5. Копирование в буфер обмена
- */
+/* 5. Clipboard */
 function copyToClipboard(text) {
-    // Современный способ
     if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text)
-            .then(() => showToast())
-            .catch(() => fallbackCopy(text));
-    } else {
-        // Старый способ для совместимости
-        fallbackCopy(text);
-    }
+        navigator.clipboard.writeText(text).then(showToast).catch(() => fallbackCopy(text));
+    } else fallbackCopy(text);
 }
-
 function fallbackCopy(text) {
-    const tempInput = document.createElement("textarea");
-    tempInput.value = text;
-    tempInput.style.position = "fixed";
-    tempInput.style.opacity = "0";
-    document.body.appendChild(tempInput);
-    
-    tempInput.focus();
-    tempInput.select();
-    
-    try {
-        document.execCommand('copy');
-        showToast();
-    } catch (err) {
-        alert('Не удалось скопировать автоматически. Номер: ' + text);
-    }
-    
-    document.body.removeChild(tempInput);
+    const el = document.createElement("textarea");
+    el.value = text; el.style.position="fixed"; el.style.opacity="0";
+    document.body.appendChild(el); el.focus(); el.select();
+    try { document.execCommand('copy'); showToast(); } catch (e) {}
+    document.body.removeChild(el);
 }
-
 function showToast() {
-    const toast = document.getElementById("toast-notification");
-    if (!toast) return;
-
-    toast.classList.add("active");
-    toast.innerHTML = '<i class="fas fa-check-circle" style="color: #22c55e; margin-right: 8px;"></i> Скопировано!';
-    
-    setTimeout(() => { 
-        toast.classList.remove("active"); 
-    }, 2500);
+    const t = document.getElementById("toast-notification");
+    if(t) { t.classList.add("active"); t.innerHTML = '<i class="fas fa-check-circle" style="color:#22c55e;margin-right:8px;"></i> Скопировано!'; setTimeout(()=>t.classList.remove("active"),2500); }
 }
 
-/* 
- * 6. Галерея Клипов (Carousel)
- */
-
-// === СПИСОК ID КЛИПОВ ===
-
-let currentClipIndex = 0;
-
+/* 6. Clips Gallery */
+let clipIdx = 0;
 function initClipsGallery() {
     const container = document.getElementById('clip-container');
-    const prevBtn = document.getElementById('prev-clip');
-    const nextBtn = document.getElementById('next-clip');
-    const totalSpan = document.getElementById('clip-total');
-    const currentSpan = document.getElementById('clip-current');
+    const prev = document.getElementById('prev-clip');
+    const next = document.getElementById('next-clip');
+    const total = document.getElementById('clip-total');
+    const curr = document.getElementById('clip-current');
     
-    if (!container || !prevBtn || !nextBtn) return;
+    if (!container) return;
+    total.textContent = BEST_CLIPS.length;
 
-    totalSpan.textContent = BEST_CLIPS.length;
-
-    const loadClip = (index) => {
-        const clipId = BEST_CLIPS[index];
+    const load = (i) => {
+        const id = BEST_CLIPS[i];
+        const dom = ["daymonmontage.github.io", "itservicepgatk.github.io", "github.io", "localhost", "127.0.0.1"];
+        let parents = "";
+        dom.forEach(d => parents += `&parent=${d}`);
         
-        const domain1 = "daymonmontage.github.io";
-        const domain2 = "localhost";
-        const domain3 = "127.0.0.1";
-        
-        container.innerHTML = `
-            <iframe 
-                src="https://clips.twitch.tv/embed?clip=${clipId}&parent=${domain1}&parent=${domain2}&parent=${domain3}&autoplay=false&muted=false" 
-                height="100%" 
-                width="100%" 
-                frameborder="0" 
-                scrolling="no" 
-                allowfullscreen="true">
-            </iframe>
-        `;
-
-        currentSpan.textContent = index + 1;
+        container.innerHTML = `<iframe src="https://clips.twitch.tv/embed?clip=${id}${parents}&autoplay=false&muted=false" height="100%" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>`;
+        curr.textContent = i + 1;
     };
+    load(clipIdx);
 
-    loadClip(currentClipIndex);
+    prev.addEventListener('click', () => { clipIdx--; if(clipIdx<0) clipIdx=BEST_CLIPS.length-1; load(clipIdx); });
+    next.addEventListener('click', () => { clipIdx++; if(clipIdx>=BEST_CLIPS.length) clipIdx=0; load(clipIdx); });
+}
 
-    // Кнопка Назад
-    prevBtn.addEventListener('click', () => {
-        currentClipIndex--;
-        if (currentClipIndex < 0) currentClipIndex = BEST_CLIPS.length - 1;
-        loadClip(currentClipIndex);
-    });
+/* 
+ * 7. Interactive Console
+ */
+const consolePanel = document.getElementById('votv-console');
+const consoleOutput = document.getElementById('console-output');
+const cmdInput = document.getElementById('cmd-input');
+let isConsoleRunning = false;
 
-    // Кнопка Вперед
-    nextBtn.addEventListener('click', () => {
-        currentClipIndex++;
-        if (currentClipIndex >= BEST_CLIPS.length) currentClipIndex = 0;
-        loadClip(currentClipIndex);
+const BOOT_SEQUENCE = [
+    { type: 'normal', text: 'Initializing DaymonOS v1.0.4...' },
+    { type: 'success', text: 'Connection established: Vitebsk Server' },
+    { type: 'normal', text: 'Loading assets... hero_left.png, cat.png' },
+    { type: 'warning', text: 'WARNING: High cringe levels detected' },
+    { type: 'normal', text: 'Detecting lifeforms...' },
+    { type: 'success', text: 'User found: You' },
+    { type: 'normal', text: 'Checking pizza status...' },
+    { type: 'success', text: 'Pizza ordered for 12:00 (Pepperoni)' },
+    { type: 'error',   text: 'Error: Omega Kerfur stuck in textures' },
+    { type: 'normal', text: 'Scanning signals...' },
+    { type: 'normal', text: 'Signal received: "Meow"' },
+    { type: 'warning', text: 'Daymon is sleeping. Do not disturb.' },
+    { type: 'normal', text: 'Downloading more RAM...' },
+    { type: 'success', text: 'System ready. Waiting for input.' },
+    { type: 'normal', text: 'Type "help" for commands' }
+];
+
+function toggleConsole() {
+    consolePanel.classList.toggle('open');
+    if (consolePanel.classList.contains('open')) {
+        setTimeout(() => cmdInput.focus(), 100);
+        if (!isConsoleRunning) {
+            isConsoleRunning = true;
+            consoleOutput.innerHTML = ''; 
+            runLogSequence(0);
+        }
+    }
+}
+
+function runLogSequence(index) {
+    if (index >= BOOT_SEQUENCE.length) return;
+    const msg = BOOT_SEQUENCE[index];
+    const delay = Math.random() * 600 + 100;
+    setTimeout(() => {
+        printToConsole(msg.text, msg.type);
+        runLogSequence(index + 1);
+    }, delay);
+}
+
+function printToConsole(text, type = 'normal') {
+    const line = document.createElement('div');
+    line.className = 'log-line';
+    let colorStyle = 'color: #ccc;';
+    if (type === 'success') colorStyle = 'color: #4ade80;';
+    if (type === 'warning') colorStyle = 'color: #facc15;';
+    if (type === 'error')   colorStyle = 'color: #ef4444;';
+    if (type === 'system')  colorStyle = 'color: #3b82f6;';
+    line.style = colorStyle;
+    line.innerHTML = `<span style="opacity:0.5">[SYS]</span> ${text}`;
+    consoleOutput.appendChild(line);
+    consoleOutput.scrollTop = consoleOutput.scrollHeight;
+}
+
+if(cmdInput) {
+    cmdInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const cmd = cmdInput.value.trim().toLowerCase();
+            if (cmd) {
+                const echo = document.createElement('div');
+                echo.className = 'cmd-echo';
+                echo.textContent = `user@daymon:~$ ${cmd}`;
+                consoleOutput.appendChild(echo);
+                processCommand(cmd);
+            }
+            cmdInput.value = '';
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+        }
     });
 }
 
-// Запускаем галерею после загрузки страницы
-document.addEventListener('DOMContentLoaded', () => {
-    initClipsGallery();
+function processCommand(cmd) {
+    let res = '', type = 'normal';
+    switch (cmd) {
+        case 'help':
+            printToConsole('=== COMMANDS ===', 'system');
+            printToConsole('status  - Stream Status');
+            printToConsole('ariral  - Feed aliens');
+            printToConsole('cat     - Meow?');
+            printToConsole('secret  - ???');
+            printToConsole('clear   - Clear');
+            return;
+        case 'clear': consoleOutput.innerHTML = ''; return;
+        case 'status':
+            const live = document.querySelector('.stream-check').classList.contains('online');
+            res = live ? "ONLINE (Pog)" : "OFFLINE (Sadge)"; type = live ? 'success' : 'error'; break;
+        case 'ariral': res = "Shrimps deployed. +15 Rep."; type = 'success'; playSfx('click'); break;
+        case 'cat': res = "MEOW MEOW MEOW"; playSfx('hover'); break;
+        case 'secret':
+            res = "Opening secure channel..."; type = 'system';
+            setTimeout(()=>window.open('https://discord.gg/UtGPrFT2Es'),1000); break;
+        default: res = `Unknown: "${cmd}". Try "help"`; type = 'error';
+    }
+    setTimeout(() => printToConsole(res, type), 200);
+}
+
+/* 
+ * 8. Audio System (Music & SFX)
+ */
+const musicBtn = document.getElementById('music-toggle');
+const sfxBtn = document.getElementById('sfx-toggle');
+
+const PLAYLIST = ['assets/music/1.mp3', 'assets/music/2.mp3', 'assets/music/3.mp3'];
+let musicMuted = localStorage.getItem('music_muted') === 'true';
+let sfxMuted = localStorage.getItem('sfx_muted') === 'true';
+
+const bgMusic = new Audio();
+bgMusic.volume = 0.15; // Начальная громкость 15%
+bgMusic.loop = false;
+
+const sfxHover = new Audio('assets/hover.mp3'); sfxHover.volume = 0.15;
+const sfxClick = new Audio('assets/click.mp3'); sfxClick.volume = 0.25;
+
+// === АГРЕССИВНЫЙ ЗАПУСК МУЗЫКИ ===
+function tryPlayMusic() {
+    updateMusicUI();
+    
+    if (musicMuted) return;
+
+    if (!bgMusic.src || bgMusic.src === "") nextTrack();
+
+    const playPromise = bgMusic.play();
+
+    if (playPromise !== undefined) {
+        playPromise
+            .then(() => {
+                console.log("Audio started automatically");
+            })
+            .catch((error) => {
+                console.log("Auto-play prevented by browser. Waiting for interaction...");
+                
+                const forcePlay = () => {
+                    if (!musicMuted && bgMusic.paused) {
+                        bgMusic.play().then(() => {
+                            document.removeEventListener('click', forcePlay);
+                            document.removeEventListener('keydown', forcePlay);
+                            document.removeEventListener('touchstart', forcePlay);
+                        }).catch(err => console.error(err));
+                    }
+                };
+
+                // Слушаем все типы взаимодействия
+                document.addEventListener('click', forcePlay, { once: true });
+                document.addEventListener('keydown', forcePlay, { once: true });
+                document.addEventListener('touchstart', forcePlay, { once: true });
+            });
+    }
+}
+
+function nextTrack() {
+    const rnd = Math.floor(Math.random() * PLAYLIST.length);
+    bgMusic.src = PLAYLIST[rnd];
+}
+
+bgMusic.addEventListener('ended', () => {
+    nextTrack();
+    if (!musicMuted) bgMusic.play();
 });
+
+function toggleMusic(e) {
+    if(e) e.stopPropagation();
+    musicMuted = !musicMuted;
+    localStorage.setItem('music_muted', musicMuted);
+    
+    if (musicMuted) bgMusic.pause();
+    else {
+        if (!bgMusic.src || bgMusic.src === "") nextTrack();
+        bgMusic.play();
+    }
+    updateMusicUI();
+}
+
+function updateMusicUI() {
+    if(!musicBtn) return;
+    if (musicMuted) musicBtn.classList.add('muted');
+    else musicBtn.classList.remove('muted');
+}
+
+// SFX Функции
+function playSfx(type) {
+    if (sfxMuted) return;
+    const sound = type === 'hover' ? sfxHover : sfxClick;
+    sound.currentTime = 0;
+    sound.play().catch(() => {});
+}
+
+function toggleSfx(e) {
+    if(e) e.stopPropagation();
+    sfxMuted = !sfxMuted;
+    localStorage.setItem('sfx_muted', sfxMuted);
+    if (!sfxMuted) playSfx('click');
+    updateSfxUI();
+}
+
+function updateSfxUI() {
+    if(!sfxBtn) return;
+    if (sfxMuted) sfxBtn.classList.add('muted');
+    else sfxBtn.classList.remove('muted');
+}
+
+// Настройка звуков для UI элементов
+function setupSoundTriggers() {
+    if (musicBtn) musicBtn.addEventListener('click', toggleMusic);
+    if (sfxBtn) sfxBtn.addEventListener('click', toggleSfx);
+
+    // Звуки при наведении и клике на кнопки
+    const triggers = document.querySelectorAll('a, button, .s-btn, .donate-btn, .plastic-card, .system-trigger, .nav-btn, .stream-preview, .hud-btn');
+    triggers.forEach(el => {
+        el.addEventListener('mouseenter', () => playSfx('hover'));
+        el.addEventListener('mousedown', () => playSfx('click'));
+    });
+}
+
+
+/* 9. Secrets */
+const SECRET_CODES = {
+    'meow':   { type: 'video', src: 'assets/cat-piano.mp4' },
+    'monica':  { type: 'image-peek', src: 'assets/monica.png' },
+    'daymon': { type: 'barrel-roll' }
+};
+let keyBuffer = '';
+const bufferLimit = 15; 
+
+document.addEventListener('keydown', (e) => {
+    keyBuffer += e.key.toLowerCase();
+    if (keyBuffer.length > bufferLimit) keyBuffer = keyBuffer.slice(-bufferLimit);
+    Object.keys(SECRET_CODES).forEach(code => {
+        if (keyBuffer.includes(code)) {
+            activateSecret(SECRET_CODES[code]);
+            keyBuffer = ''; 
+        }
+    });
+});
+
+function activateSecret(data) {
+    if (data.type === 'video') {
+        if(typeof bgMusic !== 'undefined') bgMusic.pause();
+        const overlay = document.createElement('div');
+        overlay.className = 'video-overlay';
+        overlay.innerHTML = `<video class="secret-video" autoplay><source src="${data.src}" type="video/mp4"></video>`;
+        document.body.appendChild(overlay);
+        const v = overlay.querySelector('video');
+        v.volume = 0.6;
+        const finish = () => {
+            overlay.remove();
+            if(!musicMuted) bgMusic.play().catch(()=>{});
+        };
+        v.onended = finish;
+        overlay.onclick = finish;
+    }
+    else if (data.type === 'image-peek') {
+        playSfx('hover');
+        const img = document.createElement('img');
+        img.src = data.src; img.className = 'monica-entity';
+        document.body.appendChild(img);
+        setTimeout(() => img.classList.add('peek'), 50);
+        setTimeout(() => { img.classList.remove('peek'); setTimeout(() => img.remove(), 1000); }, 3000);
+    }
+    else if (data.type === 'barrel-roll') {
+        playSfx('click');
+        document.body.classList.add('barrel-roll');
+        setTimeout(() => document.body.classList.remove('barrel-roll'), 2000);
+    }
+}

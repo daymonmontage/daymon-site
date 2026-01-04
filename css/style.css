@@ -386,12 +386,12 @@ body {
 
 /* === ФУТЕР И АВТОРСТВО === */
 .site-footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 3rem 1rem;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    position: relative;
-    z-index: 10;
+    gap: 10px;
 }
 
 .credits {
@@ -400,7 +400,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 8px 16px;
     border-radius: 50px;
-    margin-top: 10px;
+    margin-top: 0;
     backdrop-filter: blur(5px);
     transition: 0.3s;
 }
@@ -711,3 +711,323 @@ body {
     #prev-clip { left: 10px; }
     #next-clip { right: 10px; }
 }
+
+/* === КНОПКА В ФУТЕРЕ (ТРИГГЕР) === */
+.system-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 8px 16px;
+    border-radius: 50px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 0; 
+    margin-right: 15px;
+}
+
+.system-trigger:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+}
+
+.sys-dot {
+    width: 8px; height: 8px;
+    background-color: #22c55e; /* Зеленый огонек */
+    border-radius: 50%;
+    box-shadow: 0 0 5px #22c55e;
+    animation: pulse 2s infinite;
+}
+
+/* === ОКНО КОНСОЛИ === */
+.console-wrapper {
+    position: fixed;
+    bottom: -100%; /* Спрятано внизу */
+    right: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(10, 10, 12, 0.95);
+    border: 1px solid var(--accent);
+    border-radius: 8px 8px 0 0;
+    z-index: 9999;
+    transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+    font-family: 'Courier New', monospace;
+}
+
+.console-wrapper.open {
+    bottom: 0; /* Выезжает */
+}
+
+.console-header {
+    background: var(--accent);
+    color: #000;
+    padding: 8px 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.close-console {
+    background: none; border: none;
+    color: #000; font-weight: bold;
+    cursor: pointer; font-family: inherit;
+}
+.close-console:hover { color: #fff; }
+
+.console-body {
+    padding: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    color: #a1a1aa;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Скроллбар для консоли */
+.console-body::-webkit-scrollbar { width: 5px; }
+.console-body::-webkit-scrollbar-thumb { background: var(--accent); }
+
+/* Стиль строк */
+.log-line { margin-bottom: 4px; display: block; }
+.log-time { color: #555; margin-right: 5px; }
+.log-msg { color: #ccc; }
+.log-warn { color: #facc15; }
+.log-err { color: #ef4444; }
+.log-success { color: #4ade80; }
+
+/* Курсор ввода */
+.typing-cursor::after {
+    content: '_';
+    animation: blink 1s infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Адаптив консоли */
+@media (max-width: 600px) {
+    .console-wrapper {
+        width: 100%; right: 0; border-radius: 0;
+        height: 50vh;
+    }
+}
+
+/* === КНОПКА ЗВУКА === */
+.system-trigger.muted {
+    opacity: 0.5;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.system-trigger.muted:hover {
+    opacity: 1;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Иконка звука */
+#sound-icon {
+    width: 15px;
+    text-align: center;
+}
+
+/* === ПЛАВАЮЩАЯ КНОПКА ЗВУКА (HUD) === */
+.hud-controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hud-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(10, 10, 12, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    width: fit-content;
+}
+
+.hud-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+}
+
+/* Disabled State */
+.hud-btn.muted {
+    opacity: 0.5;
+    border-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    text-decoration: line-through;
+}
+
+.hud-btn.muted:hover {
+    opacity: 1;
+    color: #ef4444;
+    border-color: #ef4444;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hud-controls { top: 15px; left: 15px; gap: 8px; }
+    
+    .hud-btn {
+        padding: 8px;
+        border-radius: 8px;
+        justify-content: center;
+    }
+    
+    .hud-btn span { display: none; }
+}
+
+/* Иконка */
+#sound-icon {
+    width: 15px;
+    text-align: center;
+}
+
+/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ === */
+@media (max-width: 768px) {
+    .audio-hud {
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    #sound-text {
+        display: none;
+    }
+}
+
+/* === EASTER EGG ENTITY === */
+.secret-runner {
+    position: fixed;
+    bottom: 20px;
+    right: -300px;
+    width: 250px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+    will-change: transform;
+    animation: runAcross 3s linear forwards;
+}
+
+@keyframes runAcross {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-120vw); }
+}
+
+.shake-screen {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* === ПАСХАЛКА 1: ВИДЕО (MEOW) === */
+.video-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.secret-video {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(249, 115, 22, 0.5);
+}
+
+/* === ПАСХАЛКА 2: МОНИКА (ALIEN) === */
+.monica-entity {
+    position: fixed;
+    bottom: -100%;
+    right: 50px;
+    width: 300px;
+    z-index: 9998;
+    pointer-events: none;
+    transition: bottom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.monica-entity.peek {
+    bottom: -50px;
+}
+
+/* === ПАСХАЛКА 3: БОЧКА (DAYMON) === */
+.barrel-roll {
+    animation: roll 2s ease-in-out;
+}
+
+@keyframes roll {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* === ПОЛЕ ВВОДА В КОНСОЛИ === */
+.console-input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.prompt-user {
+    color: #f97316;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+#cmd-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    outline: none;
+    caret-color: #22c55e;
+}
+
+.cmd-response { margin-bottom: 10px; display: block; color: #aaa; }
+.cmd-echo { color: #f97316; font-weight: bold; margin-top: 5px; display: block; }
