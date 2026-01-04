@@ -36,6 +36,7 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
+    
 
     <!-- Экран загрузки -->
     <div id="preloader">
@@ -226,6 +227,28 @@
                 </ul>
             </section>
         </div>
+
+        <!-- Секция: Клипы (Карусель) -->
+        <section class="content-card tilt-effect">
+            <h2 class="section-title">Архив Сигналов (Клипы)</h2>
+            
+            <div class="clips-carousel">
+                <!-- Кнопка Назад -->
+                <button id="prev-clip" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                
+                <!-- Контейнер для видео -->
+                <div id="clip-container" class="clip-wrapper">
+                    <div class="loader-wrap">
+                        <p class="loader-text">ЗАГРУЗКА...</p>
+                    </div>
+                </div>
+
+                <!-- Кнопка Вперед -->
+                <button id="next-clip" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <p class="clip-counter">Запись <span id="clip-current">1</span> из <span id="clip-total">0</span></p>
+        </section>
 
     </main>
 

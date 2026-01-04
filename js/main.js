@@ -15,7 +15,15 @@ const ALLOWED_HOSTS = [
     "itservicepgatk.github.io",
     "github.io",
     "localhost",
-    "127.0.0.1"
+    "127.0.0.1",
+    "0.0.0.0"
+];
+
+// === СПИСОК ID КЛИПОВ ===
+const BEST_CLIPS = [
+    "SteamyGorgeousLardWOOP-OT__Q0C6jfeiYHyM",
+    "RenownedVictoriousPorpoiseCeilingCat-f7cZLbskSg6u7JWT",
+    "UnusualSpotlessJalapenoFUNgineer-FoO5tkxvrNTXd3Hu",
 ];
 
 // --- Инициализация при загрузке ---
@@ -302,3 +310,55 @@ function showToast() {
         toast.classList.remove("active"); 
     }, 2500);
 }
+
+/* 
+ * 6. Галерея Клипов (Carousel)
+ */
+
+let currentClipIndex = 0;
+
+function initClipsGallery() {
+    const container = document.getElementById('clip-container');
+    const prevBtn = document.getElementById('prev-clip');
+    const nextBtn = document.getElementById('next-clip');
+    
+    // Обновляем счетчики
+    document.getElementById('clip-total').textContent = BEST_CLIPS.length;
+    
+    if (!container || BEST_CLIPS.length === 0) return;
+
+    // Функция загрузки клипа
+    const loadClip = (index) => {
+        container.innerHTML = "";
+        const clipId = BEST_CLIPS[index];
+        
+        new Twitch.Embed("clip-container", {
+            width: "100%",
+            height: "100%",
+            video: clipId,
+            autoplay: false,
+            muted: false,
+            parent: ALLOWED_HOSTS
+        });
+
+        document.getElementById('clip-current').textContent = index + 1;
+    };
+
+    loadClip(currentClipIndex);
+    prevBtn.addEventListener('click', () => {
+        currentClipIndex--;
+        if (currentClipIndex < 0) currentClipIndex = BEST_CLIPS.length - 1; // Зацикливание
+        loadClip(currentClipIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentClipIndex++;
+        if (currentClipIndex >= BEST_CLIPS.length) currentClipIndex = 0; // Зацикливание
+        loadClip(currentClipIndex);
+    });
+}
+
+// Запускаем галерею после загрузки страницы
+document.addEventListener('DOMContentLoaded', () => {
+    initClipsGallery();
+});

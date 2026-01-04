@@ -642,3 +642,72 @@ body {
 * {
     -webkit-tap-highlight-color: transparent;
 }
+
+/* === КАРУСЕЛЬ КЛИПОВ === */
+.clips-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    height: 400px;
+}
+
+.clip-wrapper {
+    flex-grow: 1;
+    height: 100%;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border: 1px solid var(--glass-border);
+    position: relative;
+}
+
+/* Кнопки навигации */
+.nav-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: white;
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    z-index: 5;
+}
+
+.nav-btn:hover {
+    background: var(--accent);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.nav-btn:active { transform: scale(0.9); }
+
+/* Счетчик снизу */
+.clip-counter {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--text-secondary);
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* Адаптив для клипов на мобиле */
+@media (max-width: 600px) {
+    .clips-carousel {
+        height: 250px;
+    }
+    
+    .nav-btn {
+        position: absolute;
+        height: 40px; width: 40px;
+        background: rgba(0,0,0,0.6);
+        border-radius: 50%;
+    }
+    #prev-clip { left: 10px; }
+    #next-clip { right: 10px; }
+}
