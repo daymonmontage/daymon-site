@@ -3,65 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- === ГЛАВНЫЙ ЗАГОЛОВОК (То, что видно в браузере) === -->
     <title>DaymonMontage | Streamer Hub</title>
     
-    <!-- Иконки -->
     <link rel="icon" href="/daymon-site/favicon.ico" sizes="any">
     <link rel="icon" href="assets/favicon.png?v=3" type="image/png">
     <link rel="shortcut icon" href="assets/favicon.png?v=3" type="image/png">
     <link rel="apple-touch-icon" href="assets/favicon.png?v=3">
-    
-    <!-- Подключение манифеста -->
     <link rel="manifest" href="manifest.json">
 
-    <!-- Мета-теги для поисковиков -->
-    <meta name="description" content="Официальный хаб стримера DaymonMontage. Voices of the Void, мемы и ламповые стримы.">
+    <meta name="description" content="Официальный хаб стримера DaymonMontage.">
     <meta name="theme-color" content="#f97316">
 
-    <!-- Open Graph (Красивые ссылки в чатах) -->
     <meta property="og:title" content="DaymonMontage | Hub">
-    <meta property="og:description" content="Официальный хаб: стримы, конфиг ПК, донаты и рыжий кот.">
+    <meta property="og:description" content="Официальный хаб: стримы, конфиг ПК, донаты.">
     <meta property="og:image" content="https://daymonmontage.github.io/daymon-site/assets/preview.png">
     <meta property="og:url" content="https://daymonmontage.github.io/daymon-site/">
     <meta property="og:type" content="website">
 
-    <!-- Шрифты и Стили -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Скрипт -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
 
-<body>
-    <!-- HUD CONTROLS -->
     <div class="hud-controls">
-        <!-- Music Toggle -->
-        <div id="music-toggle" class="hud-btn" title="Music On/Off">
-            <i class="fas fa-music"></i>
-            <span>MUSIC</span>
-        </div>
-        
-        <!-- SFX Toggle -->
         <div id="sfx-toggle" class="hud-btn" title="SFX On/Off">
             <i class="fas fa-volume-up"></i>
             <span>SFX</span>
         </div>
     </div>
 
-    <!-- Экран загрузки -->
     <div id="preloader">
-        <div class="loader-wrap">
-            <img src="assets/avatar.png" class="loader-logo" alt="Loading...">
-            <p class="loader-text">SEARCHING SIGNAL...</p>
+        <div class="loader-content">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring-inner"></div>
+            <p class="loader-text">INITIALIZING</p>
         </div>
     </div>
 
-    <!-- Фоновые персонажи (параллакс эффект) -->
     <div class="character-layer left-guard">
         <img src="assets/hero-left.png" alt="" class="char-img">
         <div class="fade-gradient"></div>
@@ -72,14 +53,11 @@
         <div class="fade-gradient"></div>
     </div>
 
-    <!-- Фоновые эффекты -->
     <div class="glow-orb orb-primary"></div>
     <div class="glow-orb orb-secondary"></div>
 
-    <!-- Основной контент -->
     <main class="main-container">
         
-        <!-- Шапка профиля -->
         <header class="profile-header">
             <div class="avatar-container">
                 <img src="assets/avatar.png" alt="DaymonMontage" class="avatar-img">
@@ -90,14 +68,12 @@
             
             <div class="info-badges">
                 <span class="badge location"><i class="fas fa-map-marker-alt"></i> Витебск, Беларусь</span>
-                <!-- Статус стрима (обновляется через JS) -->
                 <span id="stream-status" class="badge stream-check">
                     <i class="fas fa-circle"></i> <span class="status-text">Связь с базой...</span>
                 </span>
             </div>
         </header>
 
-        <!-- Плеер Twitch (Скрыт, если офлайн) -->
         <div id="live-box" class="twitch-wrapper" style="display: none;">
             <div class="live-indicator">
                 <i class="fas fa-satellite-dish"></i> В ЭФИРЕ
@@ -105,7 +81,6 @@
             <div id="twitch-embed"></div>
         </div>
 
-        <!-- Секция: Соцсети -->
         <section class="content-card tilt-effect">
             <h2 class="section-title">Медиа & Связь</h2>
             <nav class="social-links">
@@ -139,10 +114,14 @@
             </nav>
         </section>
 
-        <!-- Секция: Поддержка -->
         <section class="content-card tilt-effect">
             <h2 class="section-title">Поддержка канала</h2>
             
+            <div class="warning-box health-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p><strong>ВНИМАНИЕ:</strong> Просьба не отправлять громкие звуки, у стримера есть слуховая травма.</p>
+            </div>
+
             <div class="alert-buttons">
                 <a href="https://www.donationalerts.com/r/daymonmontage" target="_blank" class="donate-btn da">
                     <div class="btn-icon"><i class="fas fa-donate"></i></div>
@@ -155,20 +134,13 @@
                     <div class="btn-icon"><i class="fas fa-images"></i></div>
                     <div class="btn-text">
                         <strong>MemeAlerts</strong>
-                        <small>Скример / Мем</small>
+                        <small>Мем / Звук</small>
                     </div>
                 </a>
             </div>
             
-            <!-- Реквизиты карт -->
             <div class="direct-support">
-                <div class="warning-box">
-                    <i class="fas fa-info-circle"></i>
-                    <p>Прямой перевод на карту - лучший способ поддержки (без комиссии сервисов).</p>
-                </div>
-
                 <div class="cards-grid">
-                    <!-- Карта 1 -->
                     <div class="plastic-card" onclick="copyToClipboard('9112380021489218')">
                         <div class="pc-top">
                             <span class="bank-label">Беларусбанк</span>
@@ -181,7 +153,6 @@
                         </div>
                     </div>
 
-                    <!-- Карта 2 -->
                     <div class="plastic-card" onclick="copyToClipboard('5489529620373271')">
                         <div class="pc-top">
                             <span class="bank-label">Priorbank</span>
@@ -198,7 +169,6 @@
             </div>
         </section>
 
-        <!-- Инфо и ПК -->
         <div class="two-columns">
             <section class="content-card tilt-effect">
                 <h2 class="section-title">Досье</h2>
@@ -216,7 +186,7 @@
                         <span class="spec-label">Служба</span> <span class="spec-val">11-я ОМБр, Разведка</span>
                     </li>
                     <li>
-                        <span class="spec-label">Main Game</span> <span class="spec-val highlight">Voices of the Void</span>
+                        <span class="spec-label">Характер</span> <span class="spec-val highlight">я ебал</span>
                     </li>
                 </ul>
             </section>
@@ -243,22 +213,16 @@
             </section>
         </div>
 
-        <!-- Секция: Клипы (Карусель) -->
         <section class="content-card tilt-effect">
-            <h2 class="section-title">Архив Сигналов (Клипы)</h2>
+            <h2 class="section-title">Архив Клипов</h2>
             
             <div class="clips-carousel">
-                <!-- Кнопка Назад -->
                 <button id="prev-clip" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
-                
-                <!-- Контейнер для видео -->
                 <div id="clip-container" class="clip-wrapper">
                     <div class="loader-wrap">
                         <p class="loader-text">ЗАГРУЗКА...</p>
                     </div>
                 </div>
-
-                <!-- Кнопка Вперед -->
                 <button id="next-clip" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
             
@@ -267,11 +231,10 @@
 
     </main>
 
-    <!-- Подвал -->
     <footer class="site-footer">
         <div class="system-trigger" onclick="toggleConsole()">
             <span class="sys-dot"></span>
-            <span class="sys-text">SYSTEM V.1.0.4 [LOGS]</span>
+            <span class="sys-text">CONSOLE V.1.0.5</span>
         </div>
         
         <div class="credits">
@@ -283,7 +246,6 @@
         </div>
     </footer>
 
-    <!-- === ОКНО КОНСОЛИ (Интерактивное) === -->
     <div id="votv-console" class="console-wrapper">
         <div class="console-header">
             <span>> TERMINAL_ACCESS</span>
@@ -293,17 +255,14 @@
         <div id="console-output" class="console-body">
         </div>
 
-        <!-- Поле ввода -->
         <div class="console-input-area">
             <span class="prompt-user">user@daymon:~$</span>
             <input type="text" id="cmd-input" autocomplete="off" spellcheck="false" placeholder="Type 'help'...">
         </div>
     </div>
 
-    <!-- Всплывающее уведомление -->
     <div id="toast-notification" class="toast">Скопировано в буфер!</div>
 
-    <!-- Логика сайта -->
     <script src="js/main.js"></script>
 </body>
 </html>

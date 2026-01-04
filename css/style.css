@@ -1,22 +1,16 @@
 /* 
     DaymonMontage Site Theme
-    Author: Torgovets
-    --------------------------------------------------
-    Colors: Dark Theme + Orange Accent (#f97316)
 */
 
 :root {
-    /* Палитра */
     --accent: #f97316;
     --accent-dim: rgba(249, 115, 22, 0.6);
     --bg-core: #0f0f11;
     --bg-card: rgba(30, 30, 35, 0.65);
     
-    /* Текст */
     --text-primary: #ffffff;
     --text-secondary: #a1a1aa;
     
-    /* Эффекты */
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-blur: blur(16px);
     --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -24,7 +18,6 @@
     --font-base: 'Montserrat', sans-serif;
 }
 
-/* === БАЗОВЫЕ НАСТРОЙКИ === */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -32,11 +25,10 @@ body {
     background-color: var(--bg-core);
     color: var(--text-primary);
     min-height: 100vh;
-    overflow-x: hidden; /* Чтобы герои не расширяли экран */
+    overflow-x: hidden;
     position: relative;
 }
 
-/* Кастомный скроллбар */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-core); }
 ::-webkit-scrollbar-thumb { 
@@ -45,19 +37,15 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* === ФОНОВЫЕ ЭЛЕМЕНТЫ (ГЕРОИ) === */
 .character-layer {
     position: fixed;
     bottom: 0;
     height: 85vh;
     width: auto;
     z-index: -1;
-    pointer-events: none; /* Пропускаем клики сквозь картинки */
-    
-    /* Оптимизация рендеринга */
+    pointer-events: none;
     will-change: transform, opacity;
     transform: translateZ(0);
-    
     animation: heroFadeIn 1.5s ease-out forwards;
 }
 
@@ -68,7 +56,6 @@ body {
     filter: drop-shadow(0 0 20px rgba(249, 115, 22, 0.2)); 
 }
 
-/* Градиент внизу, чтобы картинка плавно уходила в пол */
 .fade-gradient {
     position: absolute;
     bottom: 0; left: 0;
@@ -85,7 +72,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Светящиеся шары на фоне */
 .glow-orb {
     position: fixed;
     border-radius: 50%;
@@ -104,7 +90,6 @@ body {
     bottom: -50px; right: -50px; 
 }
 
-/* === ЛЕЙАУТ === */
 .main-container {
     max-width: 900px;
     margin: 0 auto;
@@ -113,7 +98,6 @@ body {
     z-index: 1;
 }
 
-/* === ШАПКА === */
 .profile-header {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -123,7 +107,7 @@ body {
 .avatar-container {
     width: 170px; height: 170px;
     margin: 0 auto 1.5rem;
-    cursor: pointer; /* Намек на пасхалку */
+    cursor: pointer;
 }
 
 .avatar-img {
@@ -141,11 +125,9 @@ body {
     letter-spacing: -1px;
     position: relative;
     color: white;
-    /* Легкое подергивание */
     animation: glitch-skew 3s infinite linear alternate-reverse;
 }
 
-/* Глитч эффект через псевдоэлементы */
 .glitch-title::before, .glitch-title::after {
     content: attr(data-text);
     position: absolute;
@@ -182,7 +164,6 @@ body {
     display: flex; align-items: center; gap: 8px;
 }
 
-/* Состояние стрима */
 .stream-check i { font-size: 0.6rem; color: #71717a; transition: color 0.3s; }
 
 .stream-check.online {
@@ -192,7 +173,6 @@ body {
 }
 .stream-check.online i { color: #22c55e; animation: pulse 1.5s infinite; }
 
-/* === TWITCH ПЛЕЕР === */
 .twitch-wrapper {
     width: 100%; margin-bottom: 2.5rem;
     animation: slideInDown 0.8s ease-out;
@@ -218,16 +198,14 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* === ОБЩИЕ СТИЛИ КАРТОЧЕК === */
 .content-card {
     background: var(--bg-card);
     border: 1px solid var(--glass-border);
     backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur); /* Safari */
+    -webkit-backdrop-filter: var(--glass-blur);
     border-radius: 24px;
     padding: 2rem;
     margin-bottom: 2rem;
-    /* Tilt эффект добавляется скриптом */
     transition: transform 0.1s; 
 }
 .content-card:hover { border-color: rgba(255, 255, 255, 0.15); }
@@ -239,7 +217,6 @@ body {
     border-left: 4px solid var(--accent);
 }
 
-/* === СОЦСЕТИ === */
 .social-links {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -265,7 +242,6 @@ body {
     border-color: rgba(255,255,255,0.2);
 }
 
-/* Брендовые цвета */
 .twitch:hover { color: #9146FF; box-shadow: 0 0 20px rgba(145, 70, 255, 0.15); }
 .telegram:hover { color: #229ED9; }
 .youtube:hover { color: #FF0000; }
@@ -275,7 +251,6 @@ body {
 .steam:hover { color: #66c0f4; }
 .soundcloud:hover { color: #ff5500; }
 
-/* === ДОНАТЫ И КАРТЫ === */
 .alert-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -318,6 +293,14 @@ body {
     font-size: 0.9rem; line-height: 1.4;
 }
 .warning-box i { color: #ef4444; font-size: 1.1rem; flex-shrink: 0; }
+
+/* Особый стиль для предупреждения о здоровье */
+.health-warning {
+    background: rgba(220, 38, 38, 0.15);
+    border: 1px solid rgba(220, 38, 38, 0.5);
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.1);
+}
+.health-warning p { color: #fca5a5; }
 
 .cards-grid {
     display: grid;
@@ -365,7 +348,6 @@ body {
 .holder { text-transform: uppercase; font-weight: 600; }
 .hint { text-align: center; margin-top: 10px; color: var(--text-secondary); opacity: 0.6; font-size: 0.8rem; }
 
-/* === ХАРАКТЕРИСТИКИ === */
 .two-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -384,7 +366,6 @@ body {
 .spec-val { font-weight: 600; }
 .spec-val.highlight { color: var(--accent); }
 
-/* === ФУТЕР И АВТОРСТВО === */
 .site-footer {
     display: flex;
     justify-content: center;
@@ -423,12 +404,11 @@ body {
 .dev-pic {
     width: 30px; height: 30px;
     border-radius: 6px;
-    image-rendering: pixelated; /* Пиксель-арт четкий */
+    image-rendering: pixelated;
     transition: 0.3s;
 }
 .credits:hover .dev-pic { transform: scale(1.2) rotate(10deg); }
 
-/* === TOAST УВЕДОМЛЕНИЕ === */
 .toast {
     visibility: hidden;
     min-width: 250px;
@@ -447,7 +427,7 @@ body {
 }
 .toast.active { visibility: visible; opacity: 1; bottom: 50px; }
 
-/* === PRELOADER === */
+/* === PRELOADER (UPDATED) === */
 #preloader {
     position: fixed; top: 0; left: 0;
     width: 100%; height: 100%;
@@ -456,12 +436,65 @@ body {
     display: flex; justify-content: center; align-items: center;
     transition: opacity 0.5s ease, visibility 0.5s;
 }
-.loader-wrap { text-align: center; }
-.loader-logo { width: 80px; height: 80px; margin-bottom: 20px; animation: pulse 1s infinite; }
-.loader-text { font-family: monospace; color: var(--accent); letter-spacing: 3px; font-weight: bold; }
+
+.loader-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+/* Внешнее кольцо */
+.spinner-ring {
+    position: absolute;
+    width: 100px; height: 100px;
+    border: 3px solid transparent;
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+/* Внутреннее кольцо */
+.spinner-ring-inner {
+    position: absolute;
+    width: 60px; height: 60px;
+    border: 3px solid transparent;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    animation: spin-reverse 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+}
+
+.loader-text {
+    margin-top: 140px; /* Отступ вниз от колец */
+    font-family: 'Courier New', monospace;
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    animation: blink-text 1.5s infinite ease-in-out;
+}
+
 #preloader.finished { opacity: 0; visibility: hidden; }
 
-/* === АНИМАЦИИ === */
+/* Анимации загрузчика */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes blink-text {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
 @keyframes slideInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -472,7 +505,6 @@ body {
     100% { opacity: 1; transform: scale(1); }
 }
 
-/* Глитч анимации (сокращенные) */
 @keyframes glitch-anim-1 {
     0% { clip: rect(20px, 999px, 10px, 0); }
     100% { clip: rect(80px, 999px, 50px, 0); }
@@ -482,22 +514,17 @@ body {
     100% { clip: rect(10px, 999px, 30px, 0); }
 }
 
-/* === АДАПТИВ (MEDIA QUERIES) === */
-
-/* 1. Большие мониторы (PC) */
 @media (min-width: 1600px) {
     .character-layer { height: 90vh; }
     .left-guard { left: 5%; }
 }
 
-/* 2. Ноутбуки (Laptop) */
 @media (max-width: 1599px) and (min-width: 1200px) {
     .character-layer { height: 85vh; }
     .left-guard { left: -60px; }
     .right-guard { right: -60px; }
 }
 
-/* 3. Планшеты (iPad / Вертикальные экраны) */
 @media (max-width: 1199px) {
     .left-guard { display: none; }
     
@@ -509,7 +536,6 @@ body {
     }
 }
 
-/* 4. Мобильные телефоны */
 @media (max-width: 768px) {
     
     .main-container { 
@@ -532,7 +558,6 @@ body {
         gap: 10px;
     }
 
-    /* ФИКС БАНКОВСКИХ КАРТ */
     .cards-grid {
         grid-template-columns: 1fr;
     }
@@ -553,13 +578,11 @@ body {
     }
 }
 
-/* Фикс для очень узких телефонов */
 @media (max-width: 370px) {
     .pc-number { font-size: 0.9rem; letter-spacing: 0px; }
     .glitch-title { font-size: 1.8rem; }
 }
 
-/* === ПРЕВЬЮ СТРИМА (Вместо плеера) === */
 .stream-preview {
     display: block;
     width: 100%;
@@ -572,7 +595,6 @@ body {
     overflow: hidden;
 }
 
-/* Затемнение фона при наведении */
 .stream-preview::before {
     content: '';
     position: absolute;
@@ -581,12 +603,10 @@ body {
     transition: background 0.3s;
 }
 
-
 .stream-preview:hover::before {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* Кнопка PLAY по центру */
 .play-btn {
     position: absolute;
     top: 50%; left: 50%;
@@ -606,7 +626,6 @@ body {
     margin-left: 5px;
 }
 
-/* Текст "Смотреть на Twitch" */
 .watch-label {
     position: absolute;
     bottom: 20px; left: 0; width: 100%;
@@ -622,7 +641,6 @@ body {
     z-index: 2;
 }
 
-/* Эффекты при наведении */
 .stream-preview:hover .play-btn {
     transform: translate(-50%, -50%) scale(1.2);
     background: #fff;
@@ -643,7 +661,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* === КАРУСЕЛЬ КЛИПОВ === */
 .clips-carousel {
     display: flex;
     align-items: center;
@@ -664,7 +681,6 @@ body {
     position: relative;
 }
 
-/* Кнопки навигации */
 .nav-btn {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
@@ -687,7 +703,6 @@ body {
 
 .nav-btn:active { transform: scale(0.9); }
 
-/* Счетчик снизу */
 .clip-counter {
     text-align: center;
     margin-top: 15px;
@@ -696,7 +711,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Адаптив для клипов на мобиле */
 @media (max-width: 600px) {
     .clips-carousel {
         height: 250px;
@@ -712,7 +726,6 @@ body {
     #next-clip { right: 10px; }
 }
 
-/* === КНОПКА В ФУТЕРЕ (ТРИГГЕР) === */
 .system-trigger {
     display: inline-flex;
     align-items: center;
@@ -739,16 +752,15 @@ body {
 
 .sys-dot {
     width: 8px; height: 8px;
-    background-color: #22c55e; /* Зеленый огонек */
+    background-color: #22c55e;
     border-radius: 50%;
     box-shadow: 0 0 5px #22c55e;
     animation: pulse 2s infinite;
 }
 
-/* === ОКНО КОНСОЛИ === */
 .console-wrapper {
     position: fixed;
-    bottom: -100%; /* Спрятано внизу */
+    bottom: -100%;
     right: 20px;
     width: 350px;
     height: 400px;
@@ -764,7 +776,7 @@ body {
 }
 
 .console-wrapper.open {
-    bottom: 0; /* Выезжает */
+    bottom: 0;
 }
 
 .console-header {
@@ -794,52 +806,12 @@ body {
     line-height: 1.4;
 }
 
-/* Скроллбар для консоли */
 .console-body::-webkit-scrollbar { width: 5px; }
 .console-body::-webkit-scrollbar-thumb { background: var(--accent); }
 
-/* Стиль строк */
 .log-line { margin-bottom: 4px; display: block; }
 .log-time { color: #555; margin-right: 5px; }
-.log-msg { color: #ccc; }
-.log-warn { color: #facc15; }
-.log-err { color: #ef4444; }
-.log-success { color: #4ade80; }
 
-/* Курсор ввода */
-.typing-cursor::after {
-    content: '_';
-    animation: blink 1s infinite;
-}
-@keyframes blink { 50% { opacity: 0; } }
-
-/* Адаптив консоли */
-@media (max-width: 600px) {
-    .console-wrapper {
-        width: 100%; right: 0; border-radius: 0;
-        height: 50vh;
-    }
-}
-
-/* === КНОПКА ЗВУКА === */
-.system-trigger.muted {
-    opacity: 0.5;
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.system-trigger.muted:hover {
-    opacity: 1;
-    border-color: #ef4444;
-    color: #ef4444;
-}
-
-/* Иконка звука */
-#sound-icon {
-    width: 15px;
-    text-align: center;
-}
-
-/* === ПЛАВАЮЩАЯ КНОПКА ЗВУКА (HUD) === */
 .hud-controls {
     position: fixed;
     top: 20px;
@@ -877,7 +849,6 @@ body {
     box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
 }
 
-/* Disabled State */
 .hud-btn.muted {
     opacity: 0.5;
     border-color: rgba(255, 255, 255, 0.05);
@@ -893,7 +864,6 @@ body {
     text-decoration: none;
 }
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
     .hud-controls { top: 15px; left: 15px; gap: 8px; }
     
@@ -906,28 +876,6 @@ body {
     .hud-btn span { display: none; }
 }
 
-/* Иконка */
-#sound-icon {
-    width: 15px;
-    text-align: center;
-}
-
-/* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ === */
-@media (max-width: 768px) {
-    .audio-hud {
-        top: 15px;
-        left: 15px;
-        padding: 10px;
-        border-radius: 12px;
-        background: rgba(0, 0, 0, 0.8);
-    }
-
-    #sound-text {
-        display: none;
-    }
-}
-
-/* === EASTER EGG ENTITY === */
 .secret-runner {
     position: fixed;
     bottom: 20px;
@@ -945,18 +893,6 @@ body {
     100% { transform: translateX(-120vw); }
 }
 
-.shake-screen {
-    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
-}
-
-@keyframes shake {
-    10%, 90% { transform: translate3d(-1px, 0, 0); }
-    20%, 80% { transform: translate3d(2px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-    40%, 60% { transform: translate3d(4px, 0, 0); }
-}
-
-/* === ПАСХАЛКА 1: ВИДЕО (MEOW) === */
 .video-overlay {
     position: fixed;
     top: 0; left: 0;
@@ -976,7 +912,6 @@ body {
     box-shadow: 0 0 50px rgba(249, 115, 22, 0.5);
 }
 
-/* === ПАСХАЛКА 2: МОНИКА (ALIEN) === */
 .monica-entity {
     position: fixed;
     bottom: -100%;
@@ -991,7 +926,6 @@ body {
     bottom: -50px;
 }
 
-/* === ПАСХАЛКА 3: БОЧКА (DAYMON) === */
 .barrel-roll {
     animation: roll 2s ease-in-out;
 }
@@ -1001,7 +935,6 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* === ПОЛЕ ВВОДА В КОНСОЛИ === */
 .console-input-area {
     display: flex;
     align-items: center;
@@ -1029,5 +962,4 @@ body {
     caret-color: #22c55e;
 }
 
-.cmd-response { margin-bottom: 10px; display: block; color: #aaa; }
 .cmd-echo { color: #f97316; font-weight: bold; margin-top: 5px; display: block; }

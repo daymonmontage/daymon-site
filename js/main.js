@@ -4,12 +4,9 @@
  * 2026
  */
 
-// --- Настройки ---
 const CHANNEL_NAME = 'daymonmontage';
-const VOLUME_LEVEL = 0.4;
 const TILT_FORCE = 3; 
 
-// Домены, где разрешен плеер Twitch
 const ALLOWED_HOSTS = [
     "daymonmontage.github.io",
     "itservicepgatk.github.io",
@@ -19,7 +16,6 @@ const ALLOWED_HOSTS = [
     "0.0.0.0"
 ];
 
-// === СПИСОК ID КЛИПОВ ===
 const BEST_CLIPS = [
     "SteamyGorgeousLardWOOP-OT__Q0C6jfeiYHyM",
     "ZealousSpikyDugongTheTarFu-601YmEiXj-qjxB8t",
@@ -31,7 +27,6 @@ const BEST_CLIPS = [
     "UnusualSpotlessJalapenoFUNgineer-FoO5tkxvrNTXd3Hu",
 ];
 
-// --- Инициализация ---
 document.addEventListener('DOMContentLoaded', () => {
     console.log(`%c DAYMON HUB %c SYSTEM ONLINE \n`, 
         'background: #f97316; color: #000; padding: 4px; font-weight: bold;', 
@@ -44,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkTwitchStatus();
     initClipsGallery();
     setupSoundTriggers();
-    tryPlayMusic();
 });
 
 // Прелоадер
@@ -55,7 +49,7 @@ window.addEventListener('load', () => {
     }
 });
 
-/* 1. 3D Tilt Effect */
+/* 3D Tilt Effect */
 function setupTiltEffect() {
     const cards = document.querySelectorAll('.tilt-effect');
     cards.forEach(card => {
@@ -75,7 +69,7 @@ function setupTiltEffect() {
     });
 }
 
-/* 2. Space Background */
+/* Space Background */
 function renderSpaceBackground() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
@@ -112,11 +106,11 @@ function renderSpaceBackground() {
     resize(); initStars(); animate();
 }
 
-/* 3. Easter Egg (Cat) */
+/* Easter Egg (Avatar Click) */
 function setupEasterEgg() {
     const avatar = document.querySelector('.avatar-container img');
     if (!avatar) return;
-    const sound = new Audio('assets/meow.mp3'); sound.volume = VOLUME_LEVEL;
+    const sound = new Audio('assets/avatar_click.mp3'); sound.volume = 0.4;
 
     avatar.addEventListener('click', () => {
         avatar.style.transition = '0.1s';
@@ -133,7 +127,7 @@ function setupEasterEgg() {
     });
 }
 
-/* 4. Twitch Status & Cover */
+/* Twitch Status */
 async function checkTwitchStatus() {
     const statusEl = document.getElementById('stream-status');
     const liveBox = document.getElementById('live-box');
@@ -173,7 +167,7 @@ function loadTwitchEmbed() {
     }
 }
 
-/* 5. Clipboard */
+/* Clipboard */
 function copyToClipboard(text) {
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(text).then(showToast).catch(() => fallbackCopy(text));
@@ -191,7 +185,7 @@ function showToast() {
     if(t) { t.classList.add("active"); t.innerHTML = '<i class="fas fa-check-circle" style="color:#22c55e;margin-right:8px;"></i> Скопировано!'; setTimeout(()=>t.classList.remove("active"),2500); }
 }
 
-/* 6. Clips Gallery */
+/* Clips Gallery */
 let clipIdx = 0;
 function initClipsGallery() {
     const container = document.getElementById('clip-container');
@@ -218,28 +212,21 @@ function initClipsGallery() {
     next.addEventListener('click', () => { clipIdx++; if(clipIdx>=BEST_CLIPS.length) clipIdx=0; load(clipIdx); });
 }
 
-/* 
- * 7. Interactive Console
- */
+/* Console System */
 const consolePanel = document.getElementById('votv-console');
 const consoleOutput = document.getElementById('console-output');
 const cmdInput = document.getElementById('cmd-input');
 let isConsoleRunning = false;
 
 const BOOT_SEQUENCE = [
-    { type: 'normal', text: 'Initializing DaymonOS v1.0.4...' },
+    { type: 'normal', text: 'Initializing DaymonOS v1.0.5...' },
     { type: 'success', text: 'Connection established: Vitebsk Server' },
     { type: 'normal', text: 'Loading assets... hero_left.png, cat.png' },
-    { type: 'warning', text: 'WARNING: High cringe levels detected' },
+    { type: 'warning', text: 'WARNING: Ears protection recommended' },
     { type: 'normal', text: 'Detecting lifeforms...' },
     { type: 'success', text: 'User found: You' },
-    { type: 'normal', text: 'Checking pizza status...' },
-    { type: 'success', text: 'Pizza ordered for 12:00 (Pepperoni)' },
-    { type: 'error',   text: 'Error: Omega Kerfur stuck in textures' },
     { type: 'normal', text: 'Scanning signals...' },
     { type: 'normal', text: 'Signal received: "Meow"' },
-    { type: 'warning', text: 'Daymon is sleeping. Do not disturb.' },
-    { type: 'normal', text: 'Downloading more RAM...' },
     { type: 'success', text: 'System ready. Waiting for input.' },
     { type: 'normal', text: 'Type "help" for commands' }
 ];
@@ -303,7 +290,6 @@ function processCommand(cmd) {
         case 'help':
             printToConsole('=== COMMANDS ===', 'system');
             printToConsole('status  - Stream Status');
-            printToConsole('ariral  - Feed aliens');
             printToConsole('cat     - Meow?');
             printToConsole('secret  - ???');
             printToConsole('clear   - Clear');
@@ -312,7 +298,6 @@ function processCommand(cmd) {
         case 'status':
             const live = document.querySelector('.stream-check').classList.contains('online');
             res = live ? "ONLINE (Pog)" : "OFFLINE (Sadge)"; type = live ? 'success' : 'error'; break;
-        case 'ariral': res = "Shrimps deployed. +15 Rep."; type = 'success'; playSfx('click'); break;
         case 'cat': res = "MEOW MEOW MEOW"; playSfx('hover'); break;
         case 'secret':
             res = "Opening secure channel..."; type = 'system';
@@ -322,89 +307,13 @@ function processCommand(cmd) {
     setTimeout(() => printToConsole(res, type), 200);
 }
 
-/* 
- * 8. Audio System (Music & SFX)
- */
-const musicBtn = document.getElementById('music-toggle');
+/* SFX System */
 const sfxBtn = document.getElementById('sfx-toggle');
-
-const PLAYLIST = ['assets/music/1.mp3', 'assets/music/2.mp3', 'assets/music/3.mp3'];
-let musicMuted = localStorage.getItem('music_muted') === 'true';
 let sfxMuted = localStorage.getItem('sfx_muted') === 'true';
-
-const bgMusic = new Audio();
-bgMusic.volume = 0.15; // Начальная громкость 15%
-bgMusic.loop = false;
 
 const sfxHover = new Audio('assets/hover.mp3'); sfxHover.volume = 0.15;
 const sfxClick = new Audio('assets/click.mp3'); sfxClick.volume = 0.25;
 
-// === АГРЕССИВНЫЙ ЗАПУСК МУЗЫКИ ===
-function tryPlayMusic() {
-    updateMusicUI();
-    
-    if (musicMuted) return;
-
-    if (!bgMusic.src || bgMusic.src === "") nextTrack();
-
-    const playPromise = bgMusic.play();
-
-    if (playPromise !== undefined) {
-        playPromise
-            .then(() => {
-                console.log("Audio started automatically");
-            })
-            .catch((error) => {
-                console.log("Auto-play prevented by browser. Waiting for interaction...");
-                
-                const forcePlay = () => {
-                    if (!musicMuted && bgMusic.paused) {
-                        bgMusic.play().then(() => {
-                            document.removeEventListener('click', forcePlay);
-                            document.removeEventListener('keydown', forcePlay);
-                            document.removeEventListener('touchstart', forcePlay);
-                        }).catch(err => console.error(err));
-                    }
-                };
-
-                // Слушаем все типы взаимодействия
-                document.addEventListener('click', forcePlay, { once: true });
-                document.addEventListener('keydown', forcePlay, { once: true });
-                document.addEventListener('touchstart', forcePlay, { once: true });
-            });
-    }
-}
-
-function nextTrack() {
-    const rnd = Math.floor(Math.random() * PLAYLIST.length);
-    bgMusic.src = PLAYLIST[rnd];
-}
-
-bgMusic.addEventListener('ended', () => {
-    nextTrack();
-    if (!musicMuted) bgMusic.play();
-});
-
-function toggleMusic(e) {
-    if(e) e.stopPropagation();
-    musicMuted = !musicMuted;
-    localStorage.setItem('music_muted', musicMuted);
-    
-    if (musicMuted) bgMusic.pause();
-    else {
-        if (!bgMusic.src || bgMusic.src === "") nextTrack();
-        bgMusic.play();
-    }
-    updateMusicUI();
-}
-
-function updateMusicUI() {
-    if(!musicBtn) return;
-    if (musicMuted) musicBtn.classList.add('muted');
-    else musicBtn.classList.remove('muted');
-}
-
-// SFX Функции
 function playSfx(type) {
     if (sfxMuted) return;
     const sound = type === 'hover' ? sfxHover : sfxClick;
@@ -426,12 +335,10 @@ function updateSfxUI() {
     else sfxBtn.classList.remove('muted');
 }
 
-// Настройка звуков для UI элементов
 function setupSoundTriggers() {
-    if (musicBtn) musicBtn.addEventListener('click', toggleMusic);
     if (sfxBtn) sfxBtn.addEventListener('click', toggleSfx);
+    updateSfxUI();
 
-    // Звуки при наведении и клике на кнопки
     const triggers = document.querySelectorAll('a, button, .s-btn, .donate-btn, .plastic-card, .system-trigger, .nav-btn, .stream-preview, .hud-btn');
     triggers.forEach(el => {
         el.addEventListener('mouseenter', () => playSfx('hover'));
@@ -439,8 +346,10 @@ function setupSoundTriggers() {
     });
 }
 
-
-/* 9. Secrets */
+/* 
+ * KEYBOARD SECRETS (Typing on keyboard)
+ * Просто печатай коды на клавиатуре в любом месте сайта
+ */
 const SECRET_CODES = {
     'meow':   { type: 'video', src: 'assets/cat-piano.mp4' },
     'monica':  { type: 'image-peek', src: 'assets/monica.png' },
@@ -452,6 +361,7 @@ const bufferLimit = 15;
 document.addEventListener('keydown', (e) => {
     keyBuffer += e.key.toLowerCase();
     if (keyBuffer.length > bufferLimit) keyBuffer = keyBuffer.slice(-bufferLimit);
+    
     Object.keys(SECRET_CODES).forEach(code => {
         if (keyBuffer.includes(code)) {
             activateSecret(SECRET_CODES[code]);
@@ -462,17 +372,13 @@ document.addEventListener('keydown', (e) => {
 
 function activateSecret(data) {
     if (data.type === 'video') {
-        if(typeof bgMusic !== 'undefined') bgMusic.pause();
         const overlay = document.createElement('div');
         overlay.className = 'video-overlay';
         overlay.innerHTML = `<video class="secret-video" autoplay><source src="${data.src}" type="video/mp4"></video>`;
         document.body.appendChild(overlay);
         const v = overlay.querySelector('video');
         v.volume = 0.6;
-        const finish = () => {
-            overlay.remove();
-            if(!musicMuted) bgMusic.play().catch(()=>{});
-        };
+        const finish = () => { overlay.remove(); };
         v.onended = finish;
         overlay.onclick = finish;
     }
