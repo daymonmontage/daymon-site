@@ -22,6 +22,11 @@ const ALLOWED_HOSTS = [
 // === СПИСОК ID КЛИПОВ ===
 const BEST_CLIPS = [
     "SteamyGorgeousLardWOOP-OT__Q0C6jfeiYHyM",
+    "ZealousSpikyDugongTheTarFu-601YmEiXj-qjxB8t",
+    "BigExcitedDiscPlanking-E1a3x7Aph1G59UK9",
+    "MotionlessStrongWrenRiPepperonis-hiVAoVs-Drf__LcT",
+    "FastWiseCrabsPogChamp-CiTjXyaR7M_cfaLr",
+    "SpineyPreciousClintmullinsUWot-Fk8Zer8ZJbM7_Vun",
     "RenownedVictoriousPorpoiseCeilingCat-f7cZLbskSg6u7JWT",
     "UnusualSpotlessJalapenoFUNgineer-FoO5tkxvrNTXd3Hu",
 ];
@@ -315,45 +320,55 @@ function showToast() {
  * 6. Галерея Клипов (Carousel)
  */
 
+// === СПИСОК ID КЛИПОВ ===
+
 let currentClipIndex = 0;
 
 function initClipsGallery() {
     const container = document.getElementById('clip-container');
     const prevBtn = document.getElementById('prev-clip');
     const nextBtn = document.getElementById('next-clip');
+    const totalSpan = document.getElementById('clip-total');
+    const currentSpan = document.getElementById('clip-current');
     
-    // Обновляем счетчики
-    document.getElementById('clip-total').textContent = BEST_CLIPS.length;
-    
-    if (!container || BEST_CLIPS.length === 0) return;
+    if (!container || !prevBtn || !nextBtn) return;
 
-    // Функция загрузки клипа
+    totalSpan.textContent = BEST_CLIPS.length;
+
     const loadClip = (index) => {
-        container.innerHTML = "";
         const clipId = BEST_CLIPS[index];
         
-        new Twitch.Embed("clip-container", {
-            width: "100%",
-            height: "100%",
-            video: clipId,
-            autoplay: false,
-            muted: false,
-            parent: ALLOWED_HOSTS
-        });
+        const domain1 = "daymonmontage.github.io";
+        const domain2 = "localhost";
+        const domain3 = "127.0.0.1";
+        
+        container.innerHTML = `
+            <iframe 
+                src="https://clips.twitch.tv/embed?clip=${clipId}&parent=${domain1}&parent=${domain2}&parent=${domain3}&autoplay=false&muted=false" 
+                height="100%" 
+                width="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                allowfullscreen="true">
+            </iframe>
+        `;
 
-        document.getElementById('clip-current').textContent = index + 1;
+        currentSpan.textContent = index + 1;
     };
 
     loadClip(currentClipIndex);
+
+    // Кнопка Назад
     prevBtn.addEventListener('click', () => {
         currentClipIndex--;
-        if (currentClipIndex < 0) currentClipIndex = BEST_CLIPS.length - 1; // Зацикливание
+        if (currentClipIndex < 0) currentClipIndex = BEST_CLIPS.length - 1;
         loadClip(currentClipIndex);
     });
 
+    // Кнопка Вперед
     nextBtn.addEventListener('click', () => {
         currentClipIndex++;
-        if (currentClipIndex >= BEST_CLIPS.length) currentClipIndex = 0; // Зацикливание
+        if (currentClipIndex >= BEST_CLIPS.length) currentClipIndex = 0;
         loadClip(currentClipIndex);
     });
 }
