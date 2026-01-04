@@ -72,8 +72,9 @@ body {
 .fade-gradient {
     position: absolute;
     bottom: 0; left: 0;
-    width: 100%; height: 25%;
-    background: linear-gradient(to top, var(--bg-core), transparent);
+    width: 100%; 
+    height: 40%;
+    background: linear-gradient(to top, var(--bg-core) 15%, transparent 100%);
 }
 
 .left-guard { left: 0; transform: translateX(-5%); }
@@ -483,27 +484,32 @@ body {
 
 /* === АДАПТИВ (MEDIA QUERIES) === */
 
-/* Большие экраны */
+/* 1. Большие мониторы (PC) */
 @media (min-width: 1600px) {
     .character-layer { height: 90vh; }
     .left-guard { left: 5%; }
 }
 
-/* Ноутбуки */
-@media (max-width: 1599px) and (min-width: 1100px) {
+/* 2. Ноутбуки (Laptop) */
+@media (max-width: 1599px) and (min-width: 1200px) {
     .character-layer { height: 85vh; }
-    .left-guard { left: -80px; }
-    .right-guard { right: -80px; }
+    .left-guard { left: -60px; }
+    .right-guard { right: -60px; }
 }
 
-/* Планшеты */
-@media (max-width: 1099px) {
-    .character-layer { height: 75vh; }
-    .left-guard { left: -150px; }
-    .right-guard { right: -150px; }
+/* 3. Планшеты (iPad / Вертикальные экраны) */
+@media (max-width: 1199px) {
+    .left-guard { display: none; }
+    
+    .right-guard {
+        height: 70vh;
+        right: -25%;
+        opacity: 0.4 !important;
+        filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.3));
+    }
 }
 
-/* Мобильные телефоны */
+/* 4. Мобильные телефоны */
 @media (max-width: 768px) {
     
     .main-container { 
@@ -526,62 +532,31 @@ body {
         gap: 10px;
     }
 
-    /* 4. ФИКС БАНКОВСКИХ КАРТ */
+    /* ФИКС БАНКОВСКИХ КАРТ */
     .cards-grid {
         grid-template-columns: 1fr;
     }
 
-    .plastic-card {
-        padding: 15px;
-    }
+    .plastic-card { padding: 15px; }
+    .pc-number { font-size: 1rem; letter-spacing: 1px; margin-bottom: 15px; }
+    .pc-top { margin-bottom: 15px; font-size: 0.75rem; }
+    .pc-bottom { font-size: 0.7rem; }
 
-    .pc-number {
-        font-size: 1rem;
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-    }
-
-    .pc-top {
-        margin-bottom: 15px;
-        font-size: 0.75rem;
-    }
-
-    .pc-bottom {
-        font-size: 0.7rem;
-    }
-
-    .donate-btn {
-        padding: 0.8rem;
-    }
-    .btn-icon {
-        width: 40px; height: 40px;
-        font-size: 1.2rem;
-        margin-right: 10px;
-    }
-    
-    .left-guard { display: none; }
+    .donate-btn { padding: 0.8rem; }
+    .btn-icon { width: 40px; height: 40px; font-size: 1.2rem; margin-right: 10px; }
     
     .right-guard {
-        display: block;
-        height: 50vh;
-        width: auto;
-        right: -25%;
-        bottom: 15%;
-        opacity: 0.4 !important;
-        filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.4));
-        transform: translateZ(0);
+        height: 60vh;
+        right: -35%;
+        bottom: 0;
+        opacity: 0.5 !important;
     }
 }
 
-/* ФИКС ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (iPhone SE и старые Android) */
+/* Фикс для очень узких телефонов */
 @media (max-width: 370px) {
-    .pc-number {
-        font-size: 0.9rem;
-        letter-spacing: 0px;
-    }
-    .glitch-title {
-        font-size: 1.8rem;
-    }
+    .pc-number { font-size: 0.9rem; letter-spacing: 0px; }
+    .glitch-title { font-size: 1.8rem; }
 }
 
 /* === ПРЕВЬЮ СТРИМА (Вместо плеера) === */
