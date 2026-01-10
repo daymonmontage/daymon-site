@@ -10,7 +10,7 @@ jobs:
   update-clips:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Разрешаем роботу обновлять файлы
+      contents: write
     
     steps:
       - name: Checkout code
@@ -32,6 +32,8 @@ jobs:
           git config --global user.name 'DaymonBot'
           git config --global user.email 'bot@daymon.site'
           git add assets/clips.json
-          # Если изменений нет, коммит не создастся (и не упадет с ошибкой)
           git commit -m "🤖 Auto-update clips list" || exit 0
+          # Сначала скачиваем свежие изменения, если они были
+          git pull --rebase --autostash
+          # Потом отправляем свои
           git push
