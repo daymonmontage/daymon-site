@@ -16,16 +16,8 @@ const ALLOWED_HOSTS = [
     "0.0.0.0"
 ];
 
-const BEST_CLIPS = [
-    "SteamyGorgeousLardWOOP-OT__Q0C6jfeiYHyM",
-    "ZealousSpikyDugongTheTarFu-601YmEiXj-qjxB8t",
-    "BigExcitedDiscPlanking-E1a3x7Aph1G59UK9",
-    "MotionlessStrongWrenRiPepperonis-hiVAoVs-Drf__LcT",
-    "FastWiseCrabsPogChamp-CiTjXyaR7M_cfaLr",
-    "SpineyPreciousClintmullinsUWot-Fk8Zer8ZJbM7_Vun",
-    "RenownedVictoriousPorpoiseCeilingCat-f7cZLbskSg6u7JWT",
-    "UnusualSpotlessJalapenoFUNgineer-FoO5tkxvrNTXd3Hu",
-];
+// Теперь это переменная, которая заполнится автоматически или запасными данными
+let BEST_CLIPS = [];
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log(`%c DAYMON HUB %c SYSTEM ONLINE \n`, 
@@ -189,9 +181,10 @@ function showToast() {
     if(t) { t.classList.add("active"); t.innerHTML = '<i class="fas fa-check-circle" style="color:#22c55e;margin-right:8px;"></i> Скопировано!'; setTimeout(()=>t.classList.remove("active"),2500); }
 }
 
-/* Clips Gallery */
+/* Clips Gallery (Auto-Load + Top Popular Backup) */
 let clipIdx = 0;
-function initClipsGallery() {
+
+async function initClipsGallery() {
     const container = document.getElementById('clip-container');
     const prev = document.getElementById('prev-clip');
     const next = document.getElementById('next-clip');
@@ -199,6 +192,29 @@ function initClipsGallery() {
     const curr = document.getElementById('clip-current');
     
     if (!container) return;
+
+    try {
+        const res = await fetch('assets/clips.json?t=' + Date.now());
+        if (!res.ok) throw new Error("JSON Fetch failed");
+        BEST_CLIPS = await res.json();
+        console.log("Clips loaded from Cloud:", BEST_CLIPS.length);
+    } catch (err) {
+        console.warn("Cloud load failed, using local TOP backup:", err);
+        
+        BEST_CLIPS = [
+            "SteamyGorgeousLardWOOP-OT__Q0C6jfeiYHyM",
+            "ZealousSpikyDugongTheTarFu-601YmEiXj-qjxB8t",
+            "BigExcitedDiscPlanking-E1a3x7Aph1G59UK9",
+            "MotionlessStrongWrenRiPepperonis-hiVAoVs-Drf__LcT",
+            "FastWiseCrabsPogChamp-CiTjXyaR7M_cfaLr",
+            "SpineyPreciousClintmullinsUWot-Fk8Zer8ZJbM7_Vun"
+        ];
+    }
+
+    if (!BEST_CLIPS || BEST_CLIPS.length === 0) {
+        container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#71717a;">Архив недоступен</div>';
+        return;
+    }
     total.textContent = BEST_CLIPS.length;
 
     const load = (i) => {
@@ -210,10 +226,20 @@ function initClipsGallery() {
         container.innerHTML = `<iframe src="https://clips.twitch.tv/embed?clip=${id}${parents}&autoplay=false&muted=false" height="100%" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>`;
         curr.textContent = i + 1;
     };
+    
     load(clipIdx);
 
-    prev.addEventListener('click', () => { clipIdx--; if(clipIdx<0) clipIdx=BEST_CLIPS.length-1; load(clipIdx); });
-    next.addEventListener('click', () => { clipIdx++; if(clipIdx>=BEST_CLIPS.length) clipIdx=0; load(clipIdx); });
+    prev.addEventListener('click', () => { 
+        clipIdx--; 
+        if(clipIdx < 0) clipIdx = BEST_CLIPS.length - 1; 
+        load(clipIdx); 
+    });
+    
+    next.addEventListener('click', () => { 
+        clipIdx++; 
+        if(clipIdx >= BEST_CLIPS.length) clipIdx = 0; 
+        load(clipIdx); 
+    });
 }
 
 /* Console System */
