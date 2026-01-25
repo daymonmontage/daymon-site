@@ -1,25 +1,24 @@
 import { CONFIG } from './config.js';
 import { unlockDirectAchievement } from './achievements.js';
-import { saveClicksToCloud } from './auth.js'; // <--- ИМПОРТ ФУНКЦИИ СОХРАНЕНИЯ
+import { saveClicksToCloud } from './auth.js'; 
 
 let donorDataList = [];
 let isDonorsLoaded = false;
 
-// Переменные для кликера, вынесенные в область модуля
 let currentClicks = 0;
-let updateClickUI = null; // Функция обновления интерфейса
+let updateClickUI = null; 
 
 export function setFloatingDonors(list) {
     donorDataList = list;
     isDonorsLoaded = true;
 }
 
-// === ФУНКЦИЯ ДЛЯ ОБНОВЛЕНИЯ КЛИКОВ ИЗВНЕ (из auth.js) ===
 export function setGlobalClickCount(count) {
     currentClicks = count;
     localStorage.setItem('avatar_clicks', count);
     if (updateClickUI) updateClickUI();
 }
+// =======================================================
 
 export function setupUI() {
     setupTiltEffect();
@@ -38,6 +37,7 @@ export function setupUI() {
         setTimeout(removeLoader, 600);
     });
 
+    // Страховка, если load не сработает
     setTimeout(removeLoader, 3000);
 }
 
@@ -242,7 +242,7 @@ function setupEasterEgg() {
     currentClicks = parseInt(localStorage.getItem('avatar_clicks')) || 0;
     
     let activeSpecialSound = null;
-    let saveTimeout = null; // Таймер для debounce
+    let saveTimeout = null; 
 
     const soundTikae = new Audio('assets/tikae.mp3'); 
     soundTikae.volume = 0.4;
@@ -262,7 +262,6 @@ function setupEasterEgg() {
     const soundSkelet = new Audio('assets/bad-to-the-bone-meme.mp3');
     soundSkelet.volume = 0.2;
 
-    // Функция обновления UI (присваиваем глобальной переменной)
     updateClickUI = () => {
         countVal.textContent = currentClicks;
         if (currentClicks > 10) {
@@ -284,21 +283,18 @@ function setupEasterEgg() {
             activeSpecialSound.currentTime = 0;
             activeSpecialSound = null;
         }
-        avatar.src = 'assets/avatar.png'; // Default
+        avatar.src = 'assets/avatar.png'; 
 
-        // === ЛОГИКА СЧЕТЧИКА ===
         currentClicks++;
         updateClickUI();
         localStorage.setItem('avatar_clicks', currentClicks);
         
-        // Отложенное сохранение в облако (Debounce 2 сек)
         if (saveTimeout) clearTimeout(saveTimeout);
         saveTimeout = setTimeout(() => {
             saveClicksToCloud(currentClicks);
         }, 2000);
-        // ========================
 
-        // === ПРОВЕРКА ДОСТИЖЕНИЙ КЛИКЕРА ===
+        // Ачивки
         if (currentClicks === 67) unlockDirectAchievement('click-67');
         if (currentClicks === 100) unlockDirectAchievement('click-100');
         if (currentClicks === 228) unlockDirectAchievement('click-228');
@@ -307,7 +303,6 @@ function setupEasterEgg() {
         if (currentClicks === 1000) unlockDirectAchievement('click-1000');
         if (currentClicks === 1337) unlockDirectAchievement('click-1337');
         if (currentClicks === 1488) unlockDirectAchievement('click-1488');
-        // ====================================
 
         const rng = Math.random();
         const isMuted = localStorage.getItem('sfx_muted') === 'true';
@@ -386,7 +381,7 @@ function setupEasterEgg() {
         resetBtn.addEventListener('click', () => {
             currentClicks = 0;
             localStorage.setItem('avatar_clicks', 0);
-            saveClicksToCloud(0); // Сброс в облаке
+            saveClicksToCloud(0); 
             updateClickUI();
         });
     }
