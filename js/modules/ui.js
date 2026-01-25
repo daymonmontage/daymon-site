@@ -5,6 +5,7 @@ import { saveClicksToCloud } from './auth.js';
 let donorDataList = [];
 let isDonorsLoaded = false;
 
+// Переменные для кликера
 let currentClicks = 0;
 let updateClickUI = null; 
 
@@ -13,6 +14,7 @@ export function setFloatingDonors(list) {
     isDonorsLoaded = true;
 }
 
+// === ВОТ ЭТА ФУНКЦИЯ, КОТОРУЮ НЕ МОЖЕТ НАЙТИ БРАУЗЕР ===
 export function setGlobalClickCount(count) {
     currentClicks = count;
     localStorage.setItem('avatar_clicks', count);
