@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Streamer | Daymon Arcade</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="scanlines"></div>
+
+    <!-- Общий контейнер для выравнивания -->
+    <div class="arcade-wrapper">
+        
+        <!-- ЛЕВАЯ ПАНЕЛЬ: ИНСТРУКЦИИ -->
+        <div class="instructions-panel">
+            <div class="inst-header">MANUAL</div>
+            
+            <div class="inst-row">
+                <div class="key-icon">SPACE</div>
+                <span>или</span>
+                <div class="mouse-icon"><i class="fas fa-mouse"></i></div>
+                <span>ПОЛЕТ</span>
+            </div>
+
+            <div class="inst-divider"></div>
+
+            <ul class="inst-list">
+                <li><i class="fas fa-exclamation-triangle" style="color:#ef4444"></i> Избегай Деймона</li>
+                <li><i class="fas fa-star" style="color:#ffd700"></i> Набивай очки</li>
+                <li><i class="fas fa-skull"></i> Не упади вниз</li>
+            </ul>
+
+            <div class="inst-footer">
+                INSERT COIN TO PLAY
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ ЧАСТЬ: ИГРА -->
+        <div class="game-container">
+            <!-- BACKGROUND LAYERS -->
+            <div class="bg-layer bg-sky"></div>
+            <div class="bg-layer bg-stars"></div>
+            <div class="bg-layer bg-ai-city"></div>
+            <div class="bg-layer bg-floor"></div>
+            
+            <canvas id="game-canvas"></canvas>
+            
+            <!-- UI Overlay -->
+            <div id="ui-layer">
+                <div class="score-board">
+                    <span>СЧЕТ: <span id="score">0</span></span>
+                    <span>РЕКОРД: <span id="best-score">...</span></span>
+                </div>
+
+                <!-- START SCREEN -->
+                <div id="start-screen" class="screen active">
+                    <h1>FLAPPY STREAMER</h1>
+                    <p>READY PLAYER ONE?</p>
+                    <button id="start-btn" class="retro-btn">ИГРАТЬ</button>
+                    <button id="leaderboard-btn" class="retro-btn blue-btn">ТОП ИГРОКОВ</button>
+                    <a href="../index.html" class="back-link">ВЫХОД</a>
+                </div>
+
+                <!-- GAME OVER SCREEN -->
+                <div id="game-over-screen" class="screen">
+                    <h1 style="color: #ef4444;">ПОТРАЧЕНО</h1>
+                    <div class="result-box">
+                        <p>Счет: <span id="final-score">0</span></p>
+                        <p>Рекорд: <span id="final-best">0</span></p>
+                        <p id="new-record-msg" style="display:none; color:#ffd700; font-size:0.8rem; margin-top:5px;">НОВЫЙ РЕКОРД!</p>
+                    </div>
+                    <button id="restart-btn" class="retro-btn">ЕЩЕ РАЗ</button>
+                    <button id="leaderboard-btn-over" class="retro-btn blue-btn">ТОП ИГРОКОВ</button>
+                    <a href="../index.html" class="back-link">ВЫХОД</a>
+                </div>
+
+                <!-- LEADERBOARD SCREEN -->
+                <div id="leaderboard-screen" class="screen">
+                    <h1 style="color: #3b82f6; font-size: 18px;">ТАБЛИЦА ЛИДЕРОВ</h1>
+                    <div class="leaderboard-container">
+                        <div id="leaderboard-list">Загрузка...</div>
+                    </div>
+                    <button id="close-lb-btn" class="retro-btn">ЗАКРЫТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

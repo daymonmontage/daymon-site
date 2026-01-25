@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daymon Arcade | Game Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Подключаем Supabase (как модуль) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <!-- CRT Overlay Effect -->
+    <div class="crt-lines"></div>
+    <div class="vignette"></div>
+
+    <!-- Navigation -->
+    <nav class="arcade-nav">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> BACK TO HUB
+        </a>
+        
+        <!-- Блок профиля -->
+        <div id="player-status" class="player-status">
+            <div class="credits-box">
+                <i class="fas fa-coins"></i> <span id="credits-val">INSERT COIN</span>
+            </div>
+            <div id="auth-ui" class="auth-ui guest">
+                <span class="player-name">GUEST</span>
+                <div class="player-avatar">?</div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="arcade-container">
+        <!-- Header -->
+        <header class="arcade-header">
+            <h1 class="neon-title" data-text="ИГРОВОЙ ЗАЛ">ИГРОВОЙ ЗАЛ</h1>
+            <p class="subtitle">СИСТЕМА РАЗВЛЕЧЕНИЙ</p>
+        </header>
+
+        <!-- Games Grid -->
+        <div class="games-grid">
+            
+<!-- Game Card: Flappy -->
+            <div class="game-card" id="game-flappy">
+                <div class="card-image" style="background: linear-gradient(to bottom, #f97316, #000);">
+                    <div class="overlay">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Flappy Streamer</h3>
+                    <p>Управляй банкой Gorilla и уворачивайся от Деймона!</p>
+                    <a href="flappy/index.html" class="play-btn" style="text-decoration:none; display:block; text-align:center;">PLAY NOW</a>
+                    
+                    <!-- MINI LEADERBOARD -->
+                    <div class="mini-leaderboard" id="flappy-top-3">
+                        <div class="ml-header">🏆 ТОП-3 ЛИДЕРА</div>
+                        <div class="ml-list">
+                            <div class="ml-loading">Загрузка...</div>
+                        </div>
+                        <button id="open-hub-lb" class="details-btn">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Game Card: Quiz -->
+             <div class="game-card coming-soon">
+                <div class="card-image" style="background: #1a1a1a;">
+                    <div class="overlay">
+                        <i class="fas fa-question"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Lore Quiz</h3>
+                    <p>Насколько хорошо ты знаешь лор?</p>
+                    <button class="play-btn" disabled>SOON</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+        <!-- MODAL LEADERBOARD (Hidden by default) -->
+    <div id="hub-lb-modal" class="lb-modal-overlay">
+        <div class="lb-modal-content">
+            <div class="lb-modal-header">
+                <h2>ТАБЛИЦА ЛИДЕРОВ</h2>
+                <button id="close-hub-lb" class="close-modal-btn">&times;</button>
+            </div>
+            <div class="lb-modal-body">
+                <div id="hub-full-list" class="full-lb-list">
+                    Загрузка...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === AUTH LOCK OVERLAY === -->
+    <div id="auth-lock-screen" class="auth-overlay">
+        <div class="lock-container">
+            <div class="lock-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h2 class="lock-title">ДОСТУП ОГРАНИЧЕН</h2>
+            <p class="lock-desc">
+                Игровая зона Daymon Arcade доступна только авторизованным сотрудникам.
+            </p>
+            <button id="overlay-login-btn" class="discord-btn-large">
+                <i class="fab fa-discord"></i> ВОЙТИ ЧЕРЕЗ DISCORD
+            </button>
+            <div class="lock-footer">SYSTEM_ID: GUEST_USER // ACCESS_DENIED</div>
+        </div>
+    </div>
+    <!-- Важно: type="module" для работы импортов -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

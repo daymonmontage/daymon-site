@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+
+body {
+    background: #050505;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 800px;
+    background: #0f0f11;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* === LAYERS SYSTEM === */
+/* 
+   0: Backgrounds
+   10: Canvas (Game)
+   20: UI (Menus)
+   99: Overlay (Scanlines)
+*/
+
+.bg-layer {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background: transparent !important;
+}
+
+#ui-layer {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.scanlines {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 99;
+}
+
+/* === BACKGROUNDS === */
+
+/* 1. Небо */
+.bg-sky {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    z-index: 1;
+}
+
+/* 2. Звезды */
+.bg-stars {
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    z-index: 2;
+    opacity: 0.8;
+    animation: move-stars 60s linear infinite;
+}
+
+/* 3. Город (Твоя картинка) */
+.bg-ai-city {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 100px; /* Поднимаем над полом */
+    left: 0;
+    
+    /* СЮДА ПОЛОЖИ СВОЮ КАРТИНКУ: assets/city.png */
+    background-image: url('assets/city.png');
+    
+    /* Если картинки нет, будет этот цвет */
+    background-color: transparent; 
+    
+    background-repeat: repeat-x;
+    background-size: auto 70%; /* Высота города */
+    background-position: 0 bottom;
+    
+    opacity: 0.9;
+    animation: move-bg-img 30s linear infinite;
+}
+
+/* 4. Пол (Земля) */
+.bg-floor {
+    z-index: 5;
+    width: 200%;
+    height: 100px;
+    position: absolute;
+    bottom: 0; left: 0;
+    background-color: #050505;
+    
+    /* Неоновая линия */
+    border-top: 4px solid #d946ef; 
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+    
+    /* Текстура движения */
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgba(59, 130, 246, 0.1) 20px,
+        rgba(59, 130, 246, 0.1) 40px
+    );
+    
+    animation: move-floor 2s linear infinite;
+}
+
+/* === ANIMATIONS === */
+
+@keyframes move-stars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+}
+
+@keyframes move-bg-img {
+    from { background-position: 0 bottom; }
+    to { background-position: -1920px bottom; } /* Сдвиг на ширину картинки (примерно) */
+}
+
+@keyframes move-floor {
+    from { transform: translateX(0); }
+    to { transform: translateX(-56px); } /* Сдвиг паттерна */
+}
+
+/* === UI STYLES === */
+
+.score-board {
+    position: absolute; top: 20px; left: 0; width: 100%;
+    display: flex; justify-content: space-between; padding: 0 20px;
+    color: white; font-size: 12px; text-shadow: 2px 2px 0 #000;
+    pointer-events: none;
+}
+
+.screen {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    gap: 20px;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s;
+    backdrop-filter: blur(5px);
+    z-index: 30;
+}
+
+.screen.active { 
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+h1 { color: #f97316; text-shadow: 3px 3px 0 #000; font-size: 24px; text-align: center; line-height: 1.5; }
+p { color: #fff; font-size: 10px; margin-bottom: 10px; text-align: center; line-height: 1.5; }
+
+.retro-btn {
+    background: #f97316; border: 4px solid #fff;
+    color: #000; padding: 15px 20px;
+    font-family: inherit; font-size: 14px;
+    cursor: pointer; box-shadow: 5px 5px 0 #000;
+    transition: 0.1s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.retro-btn:active { transform: translate(4px, 4px); box-shadow: 1px 1px 0 #000; }
+
+.retro-btn.blue-btn {
+    background: #3b82f6;
+    border-color: #fff;
+    margin-top: 5px;
+    font-size: 10px;
+    padding: 10px 15px;
+}
+
+.back-link {
+    color: #aaa; text-decoration: none; font-size: 10px; margin-top: 10px;
+    border-bottom: 1px dashed #aaa; pointer-events: auto;
+}
+
+/* Leaderboard */
+.leaderboard-container {
+    width: 80%; height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    margin: 20px 0;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.lb-item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);
+    font-size: 10px; color: #fff;
+}
+
+.lb-left { display: flex; align-items: center; gap: 10px; }
+.lb-rank { color: #f97316; width: 20px; }
+.lb-avatar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid #fff; }
+.lb-name { color: #ccc; max-width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lb-score { color: #ffd700; }
+
+.leaderboard-container::-webkit-scrollbar { width: 4px; }
+.leaderboard-container::-webkit-scrollbar-thumb { background: #f97316; }
+
+/* === LAYOUT WRAPPER === */
+.arcade-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    max-height: 800px;
+}
+
+/* === INSTRUCTIONS PANEL === */
+.instructions-panel {
+    width: 280px;
+    background: #0f0f11;
+    border: 4px solid #333;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Декоративный уголок */
+.instructions-panel::before {
+    content: '';
+    position: absolute; top: -4px; left: -4px;
+    width: 20px; height: 20px;
+    border-top: 4px solid #f97316;
+    border-left: 4px solid #f97316;
+}
+
+.inst-header {
+    color: #f97316;
+    font-size: 18px;
+    text-shadow: 2px 2px 0 #000;
+    border-bottom: 2px dashed #333;
+    padding-bottom: 15px;
+}
+
+.inst-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    color: #aaa;
+}
+
+.key-icon {
+    border: 2px solid #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #fff;
+    box-shadow: 0 4px 0 #333;
+}
+
+.mouse-icon {
+    font-size: 20px;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.inst-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inst-list li {
+    font-size: 10px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+}
+
+.inst-footer {
+    margin-top: auto;
+    font-size: 8px;
+    color: #555;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 900px) {
+    .arcade-wrapper {
+        flex-direction: column-reverse; /* Инструкции снизу */
+        gap: 20px;
+        width: 100%;
+    }
+
+    .instructions-panel {
+        display: none; /* Скрываем инструкции на мобилках для экономии места */
+    }
+    
+    .game-container {
+        max-height: 100%;
+        border-radius: 0;
+    }
+}
