@@ -4,17 +4,21 @@ export const CONFIG = {
     ACHIEVEMENT_MAX_STACK: 3,
     ACHIEVEMENT_TIME: 4000,
     REDIRECT_DELAY: 1500,
+    
     SUPABASE_URL: 'https://zddnfjnvplxutzjbpkwe.supabase.co', 
     SUPABASE_KEY: 'sb_publishable_bBE_oWza0XdFBY-uIS6MAw_abtrIZRG',
+
     // Пути к репозиториям
     MAIN_SITE_URL: 'https://daymonmontage.github.io/daymon-site/',
     GAMES_SITE_URL: 'https://daymonmontage.github.io/daymon-games/' 
 };
+
 export const ALLOWED_HOSTS = [
     "daymonmontage.github.io",
     "localhost",
     "127.0.0.1"
 ];
+
 export const ACHIEVEMENT_DATA = {
     'twitch':     { title: "Ты че, стример чтоли?",     desc: "Канал открыт" },
     'telegram':   { title: "Шифрованный канал",         desc: "Telegram" },

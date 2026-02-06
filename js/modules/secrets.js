@@ -1,35 +1,45 @@
 import { playSfx, bgMusic } from './utils.js'; 
 import { triggerAchievement } from './achievements.js';
+
 const SECRET_CODES = {
     'meow':   { type: 'video', src: 'assets/cat-piano.mp4' },
     'monica':  { type: 'image-peek', src: 'assets/monica.png' },
     'daymon': { type: 'barrel-roll' }
 };
+
 // === НАСТРОЙКИ ДЕТЕКТОРА ===
 let clickHistory = [];
 const CLICK_THRESHOLD = 24;
 const TIME_WINDOW = 1000;
 const PIXEL_VARIANCE = 5;
 let isScreaming = false;
+
 export function initSecrets() {
     setupKeyboardSecrets();
     setupAutoclickerDetector();
 }
+
 function setupAutoclickerDetector() {
     document.addEventListener('click', (e) => {
         if (isScreaming) return;
+
         const now = Date.now();
         const x = e.clientX;
         const y = e.clientY;
+
         clickHistory.push({ time: now, x: x, y: y });
+
         clickHistory = clickHistory.filter(c => now - c.time < TIME_WINDOW);
+
         if (clickHistory.length >= CLICK_THRESHOLD) {
             const minX = Math.min(...clickHistory.map(c => c.x));
             const maxX = Math.max(...clickHistory.map(c => c.x));
             const minY = Math.min(...clickHistory.map(c => c.y));
             const maxY = Math.max(...clickHistory.map(c => c.y));
+
             const varianceX = maxX - minX;
             const varianceY = maxY - minY;
+
             if (varianceX < PIXEL_VARIANCE && varianceY < PIXEL_VARIANCE) {
                 triggerScreamer();
                 clickHistory = []; 
@@ -37,58 +47,77 @@ function setupAutoclickerDetector() {
         }
     });
 }
+
 function triggerScreamer() {
     isScreaming = true;
+
     // === ЛОГИКА МУЗЫКИ: ПАУЗА ===
     let wasMusicPlaying = !bgMusic.paused;
     if (wasMusicPlaying) {
         bgMusic.pause();
     }
+
     const audio = new Audio('assets/scrm.mp3');
     audio.volume = 1.0; 
+
     audio.addEventListener('loadedmetadata', () => {
         const duration = audio.duration; 
+
         const overlay = document.createElement('div');
         overlay.className = 'screamer-overlay';
+        
         const img = document.createElement('img');
         img.src = 'assets/scrm.png';
         img.className = 'screamer-img';
+        
         // Половина длительности
         img.style.transitionDuration = `${duration / 2}s`; 
+
         overlay.appendChild(img);
         document.body.appendChild(overlay);
+
         requestAnimationFrame(() => {
             overlay.classList.add('fade-to-black');
-            audio.play().catch(e => );
+            audio.play().catch(e => console.error("Audio block:", e));
+
             setTimeout(() => {
                 img.classList.add('rise-up');
             }, 50);
         });
+
         audio.onended = () => {
             overlay.style.transition = 'opacity 0.5s';
             overlay.style.opacity = '0';
+            
             setTimeout(() => {
                 overlay.remove();
                 isScreaming = false;
+
                 // Ачивка
                 const dummyEl = document.createElement('div');
                 dummyEl.className = 'autoclicker';
                 triggerAchievement(dummyEl, 'complete'); 
+
                 // Возобновление музыки
                 if (wasMusicPlaying) {
                     bgMusic.play().catch(()=>{});
                 }
+
             }, 500);
         };
     });
+    
     audio.load();
 }
+
 function setupKeyboardSecrets() {
     let keyBuffer = '';
     const bufferLimit = 15; 
+
     document.addEventListener('keydown', (e) => {
         keyBuffer += e.key.toLowerCase();
         if (keyBuffer.length > bufferLimit) keyBuffer = keyBuffer.slice(-bufferLimit);
+        
         Object.keys(SECRET_CODES).forEach(code => {
             if (keyBuffer.includes(code)) {
                 activateSecret(SECRET_CODES[code]);
@@ -97,6 +126,7 @@ function setupKeyboardSecrets() {
         });
     });
 }
+
 function activateSecret(data) {
     if (data.type === 'video') {
         const overlay = document.createElement('div');

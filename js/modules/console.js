@@ -1,4 +1,5 @@
 import { playSfx } from './utils.js';
+
 let isConsoleRunning = false;
 const BOOT_SEQUENCE = [
     { type: 'normal', text: 'Initializing DaymonOS v1.0.5...' },
@@ -12,6 +13,7 @@ const BOOT_SEQUENCE = [
     { type: 'success', text: 'System ready. Waiting for input.' },
     { type: 'normal', text: 'Type "help" for commands' }
 ];
+
 export function initConsole() {
     const cmdInput = document.getElementById('cmd-input');
     if(cmdInput) {
@@ -32,13 +34,16 @@ export function initConsole() {
         });
     }
 }
+
 export function toggleConsole() {
     const consolePanel = document.getElementById('votv-console');
     const cmdInput = document.getElementById('cmd-input');
     const consoleOutput = document.getElementById('console-output');
     const achBtn = document.getElementById('ach-history-trigger');
+
     consolePanel.classList.toggle('open');
     if (achBtn) achBtn.classList.toggle('moved-up');
+
     if (consolePanel.classList.contains('open')) {
         setTimeout(() => cmdInput.focus(), 100);
         if (!isConsoleRunning) {
@@ -48,6 +53,7 @@ export function toggleConsole() {
         }
     }
 }
+
 function runLogSequence(index) {
     if (index >= BOOT_SEQUENCE.length) return;
     const msg = BOOT_SEQUENCE[index];
@@ -57,6 +63,7 @@ function runLogSequence(index) {
         runLogSequence(index + 1);
     }, delay);
 }
+
 function printToConsole(text, type = 'normal') {
     const output = document.getElementById('console-output');
     const line = document.createElement('div');
@@ -71,6 +78,7 @@ function printToConsole(text, type = 'normal') {
     output.appendChild(line);
     output.scrollTop = output.scrollHeight;
 }
+
 function processCommand(cmd) {
     let res = '', type = 'normal';
     switch (cmd) {

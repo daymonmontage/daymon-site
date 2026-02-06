@@ -1,8 +1,10 @@
 import { CONFIG, ACHIEVEMENT_DATA } from './config.js';
 import { soundOut, soundComplete } from './utils.js';
 import { saveToCloud, isUserLoggedIn } from './auth.js';
+
 let achContainer = null;
 const EARTH_ICON_URL = "https://cdn.modrinth.com/user/ug4niCpj/012027a682fa781055b26bdfa25e804fffebb48c.gif";
+
 class Achievement {
     constructor(title, desc) {
         this.element = this.createDOM(title, desc);
@@ -12,6 +14,7 @@ class Achievement {
         this.isPaused = false;
         this.mount();
     }
+
     createDOM(title, desc) {
         const div = document.createElement('div');
         div.className = 'mc-achievement';
@@ -24,6 +27,7 @@ class Achievement {
         `;
         return div;
     }
+
     mount() {
         if (achContainer.children.length >= CONFIG.ACHIEVEMENT_MAX_STACK) {
             const oldest = achContainer.firstChild;
@@ -37,11 +41,13 @@ class Achievement {
             this.startTimer();
         });
     }
+
     startTimer() {
         this.startTime = Date.now();
         this.isPaused = false;
         this.timerId = setTimeout(() => { this.destroy(); }, this.remainingTime);
     }
+
     pauseTimer() {
         if (this.isPaused) return;
         clearTimeout(this.timerId);
@@ -49,10 +55,12 @@ class Achievement {
         this.remainingTime -= elapsed;
         this.isPaused = true;
     }
+
     resumeTimer() {
         if (!this.isPaused || this.remainingTime <= 0) return;
         this.startTimer();
     }
+
     destroy() {
         if (!this.element) return;
         this.element.classList.remove('show');
@@ -63,15 +71,19 @@ class Achievement {
         }, 300);
     }
 }
+
 function getUnlockedAchievements() {
     return JSON.parse(localStorage.getItem('unlocked_achievements')) || [];
 }
+
 function saveAchievement(key) {
     const unlocked = getUnlockedAchievements();
+
     if (!isUserLoggedIn && unlocked.length >= 5 && !unlocked.includes(key)) {
         showLimitToast();
         return false;
     }
+
     if (!unlocked.includes(key)) {
         unlocked.push(key);
         localStorage.setItem('unlocked_achievements', JSON.stringify(unlocked));
@@ -83,6 +95,7 @@ function saveAchievement(key) {
     }
     return false; 
 }
+
 function showLimitToast() {
     const t = document.getElementById("toast-notification");
     if(t) { 
@@ -95,14 +108,17 @@ function showLimitToast() {
         }, 4000); 
     }
 }
+
 function renderHistoryList() {
     const listEl = document.getElementById('ach-history-list');
     const statsEl = document.getElementById('ach-stats-display');
     if(!listEl) return;
+
     const unlocked = getUnlockedAchievements();
     const allKeys = Object.keys(ACHIEVEMENT_DATA);
     statsEl.textContent = `${unlocked.length}/${allKeys.length}`;
     listEl.innerHTML = '';
+
     if (!isUserLoggedIn && unlocked.length >= 5) {
         const limitBanner = document.createElement('div');
         limitBanner.className = 'ach-limit-banner';
@@ -124,6 +140,7 @@ function renderHistoryList() {
     } else {
         statsEl.style.color = "#fff";
     }
+
     allKeys.forEach(key => {
         const isUnlocked = unlocked.includes(key);
         const data = ACHIEVEMENT_DATA[key];
@@ -142,6 +159,7 @@ function renderHistoryList() {
         listEl.appendChild(item);
     });
 }
+
 export function unlockDirectAchievement(key) {
     if (ACHIEVEMENT_DATA[key]) {
         const isNew = saveAchievement(key);
@@ -153,6 +171,7 @@ export function unlockDirectAchievement(key) {
         }
     }
 }
+
 export function triggerAchievement(el, soundType, preventDefault = false, event = null) {
     let keyFound = null;
     let data = { title: "Advancement Made", desc: "Clicked something" };
@@ -179,6 +198,7 @@ export function triggerAchievement(el, soundType, preventDefault = false, event 
         }, CONFIG.REDIRECT_DELAY);
     }
 }
+
 export function initAchievements() {
     achContainer = document.createElement('div');
     achContainer.id = 'ach-container';
@@ -230,6 +250,7 @@ export function initAchievements() {
     }
     renderHistoryList();
 }
+
 function playSfx(type) {
     if (localStorage.getItem('sfx_muted') === 'true') return;
     const s = new Audio(type === 'click' ? 'assets/click.mp3' : 'assets/hover.mp3');
