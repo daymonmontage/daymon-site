@@ -1,4 +1,5 @@
 import { CONFIG } from './config.js';
+import { getDonorsData, renderLiveDonors } from './donors.js';
 
 let GAMES_DATA = [];
 const INITIAL_GAMES_DISPLAY = 8; 
@@ -282,6 +283,7 @@ export async function checkTwitchStatus() {
             if(liveBox) {
                 liveBox.style.display = 'block';
                 loadTwitchEmbed();
+                renderLiveDonors(getDonorsData('stream'));
             }
 
             if(streamTab) {

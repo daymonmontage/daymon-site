@@ -1,1 +1,394 @@
-.games-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px;padding:10px}.game-card{background:#1a1a1a;border-radius:12px;overflow:hidden;cursor:pointer;transition:all .3s cubic-bezier(0.25,0.8,0.25,1);border:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;position:relative;box-shadow:0 4px 10px rgba(0,0,0,0.3)}.game-card:hover{transform:translateY(-8px) scale(1.02);border-color:var(--accent);box-shadow:0 15px 30px rgba(249,115,22,0.2);z-index:5}.game-card.hidden-game{display:none}.game-cover{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:filter .3s}.game-card:hover .game-cover{filter:brightness(1.1)}.game-info{padding:12px;background:linear-gradient(to bottom,#222,#111);border-top:2px solid transparent;transition:.3s;flex-grow:1;display:flex;flex-direction:column;justify-content:space-between}.game-card:hover .game-info{border-top-color:var(--accent);background:#1f1f1f}.game-title{font-size:.85rem;font-weight:bold;color:#fff;margin-bottom:5px;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.game-meta{font-size:.7rem;color:var(--text-secondary);display:flex;align-items:center;gap:5px}.game-meta i{color:var(--accent)}.gm-footer-controls{grid-column:1 / -1;display:flex;justify-content:center;padding:30px 0 10px 0}.toggle-clips-btn{background:rgba(255,255,255,0.05);border:1px solid var(--accent);color:var(--accent);padding:12px 30px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;text-transform:uppercase;cursor:pointer;transition:.3s;display:flex;align-items:center;gap:10px;z-index:2}.toggle-clips-btn:hover{background:var(--accent);color:#000;transform:translateY(-3px);box-shadow:0 5px 20px rgba(249,115,22,0.4)}.toggle-clips-btn i{font-size:.9rem;transition:transform .3s}.toggle-clips-btn.expanded i{transform:rotate(180deg)}.game-modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:20000;display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:.3s;backdrop-filter:blur(5px)}.game-modal-overlay.open{opacity:1;pointer-events:auto}.game-modal-content{width:95%;max-width:1600px;height:90vh;background:#0f0f11;border:1px solid var(--glass-border);border-radius:16px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 0 50px rgba(0,0,0,0.8)}.gm-header{padding:15px 25px;background:#18181b;border-bottom:1px solid #333;color:#fff;display:flex;justify-content:space-between;align-items:center;font-weight:bold;flex-shrink:0}.gm-title{font-size:1.1rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#fff}.gm-close{background:0;border:0;font-size:1.5rem;cursor:pointer;color:#aaa;transition:.2s;line-height:1}.gm-close:hover{color:#fff}.gm-body{flex-grow:1;display:flex;flex-direction:row;overflow:hidden;background:#0e0e10}.gm-left-col{flex:3;display:flex;flex-direction:column;border-right:1px solid #333;overflow-y:auto}.player-wrapper{width:100%;background:#000;position:relative;padding-top:56.25%;flex-shrink:0}.master-iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}.player-controls-panel{padding:20px;background:#18181b;flex-grow:1}.controls-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;border-bottom:1px solid #333;padding-bottom:10px;flex-wrap:wrap;gap:10px}.controls-title{font-size:1.2rem;font-weight:bold;color:#fff}.sort-tabs{display:flex;gap:10px}.sort-btn{background:transparent;border:0;color:#efeff1;font-weight:600;font-size:.9rem;cursor:pointer;padding:5px 10px;border-bottom:2px solid transparent;transition:.2s;font-family:'Montserrat',sans-serif}.sort-btn:hover{color:var(--accent)}.sort-btn.active{color:var(--accent);border-bottom-color:var(--accent)}.clip-meta-info{color:#adadb8;font-size:.9rem;line-height:1.5}.gm-right-col{flex:2;min-width:450px;background:#18181b;display:flex;flex-direction:column}.playlist-header{padding:15px;font-size:.85rem;font-weight:bold;color:#efeff1;text-transform:uppercase;border-bottom:1px solid #333;background:#1f1f23}.playlist-scroll-area{flex-grow:1;overflow-y:auto;padding:15px;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:max-content;gap:12px;align-content:start;-webkit-overflow-scrolling:touch}.playlist-item{display:flex;flex-direction:column;background:#26262c;border-radius:6px;cursor:pointer;transition:.2s;overflow:hidden;border:2px solid transparent;height:auto;min-height:100px}.playlist-item:hover{transform:translateY(-3px);background:#323239;box-shadow:0 5px 15px rgba(0,0,0,0.3);z-index:2}.playlist-item.active-clip{border-color:var(--accent);background:#3a3a40}.pl-thumb-mini{width:100%;aspect-ratio:16/9;background-size:cover;background-position:center;position:relative;background-color:#000}.pl-thumb-mini::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to top,rgba(0,0,0,0.8),transparent 40%)}.pl-views-badge{position:absolute;bottom:5px;left:5px;font-size:.7rem;color:#fff;z-index:2;display:flex;align-items:center;gap:4px;text-shadow:0 1px 2px rgba(0,0,0,0.8)}.pl-info-mini{padding:8px;display:flex;flex-direction:column;justify-content:space-between;flex-grow:1}.pl-title-mini{font-size:.75rem;font-weight:600;color:#efeff1;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}.pl-meta-mini{font-size:.65rem;color:#adadb8}.gm-left-col::-webkit-scrollbar,.playlist-scroll-area::-webkit-scrollbar{width:6px}.gm-left-col::-webkit-scrollbar-thumb,.playlist-scroll-area::-webkit-scrollbar-thumb{background:#444;border-radius:3px}@media(max-width:900px){.game-modal-content{height:100vh;width:100%;border-radius:0;border:0}.gm-body{flex-direction:column}.gm-left-col{flex:none;border-right:0;border-bottom:1px solid #333;max-height:50vh;overflow-y:auto}.gm-right-col{min-width:100%;flex:1;min-height:0}.playlist-scroll-area{grid-template-columns:repeat(2,1fr);padding-bottom:40px}.controls-header{flex-direction:column;align-items:flex-start}.sort-tabs{width:100%;justify-content:space-between;margin-top:10px}.sort-btn{flex:1;text-align:center}}
+/* 
+    8. GAMES LIBRARY
+    Grid layout & Twitch-style Modal (Mobile Optimized)
+*/
+
+/* === СЕТКА ИГР (ОСНОВНАЯ СТРАНИЦА) === */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.game-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.game-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px rgba(249, 115, 22, 0.2);
+    z-index: 5;
+}
+
+.game-card.hidden-game { display: none; }
+
+.game-cover {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s;
+}
+
+.game-card:hover .game-cover { filter: brightness(1.1); }
+
+.game-info {
+    padding: 12px;
+    background: linear-gradient(to bottom, #222, #111);
+    border-top: 2px solid transparent;
+    transition: 0.3s;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-card:hover .game-info {
+    border-top-color: var(--accent);
+    background: #1f1f1f;
+}
+
+.game-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.game-meta {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    display: flex; align-items: center; gap: 5px;
+}
+.game-meta i { color: var(--accent); }
+
+/* === КНОПКА "ПОКАЗАТЬ ВСЕ ИГРЫ" === */
+.gm-footer-controls {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+}
+
+.toggle-clips-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; align-items: center; gap: 10px;
+    z-index: 2;
+}
+
+.toggle-clips-btn:hover {
+    background: var(--accent);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(249, 115, 22, 0.4);
+}
+.toggle-clips-btn i { font-size: 0.9rem; transition: transform 0.3s; }
+.toggle-clips-btn.expanded i { transform: rotate(180deg); }
+
+
+/* === МОДАЛЬНОЕ ОКНО === */
+.game-modal-overlay {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 20000;
+    display: flex; justify-content: center; align-items: center;
+    opacity: 0; pointer-events: none;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.game-modal-overlay.open { opacity: 1; pointer-events: auto; }
+
+.game-modal-content {
+    width: 95%; max-width: 1600px;
+    height: 90vh; /* Высота окна */
+    background: #0f0f11;
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+.gm-header {
+    padding: 15px 25px;
+    background: #18181b;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    display: flex; justify-content: space-between; align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.gm-title { 
+    font-size: 1.1rem; 
+    font-weight: 800;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.gm-close {
+    background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #aaa;
+    transition: 0.2s; line-height: 1;
+}
+.gm-close:hover { color: #fff; }
+
+/* === ТЕЛО МОДАЛКИ === */
+.gm-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Важно для скролла внутри колонок */
+    background: #0e0e10;
+}
+
+/* --- ЛЕВАЯ КОЛОНКА (Плеер) --- */
+.gm-left-col {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+}
+
+.player-wrapper {
+    width: 100%;
+    background: #000;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 */
+    flex-shrink: 0;
+}
+
+.master-iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+}
+
+.player-controls-panel {
+    padding: 20px;
+    background: #18181b;
+    flex-grow: 1;
+}
+
+.controls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    flex-wrap: wrap; /* Чтобы кнопки переносились на мобилках */
+    gap: 10px;
+}
+
+.controls-title { font-size: 1.2rem; font-weight: bold; color: #fff; }
+
+.sort-tabs { display: flex; gap: 10px; }
+.sort-btn {
+    background: transparent; border: none; color: #efeff1;
+    font-weight: 600; font-size: 0.9rem; cursor: pointer;
+    padding: 5px 10px; border-bottom: 2px solid transparent;
+    transition: 0.2s; font-family: 'Montserrat', sans-serif;
+}
+.sort-btn:hover { color: var(--accent); }
+.sort-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.clip-meta-info { color: #adadb8; font-size: 0.9rem; line-height: 1.5; }
+
+/* --- ПРАВАЯ КОЛОНКА (Сетка клипов) --- */
+.gm-right-col {
+    flex: 2;
+    min-width: 450px;
+    background: #18181b;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-header {
+    padding: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #efeff1;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    background: #1f1f23;
+}
+
+.playlist-scroll-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    
+    /* СЕТКА 3 КОЛОНКИ (Desktop) */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    gap: 12px;
+    align-content: start;
+    
+    /* Плавный скролл для iOS */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* Карточка клипа в сетке */
+.playlist-item {
+    display: flex;
+    flex-direction: column;
+    background: #26262c;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+    border: 2px solid transparent;
+    height: auto;
+    min-height: 100px;
+}
+
+.playlist-item:hover {
+    transform: translateY(-3px);
+    background: #323239;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.playlist-item.active-clip {
+    border-color: var(--accent);
+    background: #3a3a40;
+}
+
+.pl-thumb-mini {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #000;
+}
+
+.pl-thumb-mini::after {
+    content: '';
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent 40%);
+}
+
+.pl-views-badge {
+    position: absolute;
+    bottom: 5px; left: 5px;
+    font-size: 0.7rem;
+    color: #fff;
+    z-index: 2;
+    display: flex; align-items: center; gap: 4px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+
+.pl-info-mini {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.pl-title-mini {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #efeff1;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.pl-meta-mini {
+    font-size: 0.65rem;
+    color: #adadb8;
+}
+
+/* Скроллбары */
+.gm-left-col::-webkit-scrollbar,
+.playlist-scroll-area::-webkit-scrollbar { width: 6px; }
+.gm-left-col::-webkit-scrollbar-thumb,
+.playlist-scroll-area::-webkit-scrollbar-thumb { background: #444; border-radius: 3px; }
+
+/* === АДАПТИВ (MOBILE) === */
+@media (max-width: 900px) {
+    .game-modal-content {
+        height: 100vh; /* На мобилках на весь экран */
+        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+
+    .gm-body { 
+        flex-direction: column; 
+    }
+
+    /* Плеер сверху */
+    .gm-left-col { 
+        flex: none; /* Не растягиваться, занимать высоту контента */
+        border-right: none; 
+        border-bottom: 1px solid #333; 
+        max-height: 50vh; /* Ограничиваем высоту, чтобы список влез */
+        overflow-y: auto;
+    }
+
+    /* Список снизу */
+    .gm-right-col { 
+        min-width: 100%; 
+        flex: 1; /* Занимает всё оставшееся место */
+        min-height: 0; /* Фикс для скролла во Flexbox */
+    }
+    
+    .playlist-scroll-area { 
+        /* На мобилках 2 колонки - оптимально для пальца */
+        grid-template-columns: repeat(2, 1fr); 
+        padding-bottom: 40px; /* Отступ снизу для удобства */
+    }
+
+    .controls-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .sort-tabs {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .sort-btn {
+        flex: 1;
+        text-align: center;
+    }
+}

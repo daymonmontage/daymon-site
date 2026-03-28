@@ -3,14 +3,12 @@ import json
 import os
 import time
 
-# === НАСТРОЙКИ ===
-CHANNEL_NAME = 'daymonmontage'
+CHANNEL_NAME = 'roneer_'
 OUTPUT_FILE = 'assets/games.json'
-CLIPS_TO_ANALYZE = 10000 
+CLIPS_TO_ANALYZE = 10000
 
 CLIENT_ID = os.environ.get('TWITCH_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('TWITCH_CLIENT_SECRET')
-# =================
 
 def get_access_token():
     url = 'https://id.twitch.tv/oauth2/token'
@@ -34,27 +32,27 @@ def get_top_clips(token, broadcaster_id):
     headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
     clips = []
     cursor = None
-    
+
     print(f"🔄 Сканируем клипы (цель: {CLIPS_TO_ANALYZE})...")
-    
+
     while len(clips) < CLIPS_TO_ANALYZE:
         url = f'https://api.twitch.tv/helix/clips?broadcaster_id={broadcaster_id}&first=100'
         if cursor:
             url += f'&after={cursor}'
-            
+
         res = requests.get(url, headers=headers)
         data = res.json()
-        
+
         current_batch = data.get('data', [])
         if not current_batch:
             break
-            
+
         clips.extend(current_batch)
         cursor = data.get('pagination', {}).get('cursor')
-        
+
         if not cursor:
             break
-            
+
     return clips[:CLIPS_TO_ANALYZE]
 
 def main():
@@ -66,27 +64,25 @@ def main():
 
         uid = get_broadcaster_id(token)
         raw_clips = get_top_clips(token, uid)
-        
+
         print(f"✅ Найдено клипов: {len(raw_clips)}")
-        
-        # Группировка по играм
+
         games_stats = {}
-        
+
         for clip in raw_clips:
             gid = clip['game_id']
-            if not gid: continue 
-            
+            if not gid: continue
+
             if gid not in games_stats:
                 games_stats[gid] = {
                     'id': gid,
                     'name': 'Unknown',
                     'count': 0,
-                    'clips': [] 
+                    'clips': []
                 }
-            
-            # Сохраняем объект клипа, а не просто ID
+
             thumb_url = clip['thumbnail_url'].replace('{width}', '480').replace('{height}', '272')
-            
+
             clip_data = {
                 'id': clip['id'],
                 'title': clip['title'],
@@ -97,19 +93,13 @@ def main():
 
             games_stats[gid]['count'] += 1
             games_stats[gid]['clips'].append(clip_data)
-            
-            # Пытаемся взять имя игры из клипа, если API игр еще не вызывали
-            if games_stats[gid]['name'] == 'Unknown' and clip.get('game_id'):
-                 # Имя игры не всегда есть в объекте клипа в старых версиях, но попробуем
-                 pass 
 
-        # Получаем картинки и названия игр
         game_ids = list(games_stats.keys())
         print("🎨 Загружаем обложки игр...")
-        
+
         headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
         unique_ids = list(set(game_ids))
-        
+
         for i in range(0, len(unique_ids), 100):
             chunk = unique_ids[i:i+100]
             if not chunk: continue
@@ -117,23 +107,21 @@ def main():
             url = f'https://api.twitch.tv/helix/games?id={query}'
             res = requests.get(url, headers=headers)
             gdata = res.json().get('data', [])
-            
+
             for g in gdata:
                 gid = g['id']
                 if gid in games_stats:
                     games_stats[gid]['name'] = g['name']
                     games_stats[gid]['art'] = g['box_art_url'].replace('{width}', '285').replace('{height}', '380')
 
-        # Превращаем словарь в список и сортируем
         final_list = list(games_stats.values())
         final_list.sort(key=lambda x: x['count'], reverse=True)
-        
-        # Убираем игры без названия или картинки
+
         final_list = [g for g in final_list if g.get('art')]
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             json.dump(final_list, f, ensure_ascii=False, indent=2)
-            
+
         print(f"💾 Готово! Сохранено игр: {len(final_list)} в {OUTPUT_FILE}")
 
     except Exception as e:

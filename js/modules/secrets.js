@@ -110,18 +110,34 @@ function triggerScreamer() {
     audio.load();
 }
 
+const RU_TO_EN_MAP = {
+    'й': 'q', 'ц': 'w', 'у': 'e', 'к': 'r', 'е': 't', 'н': 'y', 'г': 'u', 'ш': 'i', 'щ': 'o', 'з': 'p', 'х': '[', 'ъ': ']',
+    'ф': 'a', 'ы': 's', 'в': 'd', 'а': 'f', 'п': 'g', 'р': 'h', 'о': 'j', 'л': 'k', 'д': 'l', 'ж': ';', 'э': "'",
+    'я': 'z', 'ч': 'x', 'с': 'c', 'м': 'v', 'и': 'b', 'т': 'n', 'ь': 'm', 'б': ',', 'ю': '.'
+};
+
 function setupKeyboardSecrets() {
     let keyBuffer = '';
     const bufferLimit = 15; 
 
     document.addEventListener('keydown', (e) => {
-        keyBuffer += e.key.toLowerCase();
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+        let key = e.key.toLowerCase();
+
+        if (RU_TO_EN_MAP[key]) {
+            key = RU_TO_EN_MAP[key];
+        }
+
+        if (key.length !== 1) return;
+
+        keyBuffer += key;
         if (keyBuffer.length > bufferLimit) keyBuffer = keyBuffer.slice(-bufferLimit);
         
         Object.keys(SECRET_CODES).forEach(code => {
             if (keyBuffer.includes(code)) {
                 activateSecret(SECRET_CODES[code]);
-                keyBuffer = ''; 
+                keyBuffer = '';
             }
         });
     });

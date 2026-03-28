@@ -85,6 +85,7 @@ export async function initDonorsBackground() {
             
             // Для летающего фона берем "All Time" как самых важных
             setFloatingDonors(ALL_DONORS_DATA['all_time']); 
+            renderLiveDonors(ALL_DONORS_DATA['stream']);
             
         } else {
             throw new Error("File not found");
@@ -169,4 +170,30 @@ function renderDonorsList(container, list) {
         
         container.style.opacity = 1;
     }, 200);
+}
+
+export function getDonorsData(type) {
+    return ALL_DONORS_DATA[type] || [];
+}
+
+export function renderLiveDonors(list) {
+    const container = document.getElementById('live-donors-list');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    if (!list || list.length === 0) {
+        container.innerHTML = '<div class="ld-empty">Пока пусто...<br>Стань первым!</div>';
+        return;
+    }
+    
+    list.forEach((donor, idx) => {
+        const item = document.createElement('div');
+        item.className = `ld-item ${donor.type === 'gold' ? 'gold' : ''}`;
+        item.innerHTML = `
+            <div class="ld-name">${idx + 1}. ${donor.name}</div>
+            <div class="ld-amount">${donor.amount}</div>
+        `;
+        container.appendChild(item);
+    });
 }

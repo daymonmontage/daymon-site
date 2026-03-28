@@ -1,1 +1,215 @@
-.support-layout{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap}.donors-center-panel{width:300px;height:330px;background:rgba(10,10,12,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:12px;display:flex;flex-direction:column;overflow:hidden;backdrop-filter:blur(5px);box-shadow:inset 0 0 20px rgba(0,0,0,0.5);order:0;position:relative}.donors-tabs{display:flex;background:rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.05);flex-shrink:0}.d-tab{flex:1;background:transparent;border:0;color:#71717a;padding:8px 0;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.75rem;transition:all .2s;border-bottom:2px solid transparent}.d-tab:hover{color:#fff;background:rgba(255,255,255,0.05)}.d-tab.active{color:var(--accent);border-bottom-color:var(--accent);background:linear-gradient(to top,rgba(249,115,22,0.1),transparent)}.d-tab.stream-tab.active{color:#ef4444;border-bottom-color:#ef4444;background:linear-gradient(to top,rgba(239,68,68,0.1),transparent);animation:pulse 2s infinite}.donors-header{background:linear-gradient(90deg,rgba(249,115,22,0.05),transparent);color:var(--text-secondary);padding:6px;text-align:center;font-weight:800;font-size:.75rem;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,0.05);text-transform:uppercase;flex-shrink:0}.donors-scroll-area{flex-grow:1;overflow-y:auto;padding:10px;display:flex;flex-direction:column;gap:6px;text-align:center;position:relative;min-height:0}.donors-scroll-area::-webkit-scrollbar{width:4px}.donors-scroll-area::-webkit-scrollbar-thumb{background:#333;border-radius:2px}.donor-row{font-family:'Courier New',monospace;transition:all .3s ease;padding:4px;border-radius:4px;display:flex;justify-content:space-between;align-items:center;padding:4px 10px;background:rgba(255,255,255,0.02);flex-shrink:0}.donor-row:hover{background:rgba(255,255,255,0.05);transform:scale(1.02);opacity:1 !important}.d-name{font-weight:bold;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%}.d-amount{color:var(--text-secondary);font-size:.8em}.donor-row.rank-1{color:#ffd700;text-shadow:0 0 10px rgba(255,215,0,0.4);border:1px solid rgba(255,215,0,0.2);background:rgba(255,215,0,0.05)}.donor-row.rank-2{color:silver;text-shadow:0 0 8px rgba(192,192,192,0.3)}.donor-row.rank-3{color:#cd7f32;text-shadow:0 0 8px rgba(205,127,50,0.3)}.empty-wallet-state{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;min-height:180px;animation:fadeIn .5s forwards;overflow:hidden}.wallet-icon{font-size:4rem;color:#3f3f46;z-index:1;margin-top:20px;filter:drop-shadow(0 5px 15px rgba(0,0,0,0.5))}.fly-container{position:absolute;top:50%;left:50%;width:40px;height:40px;z-index:2;pointer-events:none;background-image:url("data:image/svg+xml,%3CsvgviewBox='00512512'xmlns='http://www.w3.org/2000/svg'%3E%3Cpathd='m312.539062310.667969h-114.027343c-3.6757810-6.6601572.980469-6.6601576.65625v130.527343c03.8398441.4648447.6796884.39453210.609376l49.14843749.144531c2.9257812.9296876.7656254.39453110.6054694.394531s7.679688-1.46484410.605469-4.394531l48.199219-48.199219c3.171874-3.1718754.609374-7.406254.351562-11.554688l.042969-130.523437c0-3.679687-2.980469-6.660156-6.660157-6.660156zm00'fill='%23393238'/%3E%3Cpathd='m319.199219318.46875-.039063129.382812c.2617194.148438-1.1796878.386719-4.35156211.558594l-48.19921948.199219c-2.9296872.929687-6.7695314.390625-10.6093754.390625v-201.328125h56.539062c3.67968806.6601572.9765636.6601576.65625zm00'fill='%23272027'/%3E%3Cpathd='m109.679688512c54.8007810101.6875-39.128906111.488281-93.042969l17.457031-96.007812s9.015625-48.191407-85.722656-142.929688c-5.855469-5.859375-15.90625-4.125-21.0820322.34375l-94.078124117.601563c-24.33984430.421875-37.74218868.628906-37.742188107.585937030.78906321.570312104.449219109.679688104.449219zm00'fill='%23e6edf4'/%3E%3Cpathd='m402.320312512c-54.8007810-101.6875-39.128906-111.488281-93.042969l-17.457031-96.007812s-9.015625-48.19140785.722656-142.929688c5.855469-5.85937515.90625-4.12521.0820322.34375l94.078124117.601563c24.33984430.42187537.74218868.62890637.742188107.585937030.789063-21.570312104.449219-109.679688104.449219zm00'fill='%23cfdbe5'/%3E%3Cpathd='m25678.199219c-8.2851560-15-6.714844-15-15v-48.199219c0-8.2851566.714844-1515-15s156.7148441515v48.199219c08.285156-6.71484415-1515zm00'fill='%23393238'/%3E%3Cpathd='m27115v48.199219c08.28125-6.7187515-1515v-78.199219c8.281250156.718751515zm00'fill='%23272027'/%3E%3Cpathd='m304.199219174.601562h-96.398438c-34.8515620-63.199219-28.355468-63.199219-63.2031240-34.84765728.347657-63.199219-63.199219-63.199219h96.398438c34.851562063.19921928.35156263.19921963.199219034.851562-28.34765763.203124-63.19921963.203124zm00'fill='%234b4449'/%3E%3Cpathd='m304.19921948.199219h-48.199219v126.402343h48.199219c20.199219038.222656-9.52343749.789062-24.3203128.402344-10.73046913.410157-24.23046913.410157-38.8828120-34.847657-28.347657-63.199219-63.199219-63.199219zm00'fill='%23393238'/%3E%3Cpathd='m256335.265625c-70.2929690-127.46875-57.171875-127.46875-127.449219v-9.125c0-14.43755.625-28.01953115.835938-38.24609410.234374-10.22265623.816406-15.8437538.253906-15.84375h147.316406c14.308594027.755.57031337.85546915.687510.10156210.08984415.67187523.5312515.67187537.839844v9.671875c.00390670.285157-57.179688127.464844-127.464844127.464844zm00'fill='%23b4c1cf'/%3E%3Cpathd='m367.789062160.289062c-4.097656-4.109374-8.75-7.46875-13.800781-10.007812-7.359375-3.722656-15.546875-5.679688-24.046875-5.679688h-73.941406v190.667969c22.980469044.558594-6.10937563.199219-16.80078138.371093-21.98828164.269531-63.35937564.269531-110.667969v-9.671875c0-14.308594-5.570312-27.75-15.679688-37.839844zm00'fill='%23a7b4c4'/%3E%3C/svg%3E");background-size:contain;background-repeat:no-repeat;animation:fly-buzz 5s infinite linear}.empty-text{font-size:.75rem;font-family:'Courier New',monospace;margin-top:30px;color:#52525b;z-index:1;font-weight:bold;letter-spacing:1px}@keyframes fly-buzz{0%{transform:translate(-50%,-20px) rotate(-45deg)}10%{opacity:1}25%{transform:translate(-120%,-80px) rotate(45deg)}50%{transform:translate(80%,-60px) rotate(160deg)}75%{transform:translate(20%,-30px) rotate(260deg)}90%{opacity:1}100%{transform:translate(-50%,-20px) rotate(315deg)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@media(max-width:950px){.support-layout{flex-direction:column;gap:10px}.donors-center-panel{order:2;width:100%;max-width:100%;height:280px;margin:5px 0}.inscryption-card{transform:scale(0.95);margin:-5px 0}.card-prior{order:3}}
+/* 
+   7. DONORS LIST (CENTER PANEL)
+*/
+
+.support-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.donors-center-panel {
+    width: 300px;
+    height: 330px;
+    background: rgba(10, 10, 12, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    order: 0;
+    position: relative;
+}
+
+/* === TABS === */
+.donors-tabs {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    flex-shrink: 0;
+}
+
+.d-tab {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #71717a;
+    padding: 8px 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.d-tab:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.d-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    background: linear-gradient(to top, rgba(249, 115, 22, 0.1), transparent);
+}
+
+.d-tab.stream-tab.active {
+    color: #ef4444;
+    border-bottom-color: #ef4444;
+    background: linear-gradient(to top, rgba(239, 68, 68, 0.1), transparent);
+    animation: pulse 2s infinite;
+}
+
+/* === HEADER === */
+.donors-header {
+    background: linear-gradient(90deg, rgba(249, 115, 22, 0.05), transparent);
+    color: var(--text-secondary);
+    padding: 6px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+/* === LIST AREA === */
+.donors-scroll-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    position: relative;
+    min-height: 0;
+}
+
+.donors-scroll-area::-webkit-scrollbar { width: 4px; }
+.donors-scroll-area::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+/* === DONOR ROW === */
+.donor-row {
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s ease;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.02);
+    flex-shrink: 0;
+}
+
+.donor-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: scale(1.02);
+    opacity: 1 !important;
+}
+
+.d-name { font-weight: bold; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 60%; }
+.d-amount { color: var(--text-secondary); font-size: 0.8em; }
+
+.donor-row.rank-1 {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.donor-row.rank-2 { color: #c0c0c0; text-shadow: 0 0 8px rgba(192, 192, 192, 0.3); }
+.donor-row.rank-3 { color: #cd7f32; text-shadow: 0 0 8px rgba(205, 127, 50, 0.3); }
+
+/* === EMPTY STATE (FLY ANIMATION) === */
+.empty-wallet-state {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    animation: fadeIn 0.5s forwards;
+    overflow: hidden;
+}
+
+.wallet-icon {
+    font-size: 4rem;
+    color: #3f3f46;
+    z-index: 1;
+    margin-top: 20px;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+}
+
+.fly-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    pointer-events: none;
+    
+    /* SVG мухи */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m312.539062 310.667969h-114.027343c-3.675781 0-6.660157 2.980469-6.660157 6.65625v130.527343c0 3.839844 1.464844 7.679688 4.394532 10.609376l49.148437 49.144531c2.925781 2.929687 6.765625 4.394531 10.605469 4.394531s7.679688-1.464844 10.605469-4.394531l48.199219-48.199219c3.171874-3.171875 4.609374-7.40625 4.351562-11.554688l.042969-130.523437c0-3.679687-2.980469-6.660156-6.660157-6.660156zm0 0' fill='%23393238'/%3E%3Cpath d='m319.199219 318.46875-.039063 129.382812c.261719 4.148438-1.179687 8.386719-4.351562 11.558594l-48.199219 48.199219c-2.929687 2.929687-6.769531 4.390625-10.609375 4.390625v-201.328125h56.539062c3.679688 0 6.660157 2.976563 6.660157 6.65625zm0 0' fill='%23272027'/%3E%3Cpath d='m109.679688 512c54.800781 0 101.6875-39.128906 111.488281-93.042969l17.457031-96.007812s9.015625-48.191407-85.722656-142.929688c-5.855469-5.859375-15.90625-4.125-21.082032 2.34375l-94.078124 117.601563c-24.339844 30.421875-37.742188 68.628906-37.742188 107.585937 0 30.789063 21.570312 104.449219 109.679688 104.449219zm0 0' fill='%23e6edf4'/%3E%3Cpath d='m402.320312 512c-54.800781 0-101.6875-39.128906-111.488281-93.042969l-17.457031-96.007812s-9.015625-48.191407 85.722656-142.929688c5.855469-5.859375 15.90625-4.125 21.082032 2.34375l94.078124 117.601563c24.339844 30.421875 37.742188 68.628906 37.742188 107.585937 0 30.789063-21.570312 104.449219-109.679688 104.449219zm0 0' fill='%23cfdbe5'/%3E%3Cpath d='m256 78.199219c-8.285156 0-15-6.714844-15-15v-48.199219c0-8.285156 6.714844-15 15-15s15 6.714844 15 15v48.199219c0 8.285156-6.714844 15-15 15zm0 0' fill='%23393238'/%3E%3Cpath d='m271 15v48.199219c0 8.28125-6.71875 15-15 15v-78.199219c8.28125 0 15 6.71875 15 15zm0 0' fill='%23272027'/%3E%3Cpath d='m304.199219 174.601562h-96.398438c-34.851562 0-63.199219-28.355468-63.199219-63.203124 0-34.847657 28.347657-63.199219-63.199219-63.199219h96.398438c34.851562 0 63.199219 28.351562 63.199219 63.199219 0 34.851562-28.347657 63.203124-63.199219 63.203124zm0 0' fill='%234b4449'/%3E%3Cpath d='m304.199219 48.199219h-48.199219v126.402343h48.199219c20.199219 0 38.222656-9.523437 49.789062-24.320312 8.402344-10.730469 13.410157-24.230469 13.410157-38.882812 0-34.847657-28.347657-63.199219-63.199219-63.199219zm0 0' fill='%23393238'/%3E%3Cpath d='m256 335.265625c-70.292969 0-127.46875-57.171875-127.46875-127.449219v-9.125c0-14.4375 5.625-28.019531 15.835938-38.246094 10.234374-10.222656 23.816406-15.84375 38.253906-15.84375h147.316406c14.308594 0 27.75 5.570313 37.855469 15.6875 10.101562 10.089844 15.671875 23.53125 15.671875 37.839844v9.671875c.003906 70.285157-57.179688 127.464844-127.464844 127.464844zm0 0' fill='%23b4c1cf'/%3E%3Cpath d='m367.789062 160.289062c-4.097656-4.109374-8.75-7.46875-13.800781-10.007812-7.359375-3.722656-15.546875-5.679688-24.046875-5.679688h-73.941406v190.667969c22.980469 0 44.558594-6.109375 63.199219-16.800781 38.371093-21.988281 64.269531-63.359375 64.269531-110.667969v-9.671875c0-14.308594-5.570312-27.75-15.679688-37.839844zm0 0' fill='%23a7b4c4'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    animation: fly-buzz 5s infinite linear;
+}
+
+.empty-text {
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    margin-top: 30px;
+    color: #52525b;
+    z-index: 1;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Анимация полета мухи */
+@keyframes fly-buzz {
+    0% { 
+        transform: translate(-50%, -20px) rotate(-45deg); 
+    }
+    10% { opacity: 1; }
+
+    25% { 
+        transform: translate(-120%, -80px) rotate(45deg); 
+    }
+
+    50% { 
+        transform: translate(80%, -60px) rotate(160deg); 
+    }
+
+    75% { 
+        transform: translate(20%, -30px) rotate(260deg); 
+    }
+
+    90% { opacity: 1; }
+    100% { 
+        transform: translate(-50%, -20px) rotate(315deg); 
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 950px) {
+    .support-layout { flex-direction: column; gap: 10px; }
+    .donors-center-panel { order: 2; width: 100%; max-width: 100%; height: 280px; margin: 5px 0; }
+    .inscryption-card { transform: scale(0.95); margin: -5px 0; }
+    .card-prior { order: 3; }
+}
