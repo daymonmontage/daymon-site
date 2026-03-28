@@ -6,11 +6,10 @@ import time
 # === НАСТРОЙКИ ===
 CHANNEL_NAME = 'daymonmontage'
 OUTPUT_FILE = 'assets/games.json'
-CLIPS_TO_ANALYZE = 10000  # Глубина анализа
+CLIPS_TO_ANALYZE = 10000 
 
-# Вставь сюда свои ключи с dev.twitch.tv
-CLIENT_ID = 'bfjbspz6awuwz8jxc0oqkktf4zy7is' 
-CLIENT_SECRET = '7u3xucieeuu1d8i9ju8v3s0o46vsq2'
+CLIENT_ID = os.environ.get('TWITCH_CLIENT_ID')
+CLIENT_SECRET = os.environ.get('TWITCH_CLIENT_SECRET')
 # =================
 
 def get_access_token():
