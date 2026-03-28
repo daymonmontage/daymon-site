@@ -3,7 +3,7 @@ import json
 import os
 import time
 
-CHANNEL_NAME = 'roneer_'
+CHANNEL_NAME = 'daymonmontage'
 OUTPUT_FILE = 'assets/games.json'
 CLIPS_TO_ANALYZE = 10000
 
