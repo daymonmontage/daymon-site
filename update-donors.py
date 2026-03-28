@@ -1,7 +1,6 @@
 import json
 import time
 import re
-import concurrent.futures
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -18,7 +17,7 @@ WIDGETS = {
 
 OUTPUT_FILE = "assets/donors.json"
 
-def get_driver():
+def get_driver(driver_path):
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--disable-gpu")
@@ -27,15 +26,15 @@ def get_driver():
     options.add_argument("--log-level=3")
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
     
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    return webdriver.Chrome(service=Service(driver_path), options=options)
 
-def parse_url(key, url):
+def parse_url(key, url, driver_path):
     print(f"⏳ [{key}] Запуск браузера...")
     driver = None
     donors =[]
     
     try:
-        driver = get_driver()
+        driver = get_driver(driver_path)
         driver.get(url)
         
         time.sleep(4)
@@ -74,18 +73,18 @@ def parse_url(key, url):
             driver.quit()
 
 def main():
-    print("🚀 Запуск сборщика донатов (Selenium)...")
+    print("🚀 Запуск стабильного сборщика донатов (Selenium)...")
     start_time = time.time()
     
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     final_data = {}
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-        future_to_url = {executor.submit(parse_url, key, url): key for key, url in WIDGETS.items()}
-        
-        for future in concurrent.futures.as_completed(future_to_url):
-            key, data = future.result()
-            final_data[key] = data
+    print("⚙️ Подготовка ChromeDriver...")
+    driver_path = ChromeDriverManager().install()
+    
+    for key, url in WIDGETS.items():
+        _, data = parse_url(key, url, driver_path)
+        final_data[key] = data
 
     total_donors = sum(len(v) for v in final_data.values())
 
