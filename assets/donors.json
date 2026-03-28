@@ -1,7 +1,4 @@
 {
-  "stream": [],
-  "year": [],
-  "month": [],
   "all_time": [
     {
       "name": "Пиво Махно(gamenew_joy)",
@@ -24,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -69,14 +66,119 @@
       "type": "gold"
     },
     {
-      "name": "EGR",
+      "name": "HellDream",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "TheSoul",
+      "name": "HellDream",
       "amount": "10000 RUB",
       "type": "gold"
     }
-  ]
+  ],
+  "year": [
+    {
+      "name": "izack25",
+      "amount": "40100 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "15549 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Какащке",
+      "amount": "13482.82 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "CyborgRasty",
+      "amount": "13343 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TentriheR",
+      "amount": "9930 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Kristalix2015",
+      "amount": "8000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Alan_wert",
+      "amount": "5125 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "МиссHorek",
+      "amount": "4107 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Утя",
+      "amount": "3000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "2815.34 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Пиво Махно(gamenew_joy)",
+      "amount": "2801 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "YaderniAprel",
+      "amount": "2800 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "2680 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
+      "amount": "2600 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "69DARKle69",
+      "amount": "1894.44 RUB",
+      "type": "gold"
+    }
+  ],
+  "month": [
+    {
+      "name": "Kristalix2015",
+      "amount": "8000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "CyborgRasty",
+      "amount": "4000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "2323 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "2121 RUB",
+      "type": "gold"
+    }
+  ],
+  "stream": []
 }
