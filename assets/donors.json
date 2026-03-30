@@ -84,7 +84,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "16493 RUB",
+      "amount": "16993 RUB",
       "type": "gold"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "name": "TentriheR",
-      "amount": "9930 RUB",
+      "amount": "10230 RUB",
       "type": "gold"
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "name": "МиссHorek",
-      "amount": "4107 RUB",
+      "amount": "5107 RUB",
       "type": "gold"
     },
     {
@@ -148,8 +148,8 @@
       "type": "gold"
     },
     {
-      "name": "69DARKle69",
-      "amount": "1894.44 RUB",
+      "name": "Cmerty1",
+      "amount": "1985 RUB",
       "type": "gold"
     }
   ],
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "lilShkeks",
+      "amount": "500 RUB",
+      "type": "normal"
+    }
+  ]
 }
