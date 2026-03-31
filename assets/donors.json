@@ -180,16 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "12voron35",
-      "amount": "400 RUB",
-      "type": "normal"
-    },
-    {
-      "name": "TentriheR",
-      "amount": "300 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
