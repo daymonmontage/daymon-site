@@ -56,17 +56,17 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "PanterA",
-      "amount": "550 RUB",
+      "name": "izack25",
+      "amount": "450 RUB",
       "type": "normal"
     }
   ]
