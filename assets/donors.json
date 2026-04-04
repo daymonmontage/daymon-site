@@ -56,11 +56,6 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
@@ -72,6 +67,11 @@
     },
     {
       "name": "EGR",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -182,13 +182,8 @@
   ],
   "stream": [
     {
-      "name": "PanterA",
-      "amount": "550 RUB",
-      "type": "normal"
-    },
-    {
-      "name": "Lone_wolf она же Нята",
-      "amount": "500 RUB",
+      "name": "МиссHorek",
+      "amount": "888 RUB",
       "type": "normal"
     }
   ]
