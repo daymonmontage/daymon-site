@@ -56,7 +56,7 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -66,7 +66,7 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -182,8 +182,13 @@
   ],
   "stream": [
     {
-      "name": "МиссHorek",
-      "amount": "888 RUB",
+      "name": "PanterA",
+      "amount": "550 RUB",
+      "type": "normal"
+    },
+    {
+      "name": "Lone_wolf она же Нята",
+      "amount": "500 RUB",
       "type": "normal"
     }
   ]
