@@ -1300,18 +1300,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/EsteemedImpartialRutabagaTwitchRPG--krRCFW18zd1CdGM"
       },
       {
-        "id": "WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2",
-        "title": "20 свадьба и целые мандарины",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2/197a2cb7-7ebc-4185-ae9f-08d0f9714e6d/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2"
-      },
-      {
         "id": "YawningPlausibleSkunkWutFace-K_bQnnPWaVjAIKRL",
         "title": ">_<",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips/deur6yv20J5z1mlYwCCkSw/AT-cm%7Cdeur6yv20J5z1mlYwCCkSw-preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/YawningPlausibleSkunkWutFace-K_bQnnPWaVjAIKRL"
+      },
+      {
+        "id": "WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2",
+        "title": "20 свадьба и целые мандарины",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2/197a2cb7-7ebc-4185-ae9f-08d0f9714e6d/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/WonderfulKitschyDragonflyBudBlast-UnQ3Tw17oIrlMza2"
       },
       {
         "id": "OddBusyEggStrawBeary-XNJwtBFYyD50Hi1q",
@@ -4606,18 +4606,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/EsteemedSwissTortoiseLitFam-ErX1rSRGocoWui70"
       },
       {
-        "id": "ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU",
-        "title": "Про Jenny mod😏 (part 3)",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU/2bdcfa5f-183f-4553-a05e-029225ce78a7/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU"
-      },
-      {
         "id": "ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U",
         "title": "открой дверь",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U/8936a9d0-9c08-4918-9a47-d60e74506801/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U"
+      },
+      {
+        "id": "ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU",
+        "title": "Про Jenny mod😏 (part 3)",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU/2bdcfa5f-183f-4553-a05e-029225ce78a7/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU"
       },
       {
         "id": "ExquisiteSavoryDiscPunchTrees-fVJqRJUKgmA0AVZz",
@@ -8093,6 +8093,21 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/495961_IGDB-285x380.jpg"
   },
   {
+    "id": "1706971195",
+    "name": "LEGO Voyagers",
+    "count": 1,
+    "clips": [
+      {
+        "id": "PricklyFilthySquirrelImGlitch-hYtki9eJemHmRzJO",
+        "title": "кишечная палочка гуляет",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ad726b63-f20b-4f31-99b5-f9454c50e08b/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PricklyFilthySquirrelImGlitch-hYtki9eJemHmRzJO"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/1706971195_IGDB-285x380.jpg"
+  },
+  {
     "id": "1673899638",
     "name": "Nuclear Nightmare",
     "count": 1,
@@ -8121,20 +8136,5 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490957_IGDB-285x380.jpg"
-  },
-  {
-    "id": "1706971195",
-    "name": "LEGO Voyagers",
-    "count": 1,
-    "clips": [
-      {
-        "id": "PricklyFilthySquirrelImGlitch-hYtki9eJemHmRzJO",
-        "title": "кишечная палочка гуляет",
-        "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ad726b63-f20b-4f31-99b5-f9454c50e08b/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/PricklyFilthySquirrelImGlitch-hYtki9eJemHmRzJO"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/1706971195_IGDB-285x380.jpg"
   }
 ]
