@@ -183,8 +183,8 @@
   "stream": [
     {
       "name": "МиссHorek",
-      "amount": "888 RUB",
-      "type": "normal"
+      "amount": "1000 RUB",
+      "type": "gold"
     }
   ]
 }
