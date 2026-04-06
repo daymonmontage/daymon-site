@@ -56,6 +56,11 @@
       "type": "gold"
     },
     {
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
@@ -67,11 +72,6 @@
     },
     {
       "name": "EGR",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -119,7 +119,7 @@
     },
     {
       "name": "smouk34342",
-      "amount": "3437 RUB",
+      "amount": "3937 RUB",
       "type": "gold"
     },
     {
