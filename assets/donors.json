@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "smouk34342",
-      "amount": "1337 RUB",
-      "type": "gold"
-    }
-  ]
+  "stream": []
 }
