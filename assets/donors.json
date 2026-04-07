@@ -56,6 +56,11 @@
       "type": "gold"
     },
     {
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
@@ -69,17 +74,12 @@
       "name": "EGR",
       "amount": "10000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "TheSoul",
-      "amount": "10000 RUB",
-      "type": "gold"
     }
   ],
   "year": [
     {
       "name": "izack25",
-      "amount": "45520 RUB",
+      "amount": "46820 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "izack25",
-      "amount": "200 RUB",
+      "name": "lilShkeks",
+      "amount": "500 RUB",
       "type": "normal"
     }
   ]
