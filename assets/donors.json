@@ -175,16 +175,10 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "PanterA",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "izack25",
-      "amount": "1300 RUB",
-      "type": "gold"
-    }
-  ]
+  "stream": []
 }
