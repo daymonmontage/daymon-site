@@ -56,11 +56,6 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
@@ -72,6 +67,11 @@
     },
     {
       "name": "EGR",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -89,7 +89,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "21292 RUB",
+      "amount": "21792 RUB",
       "type": "gold"
     },
     {
@@ -115,6 +115,11 @@
     {
       "name": "Alan_wert",
       "amount": "5125 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "PanterA",
+      "amount": "4550 RUB",
       "type": "gold"
     },
     {
@@ -146,11 +151,6 @@
       "name": "ARCHI_MUST",
       "amount": "2955 RUB",
       "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "2880 RUB",
-      "type": "gold"
     }
   ],
   "month": [
@@ -175,7 +175,7 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "PanterA",
       "amount": "4000 RUB",
       "type": "gold"
     }
