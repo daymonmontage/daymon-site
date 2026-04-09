@@ -79,7 +79,7 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "46820 RUB",
+      "amount": "48020 RUB",
       "type": "gold"
     },
     {
@@ -175,10 +175,16 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "izack25",
+      "amount": "1200 RUB",
+      "type": "gold"
+    }
+  ]
 }
