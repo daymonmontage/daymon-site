@@ -133,6 +133,11 @@
       "type": "gold"
     },
     {
+      "name": "ARCHI_MUST",
+      "amount": "3155 RUB",
+      "type": "gold"
+    },
+    {
       "name": "какащке",
       "amount": "3100 RUB",
       "type": "gold"
@@ -145,11 +150,6 @@
     {
       "name": "Аноним",
       "amount": "2973.69 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "ARCHI_MUST",
-      "amount": "2955 RUB",
       "type": "gold"
     }
   ],
