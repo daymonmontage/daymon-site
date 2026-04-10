@@ -128,6 +128,11 @@
       "type": "gold"
     },
     {
+      "name": "TihiyUzh",
+      "amount": "3380 RUB",
+      "type": "gold"
+    },
+    {
       "name": "YaderniAprel",
       "amount": "3300 RUB",
       "type": "gold"
@@ -145,11 +150,6 @@
     {
       "name": "Утя",
       "amount": "3000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
-      "amount": "2973.69 RUB",
       "type": "gold"
     }
   ],
@@ -175,7 +175,7 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "PanterA",
       "amount": "4000 RUB",
       "type": "gold"
     }
