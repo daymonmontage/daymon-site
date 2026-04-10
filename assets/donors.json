@@ -103,6 +103,11 @@
       "type": "gold"
     },
     {
+      "name": "какащке",
+      "amount": "13100 RUB",
+      "type": "gold"
+    },
+    {
       "name": "TentriheR",
       "amount": "11030 RUB",
       "type": "gold"
@@ -143,17 +148,17 @@
       "type": "gold"
     },
     {
-      "name": "какащке",
-      "amount": "3100 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Утя",
       "amount": "3000 RUB",
       "type": "gold"
     }
   ],
   "month": [
+    {
+      "name": "какащке",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
     {
       "name": "МиссHorek",
       "amount": "10000 RUB",
@@ -173,17 +178,12 @@
       "name": "МиссHorek",
       "amount": "4999 RUB",
       "type": "gold"
-    },
-    {
-      "name": "PanterA",
-      "amount": "4000 RUB",
-      "type": "gold"
     }
   ],
   "stream": [
     {
-      "name": "izack25",
-      "amount": "1200 RUB",
+      "name": "МиссHorek",
+      "amount": "2000 RUB",
       "type": "gold"
     }
   ]
