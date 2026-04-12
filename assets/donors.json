@@ -56,7 +56,7 @@
       "type": "gold"
     },
     {
-      "name": "какащке",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -182,9 +182,9 @@
   ],
   "stream": [
     {
-      "name": "izack25(человек зарплата)",
-      "amount": "100 RUB",
-      "type": "normal"
+      "name": "lilShkeks",
+      "amount": "2500 RUB",
+      "type": "gold"
     }
   ]
 }
