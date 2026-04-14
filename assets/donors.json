@@ -56,7 +56,7 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -155,12 +155,12 @@
   ],
   "month": [
     {
-      "name": "МиссHorek",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "какащке",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -175,16 +175,10 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "UnkAut",
-      "amount": "200 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
