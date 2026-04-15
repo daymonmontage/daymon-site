@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "CoolBread",
+      "amount": "500 RUB",
+      "type": "normal"
+    }
+  ]
 }
