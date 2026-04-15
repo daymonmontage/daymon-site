@@ -89,7 +89,7 @@
     },
     {
       "name": "МиссHorek",
-      "amount": "24994 RUB",
+      "amount": "25094 RUB",
       "type": "gold"
     },
     {
@@ -175,15 +175,15 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "PanterA",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
   "stream": [
     {
-      "name": "CoolBread",
-      "amount": "500 RUB",
+      "name": "МиссHorek",
+      "amount": "100 RUB",
       "type": "normal"
     }
   ]
