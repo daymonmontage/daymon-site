@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -175,12 +175,17 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
   "stream": [
+    {
+      "name": "PanterA",
+      "amount": "800 RUB",
+      "type": "normal"
+    },
     {
       "name": "wertov",
       "amount": "360 RUB",
