@@ -185,6 +185,11 @@
       "name": "Bazilik",
       "amount": "1300 RUB",
       "type": "gold"
+    },
+    {
+      "name": "какащке",
+      "amount": "1000 RUB",
+      "type": "gold"
     }
   ]
 }
