@@ -460,6 +460,13 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/DaintyIgnorantReindeerYee-Jnbe_hjWmDFXbkX2"
       },
       {
+        "id": "InexpensiveBrightAlpacaKappaRoss-kHX4OhqcGllGoRse",
+        "title": "выстрел крабовой палочкой",
+        "views": 20,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5b513f76-be24-4887-b75c-e270dc8a30f5/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/InexpensiveBrightAlpacaKappaRoss-kHX4OhqcGllGoRse"
+      },
+      {
         "id": "SleepyAmusedCaribouGOWSkull-fJvsQLbr_opLcF8e",
         "title": "😈😈😈",
         "views": 20,
@@ -486,13 +493,6 @@
         "views": 19,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips/0zhvPH8ZRSfwrMyKZU4hCg/AT-cm%7C0zhvPH8ZRSfwrMyKZU4hCg-preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/RenownedAmorphousShrewDendiFace-fxlFJ_CszIplTiEK"
-      },
-      {
-        "id": "InexpensiveBrightAlpacaKappaRoss-kHX4OhqcGllGoRse",
-        "title": "выстрел крабовой палочкой",
-        "views": 19,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5b513f76-be24-4887-b75c-e270dc8a30f5/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/InexpensiveBrightAlpacaKappaRoss-kHX4OhqcGllGoRse"
       },
       {
         "id": "ExuberantPoisedBatHumbleLife-330m0PZSIIbqJqfa",
@@ -817,18 +817,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/SwissCourteousFalconKappaWealth-p53KPTaA9gdPh8Bz"
       },
       {
-        "id": "AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq",
-        "title": "НОЖКИ",
-        "views": 14,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq/58c7a3b6-da7e-4234-bf32-27f0168a1458/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq"
-      },
-      {
         "id": "ScrumptiousRelentlessDragonflyPoooound-2qjsjOSPYC8Z5OFq",
         "title": "Порнуха по майнкрафту",
         "views": 14,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips/qOVbMNqo7Izkj2AvGeThag/AT-cm%7CqOVbMNqo7Izkj2AvGeThag-preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ScrumptiousRelentlessDragonflyPoooound-2qjsjOSPYC8Z5OFq"
+      },
+      {
+        "id": "AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq",
+        "title": "НОЖКИ",
+        "views": 14,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq/58c7a3b6-da7e-4234-bf32-27f0168a1458/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AmazingRacyPangolinCclamChamp-oC68_kgX8gwof3Sq"
       },
       {
         "id": "CaringClearHamburgerPMSTwin-pM9VKWpjpfOLubqC",
@@ -1384,18 +1384,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/AbnegateFrigidBobaRiPepperonis-rRBcvvcr3hnD0mT8"
       },
       {
-        "id": "BlatantAntediluvianCiderNotLikeThis-GOotcjtUdcriscyk",
-        "title": "эх ты ска",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/8QrAYhjqLXI7VHXK4rHMpA/AT-cm%7C8QrAYhjqLXI7VHXK4rHMpA-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/BlatantAntediluvianCiderNotLikeThis-GOotcjtUdcriscyk"
-      },
-      {
         "id": "SpinelessMistyDragonfruitPMSTwin-47xmY1MUz9W_LaL1",
         "title": "гурфелд обиделся",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/SpinelessMistyDragonfruitPMSTwin-47xmY1MUz9W_LaL1/340da19d-c5be-477d-9a85-f1d8222b5d01/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/SpinelessMistyDragonfruitPMSTwin-47xmY1MUz9W_LaL1"
+      },
+      {
+        "id": "BlatantAntediluvianCiderNotLikeThis-GOotcjtUdcriscyk",
+        "title": "эх ты ска",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/8QrAYhjqLXI7VHXK4rHMpA/AT-cm%7C8QrAYhjqLXI7VHXK4rHMpA-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/BlatantAntediluvianCiderNotLikeThis-GOotcjtUdcriscyk"
       },
       {
         "id": "InspiringCaringKumquatMcaT-WGA9JIbbBBbQ6HF8",
@@ -2117,7 +2117,7 @@
   {
     "id": "1330093788",
     "name": "Voices of the Void",
-    "count": 262,
+    "count": 261,
     "clips": [
       {
         "id": "StormyCrazyGrouseCopyThis-99v8HZECUf4hACGZ",
@@ -2652,13 +2652,6 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/TangentialVictoriousBoarDBstyle-uqIurdAov1elvIw4"
       },
       {
-        "id": "IgnorantPoorTitanNinjaGrumpy-sJCqlpLuaZcouN7P",
-        "title": "спинер",
-        "views": 18,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/IgnorantPoorTitanNinjaGrumpy-sJCqlpLuaZcouN7P/22077fae-333c-405e-99f8-771ba5b82461/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/IgnorantPoorTitanNinjaGrumpy-sJCqlpLuaZcouN7P"
-      },
-      {
         "id": "GiantBashfulHamburgerBudBlast-hZtzFSkXD9sCLVFb",
         "title": "Чутка про Стейси",
         "views": 17,
@@ -2974,18 +2967,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/WrongMoralIcecreamM4xHeh-HnVhamLQQ41WQe7I"
       },
       {
-        "id": "StupidUnusualPassionfruitHassanChop-AHksOOP88dCILHkO",
-        "title": "Норм биток",
-        "views": 12,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fed06706-7e02-42bf-80de-a098be9a5e9d/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/StupidUnusualPassionfruitHassanChop-AHksOOP88dCILHkO"
-      },
-      {
         "id": "IronicObservantQueleaPicoMause-0yFPgp1f_9GLc-8U",
         "title": "просто положил",
         "views": 12,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/64e57d3d-da62-4fad-a16b-88d65050820c/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/IronicObservantQueleaPicoMause-0yFPgp1f_9GLc-8U"
+      },
+      {
+        "id": "StupidUnusualPassionfruitHassanChop-AHksOOP88dCILHkO",
+        "title": "Норм биток",
+        "views": 12,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fed06706-7e02-42bf-80de-a098be9a5e9d/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/StupidUnusualPassionfruitHassanChop-AHksOOP88dCILHkO"
       },
       {
         "id": "ThankfulBoringKeyboardDeIlluminati-pg7dn7zVAVT-KeQC",
@@ -3959,7 +3952,7 @@
   {
     "id": "27471",
     "name": "Minecraft",
-    "count": 171,
+    "count": 172,
     "clips": [
       {
         "id": "SuspiciousLightKoupreyOhMyDog-sXIPVKxOpDGwZ6sB",
@@ -4226,6 +4219,13 @@
         "views": 18,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips/cts6c0LmAuBONfaeJi-KPg/AT-cm%7Ccts6c0LmAuBONfaeJi-KPg-preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/CuriousAthleticKuduPRChase-QuYC4E419p4mL4o-"
+      },
+      {
+        "id": "CallousPolishedSoymilkCharlieBitMe-paMPiIQKADzAdY_I",
+        "title": "стример никогда не виноват",
+        "views": 18,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ef080c71-0b6d-42af-8daf-4ee906e262fd/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CallousPolishedSoymilkCharlieBitMe-paMPiIQKADzAdY_I"
       },
       {
         "id": "CallousPolishedSoymilkCharlieBitMe-paMPiIQKADzAdY_I",
@@ -4676,18 +4676,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/EsteemedSwissTortoiseLitFam-ErX1rSRGocoWui70"
       },
       {
-        "id": "ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U",
-        "title": "открой дверь",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U/8936a9d0-9c08-4918-9a47-d60e74506801/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U"
-      },
-      {
         "id": "ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU",
         "title": "Про Jenny mod😏 (part 3)",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU/2bdcfa5f-183f-4553-a05e-029225ce78a7/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ResourcefulObservantPhoneHoneyBadger-isU37bMWKXG7esaU"
+      },
+      {
+        "id": "ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U",
+        "title": "открой дверь",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U/8936a9d0-9c08-4918-9a47-d60e74506801/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ObedientGlutenFreeSalsifyGrammarKing-uIra8RCj56WXDy5U"
       },
       {
         "id": "AmorphousAlertBurritoPlanking-Pk3t9NnXg926mZuP",
@@ -5440,18 +5440,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/AbstruseSpunkyHummingbirdSeemsGood-5wHkY1weSe2galT4"
       },
       {
-        "id": "VainOddZebraHeyGirl-DAKtna0b-3z5EkmA",
-        "title": "Люби меня, люби",
-        "views": 15,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/VainOddZebraHeyGirl-DAKtna0b-3z5EkmA/27018fd5-86bc-4c15-8460-e1f79e051372/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/VainOddZebraHeyGirl-DAKtna0b-3z5EkmA"
-      },
-      {
         "id": "HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7",
         "title": "Какие милашкинсы :3",
         "views": 15,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7/3d332354-cea2-46ea-a96e-2c1b654719f9/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7"
+      },
+      {
+        "id": "VainOddZebraHeyGirl-DAKtna0b-3z5EkmA",
+        "title": "Люби меня, люби",
+        "views": 15,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/VainOddZebraHeyGirl-DAKtna0b-3z5EkmA/27018fd5-86bc-4c15-8460-e1f79e051372/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/VainOddZebraHeyGirl-DAKtna0b-3z5EkmA"
       },
       {
         "id": "HelpfulFairHumanBigBrother-NBMZyssZ934_sbnZ",
@@ -5510,18 +5510,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/VastApatheticEagleWholeWheat-px111R6p0_MjOdyu"
       },
       {
-        "id": "CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2",
-        "title": "Порвало и рязвязался",
-        "views": 11,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2/7a1f7179-aa2b-48f6-8f50-331f56fa433a/preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2"
-      },
-      {
         "id": "TangibleTemperedScallionEleGiggle-Ppoo9ziC-WDZMGq9",
         "title": "неадекват получил по опе",
         "views": 11,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/TangibleTemperedScallionEleGiggle-Ppoo9ziC-WDZMGq9/1802e091-b22c-469e-bf9b-ce0b1c41c140/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/TangibleTemperedScallionEleGiggle-Ppoo9ziC-WDZMGq9"
+      },
+      {
+        "id": "CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2",
+        "title": "Порвало и рязвязался",
+        "views": 11,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2/7a1f7179-aa2b-48f6-8f50-331f56fa433a/preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CleanDaintyBorkKAPOW-dNH-D0YKL1wquyS2"
       },
       {
         "id": "MistyNurturingArugulaPastaThat-e3eUMdS4YZ0C2wBC",
