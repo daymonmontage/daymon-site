@@ -56,7 +56,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -66,12 +71,7 @@
       "type": "gold"
     },
     {
-      "name": "EGR",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TheSoul",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -175,15 +175,15 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "PanterA",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
   "stream": [
     {
-      "name": "BERSERK138Rus_Настоящий",
-      "amount": "55 RUB",
+      "name": "Fruty145512",
+      "amount": "390 RUB",
       "type": "normal"
     }
   ]
