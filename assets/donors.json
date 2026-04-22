@@ -175,10 +175,16 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "BERSERK138Rus_Настоящий",
+      "amount": "55 RUB",
+      "type": "normal"
+    }
+  ]
 }
