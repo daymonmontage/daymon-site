@@ -56,7 +56,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -66,12 +71,7 @@
       "type": "gold"
     },
     {
-      "name": "EGR",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TheSoul",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -175,7 +175,7 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
@@ -185,11 +185,6 @@
       "name": "PanterA",
       "amount": "1337 RUB",
       "type": "gold"
-    },
-    {
-      "name": "PanterA",
-      "amount": "550 RUB",
-      "type": "normal"
     }
   ]
 }
