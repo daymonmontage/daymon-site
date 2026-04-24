@@ -183,8 +183,8 @@
   "stream": [
     {
       "name": "PanterA",
-      "amount": "1337 RUB",
-      "type": "gold"
+      "amount": "550 RUB",
+      "type": "normal"
     }
   ]
 }
