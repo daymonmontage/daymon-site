@@ -175,7 +175,7 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
+      "name": "CyborgRasty",
       "amount": "4000 RUB",
       "type": "gold"
     }
@@ -185,6 +185,11 @@
       "name": "PanterA",
       "amount": "1337 RUB",
       "type": "gold"
+    },
+    {
+      "name": "PanterA",
+      "amount": "550 RUB",
+      "type": "normal"
     }
   ]
 }
