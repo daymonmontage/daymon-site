@@ -56,22 +56,22 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "EGR",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -84,7 +84,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "27042 RUB",
+      "amount": "32042 RUB",
       "type": "gold"
     },
     {
@@ -133,6 +133,11 @@
       "type": "gold"
     },
     {
+      "name": "Аноним",
+      "amount": "4137.68 RUB",
+      "type": "gold"
+    },
+    {
       "name": "TihiyUzh",
       "amount": "3380 RUB",
       "type": "gold"
@@ -145,11 +150,6 @@
     {
       "name": "YaderniAprel",
       "amount": "3300 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
-      "amount": "3037.68 RUB",
       "type": "gold"
     }
   ],
@@ -170,15 +170,21 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "4999 RUB",
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
       "type": "gold"
     },
     {
-      "name": "PanterA",
-      "amount": "4000 RUB",
+      "name": "МиссHorek",
+      "amount": "4999 RUB",
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Аноним",
+      "amount": "1100 RUB",
+      "type": "gold"
+    }
+  ]
 }
