@@ -824,18 +824,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/NiceOriginalFoxNomNom-Z0-4U-ikTCJwBPSL"
       },
       {
-        "id": "VivaciousPoliteHerringCoolCat-uSPfpXmlLEy-fYhf",
-        "title": "Что",
-        "views": 14,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/GvRTT7kj36V5pSxMvn2IXw/AT-cm%7CGvRTT7kj36V5pSxMvn2IXw-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/VivaciousPoliteHerringCoolCat-uSPfpXmlLEy-fYhf"
-      },
-      {
         "id": "ResourcefulCallousDurianBrainSlug-BRvcc-1belnUtYRO",
         "title": "эксперт по выживанию в зондбэ апокалибзизе",
         "views": 14,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips/3GU6_gUb3HPtW3pZ1LWETg/AT-cm%7C3GU6_gUb3HPtW3pZ1LWETg-preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ResourcefulCallousDurianBrainSlug-BRvcc-1belnUtYRO"
+      },
+      {
+        "id": "VivaciousPoliteHerringCoolCat-uSPfpXmlLEy-fYhf",
+        "title": "Что",
+        "views": 14,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/GvRTT7kj36V5pSxMvn2IXw/AT-cm%7CGvRTT7kj36V5pSxMvn2IXw-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/VivaciousPoliteHerringCoolCat-uSPfpXmlLEy-fYhf"
       },
       {
         "id": "CovertInquisitiveDogeStoneLightning-iv3tUQRweQp4qsAa",
@@ -1706,13 +1706,6 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/AuspiciousAmericanJellyfishJebaited-vHowMeWV0JawxaDH"
       },
       {
-        "id": "CrypticAverageGoatFeelsBadMan-oJYY4U-gkWX7pBML",
-        "title": "даймон 3 часа бикбосит ",
-        "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/0d36DKCWGOFPoJFl-6QTCw/AT-cm%7C0d36DKCWGOFPoJFl-6QTCw-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CrypticAverageGoatFeelsBadMan-oJYY4U-gkWX7pBML"
-      },
-      {
         "id": "LovelyFilthyLocustPJSalt-gFt85I9TLBXIjjQD",
         "title": "расстрел | тайминг",
         "views": 8,
@@ -1720,11 +1713,11 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/LovelyFilthyLocustPJSalt-gFt85I9TLBXIjjQD"
       },
       {
-        "id": "AgileKindSproutAMPEnergy-e5zRg1ZL1v7bbww2",
-        "title": "ам",
+        "id": "CrypticAverageGoatFeelsBadMan-oJYY4U-gkWX7pBML",
+        "title": "даймон 3 часа бикбосит ",
         "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/mpW7lnuc0YNWS9b-228MNg/AT-cm%7CmpW7lnuc0YNWS9b-228MNg-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AgileKindSproutAMPEnergy-e5zRg1ZL1v7bbww2"
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/0d36DKCWGOFPoJFl-6QTCw/AT-cm%7C0d36DKCWGOFPoJFl-6QTCw-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CrypticAverageGoatFeelsBadMan-oJYY4U-gkWX7pBML"
       },
       {
         "id": "BlueAttractiveToadShadyLulu-IiEY3mbght0S_ZHC",
@@ -1732,6 +1725,13 @@
         "views": 8,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9da8caee-2c62-4492-88ce-1fbc1a206569/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/BlueAttractiveToadShadyLulu-IiEY3mbght0S_ZHC"
+      },
+      {
+        "id": "AgileKindSproutAMPEnergy-e5zRg1ZL1v7bbww2",
+        "title": "ам",
+        "views": 8,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/mpW7lnuc0YNWS9b-228MNg/AT-cm%7CmpW7lnuc0YNWS9b-228MNg-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AgileKindSproutAMPEnergy-e5zRg1ZL1v7bbww2"
       },
       {
         "id": "LachrymoseBovineKuduCoolStoryBro-z_7ElQTUmRcnCsiu",
@@ -3135,18 +3135,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/ChillyEntertainingPassionfruitPogChamp-9Eu89QcwjTCa1IPJ"
       },
       {
-        "id": "RamshackleEnjoyableWalrusOptimizePrime-KC-8NfQuLsTwUNG6",
-        "title": "??????",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/YYdhRigvvDX0Li7E8FDRug/AT-cm%7CYYdhRigvvDX0Li7E8FDRug-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/RamshackleEnjoyableWalrusOptimizePrime-KC-8NfQuLsTwUNG6"
-      },
-      {
         "id": "AcceptableFineBobaMcaT-KiYX1OCAWSQkBGRQ",
         "title": "трансформация дея",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/AcceptableFineBobaMcaT-KiYX1OCAWSQkBGRQ/da3e6ab8-c3b2-47ba-a8d1-e91ed205c440/preview-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/AcceptableFineBobaMcaT-KiYX1OCAWSQkBGRQ"
+      },
+      {
+        "id": "RamshackleEnjoyableWalrusOptimizePrime-KC-8NfQuLsTwUNG6",
+        "title": "??????",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/YYdhRigvvDX0Li7E8FDRug/AT-cm%7CYYdhRigvvDX0Li7E8FDRug-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/RamshackleEnjoyableWalrusOptimizePrime-KC-8NfQuLsTwUNG6"
       },
       {
         "id": "HandsomeMagnificentRhinocerosDatBoi-_wCs0sls_9wEko18",
@@ -4368,18 +4368,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/SuccessfulThankfulDiscHumbleLife-PYYX1i1VMtKrYopn"
       },
       {
-        "id": "TangibleMushySparrowJonCarnage-OaZxA_hKtWFRn7rV",
-        "title": "Залетай, пообщаемся)",
-        "views": 15,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/Rih8hDmmcQP4SrVhUZ-61Q/39637777845-offset-2674-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/TangibleMushySparrowJonCarnage-OaZxA_hKtWFRn7rV"
-      },
-      {
         "id": "AstuteCrypticClintmullinsStoneLightning-Y-5azOIiJWgcQ2xq",
         "title": "папочка зимпл за работой",
         "views": 15,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ff0d491d-b8c1-472d-82b2-0ef6e3bd671f/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/AstuteCrypticClintmullinsStoneLightning-Y-5azOIiJWgcQ2xq"
+      },
+      {
+        "id": "TangibleMushySparrowJonCarnage-OaZxA_hKtWFRn7rV",
+        "title": "Залетай, пообщаемся)",
+        "views": 15,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/Rih8hDmmcQP4SrVhUZ-61Q/39637777845-offset-2674-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/TangibleMushySparrowJonCarnage-OaZxA_hKtWFRn7rV"
       },
       {
         "id": "FilthySnappyWolverineChefFrank-Dl7hA9qpJ23sfT3O",
@@ -4599,18 +4599,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/TenderBlitheChimpanzeeNotLikeThis-cUeLWQbULQ2lhgdT"
       },
       {
-        "id": "SmokyNimbleOrcaThisIsSparta-i9QXDLtxTx__SaxR",
-        "title": "Для себя сохранил",
-        "views": 12,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4fba9db6-52b7-431f-94eb-aa70a79d11db/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SmokyNimbleOrcaThisIsSparta-i9QXDLtxTx__SaxR"
-      },
-      {
         "id": "TemperedFairSlothMau5-GK3qQyvvz8yyGksm",
         "title": "Коротко о тактичности паладина Залупанюха XIII",
         "views": 12,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e449846a-27f5-4de9-8858-5377280be30e/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/TemperedFairSlothMau5-GK3qQyvvz8yyGksm"
+      },
+      {
+        "id": "SmokyNimbleOrcaThisIsSparta-i9QXDLtxTx__SaxR",
+        "title": "Для себя сохранил",
+        "views": 12,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4fba9db6-52b7-431f-94eb-aa70a79d11db/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SmokyNimbleOrcaThisIsSparta-i9QXDLtxTx__SaxR"
       },
       {
         "id": "AbnegateDoubtfulGiraffeSmoocherZ-lhd9yWRBJF26qZ1b",
@@ -4704,18 +4704,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/SteamyRamshackleHerdRickroll-MRA-OOt75vABMZW_"
       },
       {
-        "id": "CleanPlayfulJamDBstyle-6klhkMLj1PVHa-2V",
-        "title": "*невероятно оригинальное название*",
-        "views": 11,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/21839f09-0912-469a-a006-294ac8331a42/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CleanPlayfulJamDBstyle-6klhkMLj1PVHa-2V"
-      },
-      {
         "id": "DepressedGrossArmadilloOneHand-n8UCcNabN5wxV2lt",
         "title": "Изыди сатана!",
         "views": 11,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8905b32f-8dc2-498e-abba-4662b8c858ce/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/DepressedGrossArmadilloOneHand-n8UCcNabN5wxV2lt"
+      },
+      {
+        "id": "CleanPlayfulJamDBstyle-6klhkMLj1PVHa-2V",
+        "title": "*невероятно оригинальное название*",
+        "views": 11,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/21839f09-0912-469a-a006-294ac8331a42/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CleanPlayfulJamDBstyle-6klhkMLj1PVHa-2V"
       },
       {
         "id": "EsteemedSwissTortoiseLitFam-ErX1rSRGocoWui70",
@@ -4781,13 +4781,6 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/ImpossibleIncredulousKuduKAPOW-3_6FhBohO4hPBMd5"
       },
       {
-        "id": "NaiveBloodyTigerPanicVis-qoabh5RzzqFWxqyr",
-        "title": "Стримлер на протяжении 45 секунд осуждает себя",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/Kex0VqqGm4eUc86hVsasqw/AT-cm%7CKex0VqqGm4eUc86hVsasqw-preview-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/NaiveBloodyTigerPanicVis-qoabh5RzzqFWxqyr"
-      },
-      {
         "id": "HandsomeBadRadicchioDuDudu-mlwYjZ7Iv9SvVV2l",
         "title": "Божественные подкрадули",
         "views": 10,
@@ -4809,11 +4802,11 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/ProudIgnorantTroutOneHand-6kUDAa_7fU2HC1F5"
       },
       {
-        "id": "TriangularImportantCheesePRChase-sTgMmkq5_iRCqoiH",
-        "title": "Зомби говорит \"Эх блядь\"",
+        "id": "NaiveBloodyTigerPanicVis-qoabh5RzzqFWxqyr",
+        "title": "Стримлер на протяжении 45 секунд осуждает себя",
         "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3de9935f-3211-4f07-8eab-1d8c8de90a8d/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/TriangularImportantCheesePRChase-sTgMmkq5_iRCqoiH"
+        "thumb": "https://static-cdn.jtvnw.net/twitch-clips/Kex0VqqGm4eUc86hVsasqw/AT-cm%7CKex0VqqGm4eUc86hVsasqw-preview-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/NaiveBloodyTigerPanicVis-qoabh5RzzqFWxqyr"
       },
       {
         "id": "ArtisticEvilPigThunBeast-b1gpsAdk-lBY6QR7",
@@ -4823,6 +4816,13 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/ArtisticEvilPigThunBeast-b1gpsAdk-lBY6QR7"
       },
       {
+        "id": "TriangularImportantCheesePRChase-sTgMmkq5_iRCqoiH",
+        "title": "Зомби говорит \"Эх блядь\"",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3de9935f-3211-4f07-8eab-1d8c8de90a8d/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/TriangularImportantCheesePRChase-sTgMmkq5_iRCqoiH"
+      },
+      {
         "id": "ResourcefulNiceCatPraiseIt-t9bnKrRTWt3ugeVO",
         "title": "фулл на стол",
         "views": 10,
@@ -4830,18 +4830,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/ResourcefulNiceCatPraiseIt-t9bnKrRTWt3ugeVO"
       },
       {
-        "id": "SingleStupidCrowHumbleLife-6CCNCGbQnqBYS9N2",
-        "title": "вкусно гаду #Minecraft",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/99469b9c-5909-4d65-9fd5-84833a3f6972/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SingleStupidCrowHumbleLife-6CCNCGbQnqBYS9N2"
-      },
-      {
         "id": "SuspiciousCoweringPastaStrawBeary-mM6TfHAWXhaItzOv",
         "title": "лютий",
         "views": 10,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d4887fab-610e-466f-9768-193d506765ca/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/SuspiciousCoweringPastaStrawBeary-mM6TfHAWXhaItzOv"
+      },
+      {
+        "id": "SingleStupidCrowHumbleLife-6CCNCGbQnqBYS9N2",
+        "title": "вкусно гаду #Minecraft",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/99469b9c-5909-4d65-9fd5-84833a3f6972/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SingleStupidCrowHumbleLife-6CCNCGbQnqBYS9N2"
       },
       {
         "id": "FrailWiseFungusAMPEnergyCherry-zBnXCybqR8dNkSNp",
@@ -4998,18 +4998,18 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/BlushingThirstyShingleCmonBruh-u89jJiLZjQigGIos"
       },
       {
-        "id": "PuzzledSmallQuailPeanutButterJellyTime-zq4HDFfeW1b1sVno",
-        "title": "ТЯЖЕЛОЕ прошлое стримлера",
-        "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f6cf100b-51fc-409e-9b44-8a7a2c226807/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/PuzzledSmallQuailPeanutButterJellyTime-zq4HDFfeW1b1sVno"
-      },
-      {
         "id": "EagerRelentlessOtterPoooound-EbLV6kJJ-BIuvMeg",
         "title": "*невероятно оригинальное название*",
         "views": 8,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3df1254b-4d9d-4e03-bd84-af99712d392b/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/EagerRelentlessOtterPoooound-EbLV6kJJ-BIuvMeg"
+      },
+      {
+        "id": "PuzzledSmallQuailPeanutButterJellyTime-zq4HDFfeW1b1sVno",
+        "title": "ТЯЖЕЛОЕ прошлое стримлера",
+        "views": 8,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f6cf100b-51fc-409e-9b44-8a7a2c226807/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PuzzledSmallQuailPeanutButterJellyTime-zq4HDFfeW1b1sVno"
       },
       {
         "id": "ShakingBreakableMonkeyWOOP-fqqIxTEKOa3sI1OC",
@@ -5026,11 +5026,11 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/BelovedCharmingCamelSmoocherZ-lyfatwh5cY9AUn0F"
       },
       {
-        "id": "CogentTolerantReubenBCouch-lNO_eyKNjwsXAEz-",
-        "title": "12312312312344444444444444444",
+        "id": "AntediluvianLazyWoodcockPMSTwin-hLgSjC6--TN6oSKN",
+        "title": "мысли в слух #Minecraft",
         "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eee1be9f-fa6b-4ef4-9cdc-4d0a15bda70e/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CogentTolerantReubenBCouch-lNO_eyKNjwsXAEz-"
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5c918272-677d-4471-834b-4cc8b55e6d81/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AntediluvianLazyWoodcockPMSTwin-hLgSjC6--TN6oSKN"
       },
       {
         "id": "SinglePrettyBaconBrainSlug-JA1xQNDPgl0Pp8Sx",
@@ -5040,11 +5040,11 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/SinglePrettyBaconBrainSlug-JA1xQNDPgl0Pp8Sx"
       },
       {
-        "id": "AntediluvianLazyWoodcockPMSTwin-hLgSjC6--TN6oSKN",
-        "title": "мысли в слух #Minecraft",
+        "id": "CogentTolerantReubenBCouch-lNO_eyKNjwsXAEz-",
+        "title": "12312312312344444444444444444",
         "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5c918272-677d-4471-834b-4cc8b55e6d81/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AntediluvianLazyWoodcockPMSTwin-hLgSjC6--TN6oSKN"
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eee1be9f-fa6b-4ef4-9cdc-4d0a15bda70e/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CogentTolerantReubenBCouch-lNO_eyKNjwsXAEz-"
       },
       {
         "id": "SparklyOilyDumplingsBrokeBack-Wal2AwXrjjkGpkqe",
@@ -5447,11 +5447,11 @@
         "url": "https://www.twitch.tv/daymonmontage/clip/AbstruseSpunkyHummingbirdSeemsGood-5wHkY1weSe2galT4"
       },
       {
-        "id": "VainOddZebraHeyGirl-DAKtna0b-3z5EkmA",
-        "title": "Люби меня, люби",
+        "id": "HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7",
+        "title": "Какие милашкинсы :3",
         "views": 15,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6e5982bf-cb49-45b8-8b42-80c92967d346/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/VainOddZebraHeyGirl-DAKtna0b-3z5EkmA"
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/73eae7a2-74a2-4cf8-a269-57b19fb6aaa2/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7"
       },
       {
         "id": "HotMagnificentWasabiVoteNay-ZJMHoCOOK3bhFVn7",
