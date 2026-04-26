@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -56,22 +56,22 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -138,13 +138,13 @@
       "type": "gold"
     },
     {
-      "name": "TihiyUzh",
-      "amount": "3380 RUB",
+      "name": "ARCHI_MUST",
+      "amount": "3455 RUB",
       "type": "gold"
     },
     {
-      "name": "ARCHI_MUST",
-      "amount": "3305 RUB",
+      "name": "TihiyUzh",
+      "amount": "3380 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "TentriheR",
-      "amount": "750 RUB",
+      "name": "ARCHI_MUST",
+      "amount": "150 RUB",
       "type": "normal"
     }
   ]
