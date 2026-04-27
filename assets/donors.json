@@ -79,7 +79,7 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "49270 RUB",
+      "amount": "49320 RUB",
       "type": "gold"
     },
     {
@@ -155,12 +155,12 @@
   ],
   "month": [
     {
-      "name": "МиссHorek",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "какащке",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "ARCHI_MUST",
-      "amount": "150 RUB",
+      "name": "TentriheR",
+      "amount": "750 RUB",
       "type": "normal"
     }
   ]
