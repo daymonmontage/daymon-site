@@ -139,12 +139,12 @@
     },
     {
       "name": "ARCHI_MUST",
-      "amount": "3605 RUB",
+      "amount": "3655 RUB",
       "type": "gold"
     },
     {
       "name": "TihiyUzh",
-      "amount": "3380 RUB",
+      "amount": "3480 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "TentriheR",
-      "amount": "750 RUB",
+      "name": "ARCHI_MUST",
+      "amount": "150 RUB",
       "type": "normal"
     }
   ]
