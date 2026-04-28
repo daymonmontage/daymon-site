@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -56,22 +56,22 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "EGR",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -99,7 +99,7 @@
     },
     {
       "name": "CyborgRasty",
-      "amount": "16343 RUB",
+      "amount": "17343 RUB",
       "type": "gold"
     },
     {
@@ -109,7 +109,7 @@
     },
     {
       "name": "TentriheR",
-      "amount": "13280 RUB",
+      "amount": "13430 RUB",
       "type": "gold"
     },
     {
@@ -134,7 +134,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "4137.68 RUB",
+      "amount": "4314.32 RUB",
       "type": "gold"
     },
     {
@@ -182,9 +182,9 @@
   ],
   "stream": [
     {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "350 RUB",
-      "type": "normal"
+      "name": "12voron35",
+      "amount": "1000 RUB",
+      "type": "gold"
     }
   ]
 }
