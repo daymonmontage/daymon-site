@@ -155,17 +155,17 @@
   ],
   "month": [
     {
+      "name": "lilShkeks",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "Аноним",
-      "amount": "1000 RUB",
+      "name": "12voron35",
+      "amount": "1500 RUB",
       "type": "gold"
     }
   ]
