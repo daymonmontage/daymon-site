@@ -89,7 +89,7 @@
     },
     {
       "name": "МиссHorek",
-      "amount": "26094 RUB",
+      "amount": "26199 RUB",
       "type": "gold"
     },
     {
@@ -155,12 +155,12 @@
   ],
   "month": [
     {
-      "name": "какащке",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
