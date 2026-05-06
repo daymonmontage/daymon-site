@@ -1,6 +1,82 @@
 {
   "all_time": [],
-  "year": [],
+  "year": [
+    {
+      "name": "izack25",
+      "amount": "49420 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "43042 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "МиссHorek",
+      "amount": "26199 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
+      "amount": "20100 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "CyborgRasty",
+      "amount": "17343 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Какащке",
+      "amount": "13474.95 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TentriheR",
+      "amount": "13430 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "PanterA",
+      "amount": "12495 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Kristalix2015",
+      "amount": "8000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "6612.67 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Alan_wert",
+      "amount": "5125 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "smouk34342",
+      "amount": "4337 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "12voron35",
+      "amount": "3750 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "ARCHI_MUST",
+      "amount": "3655 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Cmerty1",
+      "amount": "3615 RUB",
+      "type": "gold"
+    }
+  ],
   "month": [],
   "stream": []
 }
