@@ -56,6 +56,11 @@
       "type": "gold"
     },
     {
+      "name": "lilShkeks",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
@@ -67,11 +72,6 @@
     },
     {
       "name": "EGR",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TheSoul",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -181,6 +181,11 @@
     }
   ],
   "stream": [
+    {
+      "name": "eren_yegor228",
+      "amount": "200 RUB",
+      "type": "normal"
+    },
     {
       "name": "Аноним",
       "amount": "100 RUB",
