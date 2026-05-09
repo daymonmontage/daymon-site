@@ -56,7 +56,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -66,12 +71,7 @@
       "type": "gold"
     },
     {
-      "name": "EGR",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TheSoul",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -104,7 +104,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13474.92 RUB",
+      "amount": "13474.95 RUB",
       "type": "gold"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "6712.51 RUB",
+      "amount": "6712.67 RUB",
       "type": "gold"
     },
     {
