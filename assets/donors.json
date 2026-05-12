@@ -56,17 +56,17 @@
       "type": "gold"
     },
     {
+      "name": "lilShkeks",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "какащке",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -148,8 +148,8 @@
       "type": "gold"
     },
     {
-      "name": "Cmerty1",
-      "amount": "3815 RUB",
+      "name": "TihiyUzh",
+      "amount": "3930 RUB",
       "type": "gold"
     }
   ],
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "TihiyUzh",
+      "amount": "300 RUB",
+      "type": "normal"
+    }
+  ]
 }
