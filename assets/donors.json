@@ -66,7 +66,7 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -84,7 +84,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "44042 RUB",
+      "amount": "45042 RUB",
       "type": "gold"
     },
     {
@@ -129,12 +129,17 @@
     },
     {
       "name": "Аноним",
-      "amount": "6708.36 RUB",
+      "amount": "6908.36 RUB",
       "type": "gold"
     },
     {
       "name": "Alan_wert",
-      "amount": "5624 RUB",
+      "amount": "6024 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Пиво Махно(gamenew_joy)",
+      "amount": "5151 RUB",
       "type": "gold"
     },
     {
@@ -145,11 +150,6 @@
     {
       "name": "smouk34342",
       "amount": "4337 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "3930 RUB",
       "type": "gold"
     }
   ],
@@ -175,16 +175,16 @@
       "type": "gold"
     },
     {
-      "name": "какащке",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "2000 RUB",
       "type": "gold"
     }
   ],
   "stream": [
     {
-      "name": "TentriheR",
-      "amount": "100 RUB",
-      "type": "normal"
+      "name": "lilShkeks",
+      "amount": "1000 RUB",
+      "type": "gold"
     }
   ]
 }
