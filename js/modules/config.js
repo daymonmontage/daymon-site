@@ -3,7 +3,7 @@ export const CONFIG = {
     TILT_FORCE: 3,
     ACHIEVEMENT_MAX_STACK: 3,
     ACHIEVEMENT_TIME: 4000,
-    REDIRECT_DELAY: 1500,
+    REDIRECT_DELAY: 300,
     
     SUPABASE_URL: 'https://zddnfjnvplxutzjbpkwe.supabase.co', 
     SUPABASE_KEY: 'sb_publishable_bBE_oWza0XdFBY-uIS6MAw_abtrIZRG',

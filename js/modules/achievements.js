@@ -192,9 +192,15 @@ export function triggerAchievement(el, soundType, preventDefault = false, event 
         }
     }
     if (preventDefault && event && el.tagName === 'A') {
+        // Если ссылка открывается в новой вкладке, не блокируем её
+        if (el.target === '_blank') {
+            return; // Браузер сам мгновенно откроет новую вкладку
+        }
+        
+        // Задержка срабатывает ТОЛЬКО если переход происходит в текущем окне
         event.preventDefault();
         setTimeout(() => {
-            window.open(el.href, el.target || '_self');
+            window.open(el.href, '_self');
         }, CONFIG.REDIRECT_DELAY);
     }
 }
@@ -234,7 +240,7 @@ export function initAchievements() {
     document.querySelectorAll('.s-btn').forEach(el => {
         el.addEventListener('click', (e) => triggerAchievement(el, 'out', true, e));
     });
-    const supportSelectors = ['.donate-btn.da', '.plastic-card', '.inscryption-card'];
+    const supportSelectors = ['.donate-btn.da', '.plastic-card'];
     supportSelectors.forEach(sel => {
         document.querySelectorAll(sel).forEach(el => {
             el.addEventListener('click', (e) => {

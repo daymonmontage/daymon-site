@@ -9,9 +9,9 @@ const SECRET_CODES = {
 
 // === НАСТРОЙКИ ДЕТЕКТОРА ===
 let clickHistory = [];
-const CLICK_THRESHOLD = 24;
-const TIME_WINDOW = 1000;
-const PIXEL_VARIANCE = 5;
+const CLICK_THRESHOLD = 14; // Снизили до 14 кликов в секунду (реально сделать руками, если постараться)
+const TIME_WINDOW = 1000;   // Окно времени оставляем 1 секунду
+const PIXEL_VARIANCE = 30;  // Увеличили до 30 пикселей, чтобы прощать дрожание руки при фаст-клике
 let isScreaming = false;
 
 export function initSecrets() {
