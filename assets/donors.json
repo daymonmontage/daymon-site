@@ -51,17 +51,17 @@
       "type": "gold"
     },
     {
+      "name": "PanterA",
+      "amount": "14400 RUB",
+      "type": "gold"
+    },
+    {
       "name": "TheSoul",
       "amount": "11000 RUB",
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -79,12 +79,17 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "49420 RUB",
+      "amount": "50870 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
       "amount": "45042 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "PanterA",
+      "amount": "26895 RUB",
       "type": "gold"
     },
     {
@@ -118,11 +123,6 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
-      "amount": "12495 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Kristalix2015",
       "amount": "8000 RUB",
       "type": "gold"
@@ -133,13 +133,13 @@
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
-      "amount": "6124 RUB",
+      "name": "12voron35",
+      "amount": "6300 RUB",
       "type": "gold"
     },
     {
-      "name": "12voron35",
-      "amount": "5550 RUB",
+      "name": "Alan_wert",
+      "amount": "6124 RUB",
       "type": "gold"
     },
     {
@@ -155,17 +155,22 @@
   ],
   "month": [
     {
+      "name": "PanterA",
+      "amount": "14400 RUB",
+      "type": "gold"
+    },
+    {
       "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "UnkAut",
+      "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "UnkAut",
       "amount": "5000 RUB",
       "type": "gold"
     },
@@ -173,17 +178,12 @@
       "name": "UnkAut",
       "amount": "3000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "2000 RUB",
-      "type": "gold"
     }
   ],
   "stream": [
     {
-      "name": "Fruty145512",
-      "amount": "200 RUB",
+      "name": "12voron35",
+      "amount": "750 RUB",
       "type": "normal"
     }
   ]
