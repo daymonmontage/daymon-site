@@ -66,7 +66,7 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -180,16 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "UnkAut",
-      "amount": "1000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Alan_wert",
-      "amount": "100 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
