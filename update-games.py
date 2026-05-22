@@ -2,10 +2,10 @@ import requests
 import json
 import os
 import time
+import datetime
 
-CHANNEL_NAME = 'daymonmontage'
+CHANNEL_NAME = 'roneer_'
 OUTPUT_FILE = 'assets/games.json'
-CLIPS_TO_ANALYZE = 10000
 
 CLIENT_ID = os.environ.get('TWITCH_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('TWITCH_CLIENT_SECRET')
@@ -31,29 +31,47 @@ def get_broadcaster_id(token):
 def get_top_clips(token, broadcaster_id):
     headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
     clips = []
-    cursor = None
+    
+    start_date = datetime.datetime(2016, 1, 1, tzinfo=datetime.timezone.utc)
+    end_date = datetime.datetime.now(datetime.timezone.utc)
+    current_start = start_date
+    
+    print("🔄 Сканируем все клипы с обходом лимита Twitch...")
 
-    print(f"🔄 Сканируем клипы (цель: {CLIPS_TO_ANALYZE})...")
+    while current_start < end_date:
+        current_end = current_start + datetime.timedelta(days=180)
+        if current_end > end_date:
+            current_end = end_date
+            
+        started_at = current_start.isoformat().replace("+00:00", "Z")
+        ended_at = current_end.isoformat().replace("+00:00", "Z")
+        
+        cursor = None
+        while True:
+            url = f'https://api.twitch.tv/helix/clips?broadcaster_id={broadcaster_id}&first=100&started_at={started_at}&ended_at={ended_at}'
+            if cursor:
+                url += f'&after={cursor}'
 
-    while len(clips) < CLIPS_TO_ANALYZE:
-        url = f'https://api.twitch.tv/helix/clips?broadcaster_id={broadcaster_id}&first=100'
-        if cursor:
-            url += f'&after={cursor}'
+            res = requests.get(url, headers=headers)
+            if res.status_code != 200:
+                time.sleep(1)
+                continue
 
-        res = requests.get(url, headers=headers)
-        data = res.json()
+            data = res.json()
+            current_batch = data.get('data', [])
+            if not current_batch:
+                break
 
-        current_batch = data.get('data', [])
-        if not current_batch:
-            break
+            clips.extend(current_batch)
+            cursor = data.get('pagination', {}).get('cursor')
 
-        clips.extend(current_batch)
-        cursor = data.get('pagination', {}).get('cursor')
+            if not cursor:
+                break
+                
+        current_start = current_end
 
-        if not cursor:
-            break
-
-    return clips[:CLIPS_TO_ANALYZE]
+    unique_clips = {c['id']: c for c in clips}
+    return list(unique_clips.values())
 
 def main():
     try:
@@ -70,15 +88,17 @@ def main():
         games_stats = {}
 
         for clip in raw_clips:
-            gid = clip['game_id']
-            if not gid: continue
+            gid = clip.get('game_id')
+            if not gid:
+                gid = 'unknown'
 
             if gid not in games_stats:
                 games_stats[gid] = {
                     'id': gid,
-                    'name': 'Unknown',
+                    'name': 'Без категории / Неизвестно',
                     'count': 0,
-                    'clips': []
+                    'clips': [],
+                    'art': 'https://static-cdn.jtvnw.net/ttv-static/404_boxart-285x380.jpg'
                 }
 
             thumb_url = clip['thumbnail_url'].replace('{width}', '480').replace('{height}', '272')
@@ -94,7 +114,7 @@ def main():
             games_stats[gid]['count'] += 1
             games_stats[gid]['clips'].append(clip_data)
 
-        game_ids = list(games_stats.keys())
+        game_ids = [gid for gid in games_stats.keys() if gid != 'unknown']
         print("🎨 Загружаем обложки игр...")
 
         headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
@@ -116,8 +136,6 @@ def main():
 
         final_list = list(games_stats.values())
         final_list.sort(key=lambda x: x['count'], reverse=True)
-
-        final_list = [g for g in final_list if g.get('art')]
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             json.dump(final_list, f, ensure_ascii=False, indent=2)

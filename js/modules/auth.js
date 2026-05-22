@@ -67,6 +67,17 @@ async function handleUserIn(user, token) {
         userProfile.style.display = 'flex';
         userName.textContent = user.user_metadata.full_name || user.email;
         userAvatar.src = user.user_metadata.avatar_url || 'assets/avatar.png';
+        userAvatar.onerror = () => { 
+            userAvatar.src = 'assets/avatar.png'; 
+            userAvatar.title = "Дискорд сожрал твою аватарку! Перезайди, чтобы вернуть.";
+            
+            const t = document.getElementById("toast-notification");
+            if(t) {
+                t.classList.add("active");
+                t.innerHTML = '<i class="fas fa-cookie-bite" style="color:#f97316;margin-right:8px;"></i> Дискорд сожрал твою аватарку! Перезайди!';
+                setTimeout(()=>t.classList.remove("active"), 6000);
+            }
+        };
     }
 
     await syncAchievements();
