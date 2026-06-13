@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "EGR",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -79,12 +79,12 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "50870 RUB",
+      "amount": "52370 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "45042 RUB",
+      "amount": "50042 RUB",
       "type": "gold"
     },
     {
@@ -109,7 +109,7 @@
     },
     {
       "name": "TentriheR",
-      "amount": "14280 RUB",
+      "amount": "16880 RUB",
       "type": "gold"
     },
     {
@@ -160,6 +160,11 @@
       "type": "gold"
     },
     {
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "UnkAut",
       "amount": "5000 RUB",
       "type": "gold"
@@ -170,13 +175,8 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "2000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "UnkAut",
-      "amount": "1000 RUB",
+      "name": "TentriheR",
+      "amount": "2600 RUB",
       "type": "gold"
     }
   ],
