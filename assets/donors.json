@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "какащке",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -160,11 +160,6 @@
       "type": "gold"
     },
     {
-      "name": "UnkAut",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
@@ -177,6 +172,11 @@
     {
       "name": "TentriheR",
       "amount": "2600 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Valhalla_06660",
+      "amount": "2000 RUB",
       "type": "gold"
     }
   ],
