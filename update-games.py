@@ -4,7 +4,7 @@ import os
 import time
 import datetime
 
-CHANNEL_NAME = 'roneer_'
+CHANNEL_NAME = 'daymonmontage'
 OUTPUT_FILE = 'assets/games.json'
 
 CLIENT_ID = os.environ.get('TWITCH_CLIENT_ID')
