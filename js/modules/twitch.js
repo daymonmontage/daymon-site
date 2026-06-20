@@ -259,25 +259,31 @@ export async function checkTwitchStatus() {
     if (!statusEl) return;
 
     const ui = { icon: statusEl.querySelector('i'), text: statusEl.querySelector('.status-text') };
-    const url = `https://api.codetabs.com/v1/proxy?quest=https://decapi.me/twitch/uptime/${CONFIG.CHANNEL_NAME}`;
+    const url = `https://decapi.me/twitch/uptime/${CONFIG.CHANNEL_NAME}`;
+
+    const setStreamOffline = () => {
+        ui.text.textContent = 'Offline';
+        ui.icon.style.color = '#71717a';
+        statusEl.classList.remove('online');
+        if(liveBox) liveBox.style.display = 'none';
+        if(streamTab) streamTab.style.display = 'none';
+    };
 
     try {
         const res = await fetch(url);
+        if (!res.ok) {
+            setStreamOffline();
+            return;
+        }
         const data = await res.text();
         
-        if (data.toLowerCase().includes('offline')) {
+        if (data.toLowerCase().includes('offline') || data.toLowerCase().includes('error')) {
             // === OFFLINE ===
-            ui.text.textContent = 'Offline';
-            ui.icon.style.color = '#71717a';
-            statusEl.classList.remove('online');
-            
-            if(liveBox) liveBox.style.display = 'none';
-            
-            if(streamTab) streamTab.style.display = 'none';
-            
+            setStreamOffline();
         } else {
             // === ONLINE ===
             ui.text.textContent = 'LIVE';
+            ui.icon.style.color = ''; // Сбрасываем серый цвет, будет использоваться CSS класс .online
             statusEl.classList.add('online');
             
             if(liveBox) {
@@ -293,6 +299,7 @@ export async function checkTwitchStatus() {
         }
     } catch (e) { 
         console.warn('Twitch API Error', e); 
+        setStreamOffline();
     }
 }
 

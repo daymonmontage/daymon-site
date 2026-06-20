@@ -312,7 +312,11 @@
     .glitch-title { font-size: 2rem; line-height: 1.1; }
     .content-card { padding: 1.25rem; margin-bottom: 1.5rem; }
     .social-links { grid-template-columns: 1fr 1fr; gap: 10px; }
-    .site-footer { flex-direction: column; gap: 20px; }
+    .site-footer { 
+        flex-direction: column; 
+        gap: 20px; 
+        padding-bottom: 100px; /* Добавляем пустое место снизу для плавающих кнопок */
+    }
     .hud-controls { top: 15px; left: 15px; gap: 8px; }
     .hud-btn span { display: none; }
 }

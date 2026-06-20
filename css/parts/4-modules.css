@@ -295,35 +295,26 @@
     100% { transform: rotate(0deg); }
 }
 
-/* Адаптив для мобильных */
+/* Адаптив для мобильных (Arcade + Console) */
 @media (max-width: 768px) {
     .arcade-hub-btn {
         bottom: 20px;
         left: 20px;
-        padding: 8px;
-        padding-right: 15px;
+        padding: 6px 14px 6px 8px; /* Делаем кнопку чуть компактнее */
     }
     .ah-icon-box {
-        width: 35px; height: 35px;
-        font-size: 1.1rem;
+        width: 32px; height: 32px;
+        font-size: 1rem;
     }
-    .ah-title { font-size: 0.8rem; }
-    .ah-subtitle { display: none; } /* Скрываем подпись на мелких экранах */
+    .ah-title { font-size: 0.75rem; }
+    .ah-subtitle { display: none; } 
     
-    /* Консоль еще выше на мобилках или скрываем текст */
+    /* Консоль ставим ровно НАД аркадой */
     .system-trigger {
-        bottom: 80px;
+        bottom: 80px; 
         left: 20px;
-    }
-}
-
-/* Адаптив для мобильных, чтобы не перекрывало контент */
-@media (max-width: 768px) {
-    .system-trigger {
-        bottom: 20px;
-        left: 20px;
-        padding: 8px 15px;
-        font-size: 0.75rem;
+        padding: 6px 12px;
+        font-size: 0.7rem;
     }
 }
 

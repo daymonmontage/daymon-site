@@ -4,7 +4,7 @@ import os
 import time
 import datetime
 
-CHANNEL_NAME = 'daymonmontage'
+CHANNEL_NAME = 'roneer_'
 OUTPUT_FILE = 'assets/games.json'
 
 CLIENT_ID = os.environ.get('TWITCH_CLIENT_ID')
@@ -18,7 +18,6 @@ def get_access_token():
         'grant_type': 'client_credentials'
     }
     res = requests.post(url, params=params)
-    res.raise_for_status()
     return res.json().get('access_token')
 
 def get_broadcaster_id(token):
@@ -26,18 +25,20 @@ def get_broadcaster_id(token):
     res = requests.get(f'https://api.twitch.tv/helix/users?login={CHANNEL_NAME}', headers=headers)
     data = res.json().get('data', [])
     if not data:
-        raise Exception(f"Канал {CHANNEL_NAME} не найден")
+        raise Exception("Канал не найден")
     return data[0]['id']
 
 def get_top_clips(token, broadcaster_id):
     headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
     clips = []
     
-    start_date = datetime.datetime(2016, 5, 1, tzinfo=datetime.timezone.utc)
+    start_date = datetime.datetime(2016, 1, 1, tzinfo=datetime.timezone.utc)
     end_date = datetime.datetime.now(datetime.timezone.utc)
     current_start = start_date
     
     print("🔄 Сканируем все клипы с обходом лимитов Twitch...")
+
+    last_printed_year_month = ""
 
     while current_start < end_date:
         current_end = current_start + datetime.timedelta(days=7)
@@ -47,6 +48,12 @@ def get_top_clips(token, broadcaster_id):
         started_at = current_start.isoformat().replace("+00:00", "Z")
         ended_at = current_end.isoformat().replace("+00:00", "Z")
         
+        # Печатаем прогресс раз в месяц
+        current_year_month = current_start.strftime('%Y-%m')
+        if current_year_month != last_printed_year_month:
+            print(f"⏳ Сканирование периода: {current_year_month} (собрано клипов: {len(clips)})...")
+            last_printed_year_month = current_year_month
+        
         cursor = None
         while True:
             url = f'https://api.twitch.tv/helix/clips?broadcaster_id={broadcaster_id}&first=100&started_at={started_at}&ended_at={ended_at}'
@@ -54,7 +61,6 @@ def get_top_clips(token, broadcaster_id):
                 url += f'&after={cursor}'
 
             res = requests.get(url, headers=headers)
-            
             if res.status_code == 429:
                 print("⏳ Достигнут лимит API Twitch. Ждем 3 секунды...")
                 time.sleep(3)
@@ -65,7 +71,6 @@ def get_top_clips(token, broadcaster_id):
 
             data = res.json()
             current_batch = data.get('data', [])
-            
             if not current_batch:
                 break
 
@@ -76,27 +81,21 @@ def get_top_clips(token, broadcaster_id):
                 break
                 
         current_start = current_end
-        
-        time.sleep(0.05)
 
     unique_clips = {c['id']: c for c in clips}
     return list(unique_clips.values())
 
 def main():
     try:
-        os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-        
-        print("🔑 Получение токена...")
         token = get_access_token()
         if not token:
             print("❌ Ошибка получения токена")
             return
 
-        print(f"🔍 Поиск ID канала {CHANNEL_NAME}...")
         uid = get_broadcaster_id(token)
-        
         raw_clips = get_top_clips(token, uid)
-        print(f"✅ Успешно собрано уникальных клипов: {len(raw_clips)}")
+
+        print(f"✅ Найдено клипов: {len(raw_clips)}")
 
         games_stats = {}
 
@@ -128,7 +127,7 @@ def main():
             games_stats[gid]['clips'].append(clip_data)
 
         game_ids = [gid for gid in games_stats.keys() if gid != 'unknown']
-        print(f"🎨 Загружаем обложки для {len(game_ids)} игр...")
+        print("🎨 Загружаем обложки игр...")
 
         headers = {'Client-ID': CLIENT_ID, 'Authorization': f'Bearer {token}'}
         unique_ids = list(set(game_ids))
@@ -139,16 +138,13 @@ def main():
             query = "&id=".join(chunk)
             url = f'https://api.twitch.tv/helix/games?id={query}'
             res = requests.get(url, headers=headers)
-            
-            if res.status_code == 200:
-                gdata = res.json().get('data', [])
-                for g in gdata:
-                    gid = g['id']
-                    if gid in games_stats:
-                        games_stats[gid]['name'] = g['name']
-                        games_stats[gid]['art'] = g['box_art_url'].replace('{width}', '285').replace('{height}', '380')
-            else:
-                print(f"⚠️ Не удалось загрузить обложки для части игр (Код {res.status_code})")
+            gdata = res.json().get('data', [])
+
+            for g in gdata:
+                gid = g['id']
+                if gid in games_stats:
+                    games_stats[gid]['name'] = g['name']
+                    games_stats[gid]['art'] = g['box_art_url'].replace('{width}', '285').replace('{height}', '380')
 
         final_list = list(games_stats.values())
         final_list.sort(key=lambda x: x['count'], reverse=True)
@@ -156,7 +152,7 @@ def main():
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             json.dump(final_list, f, ensure_ascii=False, indent=2)
 
-        print(f"💾 Готово! Данные сохранены: {OUTPUT_FILE}")
+        print(f"💾 Готово! Сохранено игр: {len(final_list)} в {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"CRITICAL ERROR: {e}")
