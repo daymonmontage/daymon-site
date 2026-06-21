@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -155,11 +155,6 @@
   ],
   "month": [
     {
-      "name": "PanterA",
-      "amount": "14400 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
@@ -177,6 +172,11 @@
     {
       "name": "TentriheR",
       "amount": "2600 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Valhalla_06660",
+      "amount": "2000 RUB",
       "type": "gold"
     }
   ],
