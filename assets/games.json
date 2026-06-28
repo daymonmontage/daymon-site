@@ -9441,7 +9441,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1039,
+    "count": 1041,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -17753,6 +17753,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/85cc8daa-2cc5-4165-a9ab-9c46eab25974/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ColorfulCreativeOilWoofer-PBy6-cmITzMqNth0",
         "created_at": "2025-11-15T21:01:58Z"
+      },
+      {
+        "id": "SparklingCrowdedLegThisIsSparta-bO5lUcwigLt2SwjU",
+        "title": "по фрейду",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fec3ce3e-b5ff-4086-a5d3-4264709a9756/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SparklingCrowdedLegThisIsSparta-bO5lUcwigLt2SwjU",
+        "created_at": "2026-06-28T17:21:47Z"
+      },
+      {
+        "id": "OnerousSpinelessMangetoutPupper-8ihK52CDwqis37OF",
+        "title": "да-да-да, донатная ага",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d42e5115-1709-4268-8394-0ede23261b75/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/OnerousSpinelessMangetoutPupper-8ihK52CDwqis37OF",
+        "created_at": "2026-06-28T17:21:54Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"
