@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Аноним",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -149,7 +149,7 @@
     },
     {
       "name": "ARCHI_MUST",
-      "amount": "5355 RUB",
+      "amount": "5455 RUB",
       "type": "gold"
     }
   ],
