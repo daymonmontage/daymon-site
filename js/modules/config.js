@@ -10,7 +10,10 @@ export const CONFIG = {
 
     // Пути к репозиториям
     MAIN_SITE_URL: 'https://daymonmontage.github.io/daymon-site/',
-    GAMES_SITE_URL: 'https://daymonmontage.github.io/daymon-games/' 
+    GAMES_SITE_URL: 'https://daymonmontage.github.io/daymon-games/',
+    
+    // Адрес бэкенда скачивания на Vercel
+    DOWNLOAD_API_URL: 'https://daymon-api.vercel.app/api/download'
 };
 
 export const ALLOWED_HOSTS = [

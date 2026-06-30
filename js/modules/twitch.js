@@ -1,5 +1,6 @@
 import { CONFIG } from './config.js';
 import { getDonorsData, renderLiveDonors } from './donors.js';
+import { copyToClipboard } from './utils.js';
 
 let GAMES_DATA = [];
 const INITIAL_GAMES_DISPLAY = 8; 
@@ -125,6 +126,79 @@ function openGameModal(game) {
     const firstClip = game.clips[0];
     const firstClipId = typeof firstClip === 'object' ? firstClip.id : firstClip;
 
+    // Функция обновления информации об активном клипе и кнопок скачивания
+    const updateActiveClipInfo = (clipData, index) => {
+        const acTitle = controlsPanel.querySelector('#ac-title');
+        const acMeta = controlsPanel.querySelector('#ac-meta');
+        const acViews = controlsPanel.querySelector('#ac-views');
+        const acActions = controlsPanel.querySelector('#ac-actions');
+        const acDlDirect = controlsPanel.querySelector('#ac-dl-direct');
+        const acDlUntwitch = controlsPanel.querySelector('#ac-dl-untwitch');
+        const acDlStreamsCharts = controlsPanel.querySelector('#ac-dl-streamscharts');
+        const acCopyBtn = controlsPanel.querySelector('#ac-copy-btn');
+        const acTwitchBtn = controlsPanel.querySelector('#ac-twitch-btn');
+
+        if (!clipData) {
+            if (acTitle) acTitle.textContent = "Выберите клип для воспроизведения";
+            if (acMeta) acMeta.style.display = 'none';
+            if (acActions) acActions.style.display = 'none';
+            return;
+        }
+
+        let cId, cTitle, cViews, cUrl;
+        if (typeof clipData === 'object') {
+            cId = clipData.id;
+            cTitle = clipData.title || `Клип #${index + 1}`;
+            cViews = clipData.views;
+            cUrl = clipData.url || `https://clips.twitch.tv/${cId}`;
+        } else {
+            cId = clipData;
+            cTitle = `Клип #${index + 1}`;
+            cViews = '?';
+            cUrl = `https://clips.twitch.tv/${cId}`;
+        }
+
+        if (acTitle) acTitle.textContent = cTitle;
+        if (acViews) {
+            const formattedViews = cViews !== '?' && cViews > 1000 ? (cViews/1000).toFixed(1) + 'k' : cViews;
+            acViews.innerHTML = `<i class="fas fa-eye"></i> ${formattedViews} просмотров`;
+        }
+        if (acMeta) acMeta.style.display = 'flex';
+        if (acActions) acActions.style.display = 'flex';
+
+        if (acDlDirect) {
+            const apiBase = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                ? '/api/download'
+                : CONFIG.DOWNLOAD_API_URL;
+            acDlDirect.href = `${apiBase}?slug=${cId}`;
+        }
+        if (acDlUntwitch) {
+            acDlUntwitch.href = `https://untwitch.com/?url=${encodeURIComponent(cUrl)}`;
+        }
+        if (acDlStreamsCharts) {
+            acDlStreamsCharts.href = `https://streamscharts.com/twitch-clip-downloader?url=${encodeURIComponent(cUrl)}`;
+        }
+        if (acTwitchBtn) {
+            acTwitchBtn.href = cUrl;
+        }
+
+        if (acCopyBtn) {
+            acCopyBtn.onclick = (e) => {
+                e.stopPropagation();
+                copyToClipboard(cUrl);
+                
+                const originalText = acCopyBtn.innerHTML;
+                acCopyBtn.innerHTML = `<i class="fas fa-check"></i> Скопировано`;
+                acCopyBtn.classList.add('copied');
+                
+                setTimeout(() => {
+                    acCopyBtn.innerHTML = originalText;
+                    acCopyBtn.classList.remove('copied');
+                }, 2000);
+            };
+        }
+    };
+
     if (game.clips.length > 0) {
         iframe.src = `https://clips.twitch.tv/embed?clip=${firstClipId}${parents}&autoplay=true&muted=false`;
     }
@@ -145,12 +219,64 @@ function openGameModal(game) {
                 <button class="sort-btn" data-sort="reverse">С конца</button>
             </div>
         </div>
+        
+        <div class="active-clip-section">
+            <div class="ac-title" id="ac-title">Загрузка информации о клипе...</div>
+            <div class="ac-meta" id="ac-meta" style="display: none;">
+                <span id="ac-views"><i class="fas fa-eye"></i> 0 просмотров</span>
+                <span id="ac-author"><i class="fas fa-user-edit"></i> by DaymonMontage</span>
+            </div>
+            <div class="ac-actions" id="ac-actions" style="display: none;">
+                <div class="ac-download-dropdown-wrapper">
+                    <button class="ac-btn ac-btn-download dropdown-toggle" id="ac-download-btn-main">
+                        <i class="fas fa-download"></i> Скачать клип <i class="fas fa-chevron-down" style="font-size:0.75rem; margin-left: 4px;"></i>
+                    </button>
+                    <div class="ac-download-dropdown-menu" id="ac-download-menu">
+                        <a id="ac-dl-direct" href="#" target="_blank" class="ac-dropdown-item direct-dl">
+                            <i class="fas fa-cloud-download-alt"></i> Скачать напрямую (Без рекламы)
+                        </a>
+                        <a id="ac-dl-untwitch" href="#" target="_blank" class="ac-dropdown-item">
+                            <i class="fas fa-external-link-alt"></i> Через Untwitch (Зеркало 1)
+                        </a>
+                        <a id="ac-dl-streamscharts" href="#" target="_blank" class="ac-dropdown-item">
+                            <i class="fas fa-external-link-alt"></i> Через Streams Charts (Зеркало 2)
+                        </a>
+                    </div>
+                </div>
+                <button id="ac-copy-btn" class="ac-btn ac-btn-copy">
+                    <i class="fas fa-copy"></i> Ссылка
+                </button>
+                <a id="ac-twitch-btn" href="#" target="_blank" class="ac-btn ac-btn-twitch">
+                    <i class="fab fa-twitch"></i> На Twitch
+                </a>
+            </div>
+        </div>
+
         <div class="clip-meta-info">
-            <p><strong>Категория:</strong> ${game.name}</p>
-            <p><strong>Всего клипов:</strong> ${game.count}</p>
+            <p><strong>Категория:</strong> ${game.name} &nbsp;&bull;&nbsp; <strong>Всего клипов:</strong> ${game.count}</p>
         </div>
     `;
     leftCol.appendChild(controlsPanel);
+
+    // Логика переключения выпадающего меню загрузки
+    const dlToggle = controlsPanel.querySelector('#ac-download-btn-main');
+    const dlMenu = controlsPanel.querySelector('#ac-download-menu');
+    if (dlToggle && dlMenu) {
+        dlToggle.onclick = (e) => {
+            e.stopPropagation();
+            dlMenu.classList.toggle('show');
+        };
+        document.addEventListener('click', () => {
+            dlMenu.classList.remove('show');
+        });
+    }
+
+    // Инициализируем инфо первого клипа
+    if (game.clips.length > 0) {
+        updateActiveClipInfo(firstClip, 0);
+    } else {
+        updateActiveClipInfo(null, 0);
+    }
 
     // --- 2. ПРАВАЯ КОЛОНКА (Сетка 3x) ---
     const rightCol = document.createElement('div');
@@ -208,6 +334,10 @@ function openGameModal(game) {
                 item.classList.add('active-clip');
                 iframe.src = `https://clips.twitch.tv/embed?clip=${cId}${parents}&autoplay=true&muted=false`;
                 
+                // Находим оригинальный индекс клипа в списке текущих
+                const origIndex = currentClips.findIndex(c => (typeof c === 'object' ? c.id : c) === cId);
+                updateActiveClipInfo(clipData, origIndex !== -1 ? origIndex : index);
+
                 if (window.innerWidth < 1024) {
                     bodyEl.scrollTo({ top: 0, behavior: 'smooth' });
                 }
@@ -246,6 +376,9 @@ function openGameModal(game) {
             const fId = typeof first === 'object' ? first.id : first;
             if (fId) {
                 iframe.src = `https://clips.twitch.tv/embed?clip=${fId}${parents}&autoplay=true&muted=false`;
+                updateActiveClipInfo(first, 0);
+            } else {
+                updateActiveClipInfo(null, 0);
             }
         });
     });
