@@ -79,12 +79,12 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "59370 RUB",
+      "amount": "62870 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "56319 RUB",
+      "amount": "58819 RUB",
       "type": "gold"
     },
     {
@@ -171,7 +171,7 @@
     },
     {
       "name": "izack25",
-      "amount": "3000 RUB",
+      "amount": "3500 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "kakashke57",
-      "amount": "1000 RUB",
+      "name": "lilShkeks",
+      "amount": "2500 RUB",
       "type": "gold"
     }
   ]
