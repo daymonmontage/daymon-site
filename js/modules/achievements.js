@@ -148,14 +148,49 @@ function renderHistoryList() {
         item.className = `history-item ${isUnlocked ? 'unlocked' : 'locked'}`;
         const iconHtml = isUnlocked ? '<i class="fas fa-check"></i>' : '<i class="fas fa-lock"></i>';
         const titleHtml = isUnlocked ? data.title : "???";
-        const descHtml = isUnlocked ? data.desc : "Заблокировано";
-        item.innerHTML = `
-            <div class="h-icon">${iconHtml}</div>
-            <div class="h-content">
-                <div class="h-title">${titleHtml}</div>
-                <div class="h-desc">${descHtml}</div>
-            </div>
-        `;
+        const descHtml = isUnlocked ? data.desc : `Подсказка: ${data.clue || 'Заблокировано'}`;
+        
+        if (isUnlocked) {
+            item.innerHTML = `
+                <div class="h-icon">${iconHtml}</div>
+                <div class="h-content">
+                    <div class="h-title-row">
+                        <div class="h-title">${titleHtml}</div>
+                        <button class="h-details-btn">Подробнее <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="h-desc">${descHtml}</div>
+                    <div class="h-how" style="display: none;">
+                        <i class="fas fa-info-circle"></i> Условие: ${data.hint || ''}
+                    </div>
+                </div>
+            `;
+            
+            const btn = item.querySelector('.h-details-btn');
+            const how = item.querySelector('.h-how');
+            if (btn && how) {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isHidden = how.style.display === 'none';
+                    if (isHidden) {
+                        how.style.display = 'flex';
+                        btn.innerHTML = `Скрыть <i class="fas fa-chevron-up"></i>`;
+                        btn.classList.add('active');
+                    } else {
+                        how.style.display = 'none';
+                        btn.innerHTML = `Подробнее <i class="fas fa-chevron-down"></i>`;
+                        btn.classList.remove('active');
+                    }
+                });
+            }
+        } else {
+            item.innerHTML = `
+                <div class="h-icon">${iconHtml}</div>
+                <div class="h-content">
+                    <div class="h-title">${titleHtml}</div>
+                    <div class="h-desc">${descHtml}</div>
+                </div>
+            `;
+        }
         listEl.appendChild(item);
     });
 }
@@ -240,7 +275,7 @@ export function initAchievements() {
     document.querySelectorAll('.s-btn').forEach(el => {
         el.addEventListener('click', (e) => triggerAchievement(el, 'out', true, e));
     });
-    const supportSelectors = ['.donate-btn.da', '.plastic-card'];
+    const supportSelectors = ['.donate-btn.da'];
     supportSelectors.forEach(sel => {
         document.querySelectorAll(sel).forEach(el => {
             el.addEventListener('click', (e) => {
@@ -250,10 +285,14 @@ export function initAchievements() {
             });
         });
     });
-    const streamPrev = document.querySelector('.stream-preview');
-    if (streamPrev) {
-        streamPrev.addEventListener('click', (e) => triggerAchievement(streamPrev, 'complete', true, e));
-    }
+
+    // Делегирование события клика для динамически загружаемого стрим-превью
+    document.addEventListener('click', (e) => {
+        const streamPrev = e.target.closest('.stream-preview');
+        if (streamPrev) {
+            triggerAchievement(streamPrev, 'complete', true, e);
+        }
+    });
     renderHistoryList();
 }
 

@@ -270,6 +270,17 @@
             <h2 class="section-title">Библиотека Игр</h2>
             <p style="margin-bottom:15px; font-size:0.9rem; color:#a1a1aa;">Игры, в которых Деймон оставил свой след.</p>
             
+            <!-- Фильтры и поиск -->
+            <div class="games-library-controls">
+                <div class="game-search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="game-search-input" placeholder="Поиск по названию игры...">
+                </div>
+                <button id="random-clip-btn" class="random-clip-btn" title="Случайный клип">
+                    <i class="fas fa-random"></i> <span>Мне повезет!</span>
+                </button>
+            </div>
+
             <!-- Сюда JS загрузит карточки игр -->
             <div id="games-container" class="games-grid">
                 <div class="loader-wrap">

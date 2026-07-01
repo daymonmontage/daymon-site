@@ -1,6 +1,6 @@
 import { CONFIG } from './config.js';
 import { unlockDirectAchievement } from './achievements.js';
-import { saveClicksToCloud } from './auth.js'; 
+import { saveClicksToCloud, isUserLoggedIn } from './auth.js';
 
 let donorDataList = [];
 let isDonorsLoaded = false;
@@ -19,8 +19,31 @@ export function setGlobalClickCount(count) {
     currentClicks = count;
     localStorage.setItem('avatar_clicks', count);
     if (updateClickUI) updateClickUI();
+    checkClickAchievements(count);
 }
 // =======================================================
+
+function checkClickAchievements(clicks) {
+    const unlocked = JSON.parse(localStorage.getItem('unlocked_achievements')) || [];
+    const canUnlockMore = isUserLoggedIn || unlocked.length < 5;
+
+    const checkThreshold = (threshold, key) => {
+        if (clicks === threshold) {
+            unlockDirectAchievement(key);
+        } else if (clicks > threshold && !unlocked.includes(key) && canUnlockMore) {
+            unlockDirectAchievement(key);
+        }
+    };
+
+    checkThreshold(67, 'click-67');
+    checkThreshold(100, 'click-100');
+    checkThreshold(228, 'click-228');
+    checkThreshold(666, 'click-666');
+    checkThreshold(777, 'click-777');
+    checkThreshold(1000, 'click-1000');
+    checkThreshold(1337, 'click-1337');
+    checkThreshold(1488, 'click-1488');
+}
 
 export function setupUI() {
     setupTiltEffect();
@@ -297,14 +320,7 @@ function setupEasterEgg() {
         }, 2000);
 
         // Ачивки
-        if (currentClicks === 67) unlockDirectAchievement('click-67');
-        if (currentClicks === 100) unlockDirectAchievement('click-100');
-        if (currentClicks === 228) unlockDirectAchievement('click-228');
-        if (currentClicks === 666) unlockDirectAchievement('click-666');
-        if (currentClicks === 777) unlockDirectAchievement('click-777');
-        if (currentClicks === 1000) unlockDirectAchievement('click-1000');
-        if (currentClicks === 1337) unlockDirectAchievement('click-1337');
-        if (currentClicks === 1488) unlockDirectAchievement('click-1488');
+        checkClickAchievements(currentClicks);
 
         const rng = Math.random();
         const isMuted = localStorage.getItem('sfx_muted') === 'true';

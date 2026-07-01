@@ -20,10 +20,22 @@ export async function initClipsGallery() {
         return;
     }
 
+    renderGames(GAMES_DATA);
+    setupGameModal();
+    setupGalleryControls();
+}
+
+function renderGames(filteredGames) {
+    const container = document.getElementById('games-container');
     container.innerHTML = '';
 
+    if (filteredGames.length === 0) {
+        container.innerHTML = '<div style="text-align:center; grid-column: 1 / -1; padding:40px; color:#a1a1aa; font-size:0.9rem;">Игры с таким названием не найдены.</div>';
+        return;
+    }
+
     // 1. Рендерим карточки игр
-    GAMES_DATA.forEach((game, index) => {
+    filteredGames.forEach((game, index) => {
         const card = document.createElement('div');
         card.className = `game-card ${index >= INITIAL_GAMES_DISPLAY ? 'hidden-game' : ''}`;
         card.onclick = () => openGameModal(game);
@@ -41,13 +53,13 @@ export async function initClipsGallery() {
     });
 
     // 2. Кнопка "Показать больше"
-    if (GAMES_DATA.length > INITIAL_GAMES_DISPLAY) {
+    if (filteredGames.length > INITIAL_GAMES_DISPLAY) {
         const controlsDiv = document.createElement('div');
         controlsDiv.className = 'gm-footer-controls';
         
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'toggle-clips-btn';
-        toggleBtn.innerHTML = `Показать все (${GAMES_DATA.length}) <i class="fas fa-chevron-down"></i>`;
+        toggleBtn.innerHTML = `Показать все (${filteredGames.length}) <i class="fas fa-chevron-down"></i>`;
         
         let isExpanded = false;
 
@@ -65,7 +77,7 @@ export async function initClipsGallery() {
                 });
                 const sectionTop = container.closest('.content-card').offsetTop - 100;
                 window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-                toggleBtn.innerHTML = `Показать все (${GAMES_DATA.length}) <i class="fas fa-chevron-down"></i>`;
+                toggleBtn.innerHTML = `Показать все (${filteredGames.length}) <i class="fas fa-chevron-down"></i>`;
                 toggleBtn.classList.remove('expanded');
                 isExpanded = false;
             }
@@ -74,8 +86,35 @@ export async function initClipsGallery() {
         controlsDiv.appendChild(toggleBtn);
         container.appendChild(controlsDiv);
     }
+}
 
-    setupGameModal();
+function setupGalleryControls() {
+    const searchInput = document.getElementById('game-search-input');
+    const randomBtn = document.getElementById('random-clip-btn');
+
+    if (searchInput) {
+        searchInput.value = ''; // сброс при перезагрузке
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const filtered = GAMES_DATA.filter(game => game.name.toLowerCase().includes(query));
+            renderGames(filtered);
+        });
+    }
+
+    if (randomBtn) {
+        randomBtn.onclick = () => {
+            if (GAMES_DATA.length === 0) return;
+
+            const gamesWithClips = GAMES_DATA.filter(g => g.clips && g.clips.length > 0);
+            if (gamesWithClips.length === 0) return;
+
+            const randomGame = gamesWithClips[Math.floor(Math.random() * gamesWithClips.length)];
+            const randomClip = randomGame.clips[Math.floor(Math.random() * randomGame.clips.length)];
+            const clipId = typeof randomClip === 'object' ? randomClip.id : randomClip;
+
+            openGameModal(randomGame, clipId);
+        };
+    }
 }
 
 function setupGameModal() {
@@ -97,7 +136,7 @@ function setupGameModal() {
 }
 
 // === НОВАЯ ЛОГИКА: 3-COLUMN GRID IN SIDEBAR ===
-function openGameModal(game) {
+function openGameModal(game, targetClipId = null) {
     const modal = document.getElementById('game-gallery-modal');
     const titleEl = document.getElementById('gm-game-title');
     const bodyEl = document.getElementById('gm-clips-grid');
@@ -107,6 +146,10 @@ function openGameModal(game) {
     modal.classList.add('open');
 
     const dom = ["daymonmontage.github.io", "itservicepgatk.github.io", "github.io", "localhost", "127.0.0.1"];
+    const currentHost = window.location.hostname;
+    if (currentHost && !dom.includes(currentHost)) {
+        dom.push(currentHost);
+    }
     let parents = "";
     dom.forEach(d => parents += `&parent=${d}`);
 
@@ -122,9 +165,84 @@ function openGameModal(game) {
     iframe.allowFullscreen = true;
     iframe.scrolling = "no";
     
-    // Берем первый клип (проверка на старый/новый формат)
-    const firstClip = game.clips[0];
-    const firstClipId = typeof firstClip === 'object' ? firstClip.id : firstClip;
+    // Берем активный клип (целевой или первый)
+    const initialClip = targetClipId 
+        ? (game.clips.find(c => (typeof c === 'object' ? c.id : c) === targetClipId) || game.clips[0])
+        : game.clips[0];
+    const initialClipId = typeof initialClip === 'object' ? initialClip.id : initialClip;
+
+    // Функция обновления информации об активном клипе и кнопок скачивания
+    const updateActiveClipInfo = (clipData, index) => {
+        const acTitle = controlsPanel.querySelector('#ac-title');
+        const acMeta = controlsPanel.querySelector('#ac-meta');
+        const acViews = controlsPanel.querySelector('#ac-views');
+        const acActions = controlsPanel.querySelector('#ac-actions');
+        const acDlDirect = controlsPanel.querySelector('#ac-dl-direct');
+        const acDlUntwitch = controlsPanel.querySelector('#ac-dl-untwitch');
+        const acDlStreamsCharts = controlsPanel.querySelector('#ac-dl-streamscharts');
+        const acCopyBtn = controlsPanel.querySelector('#ac-copy-btn');
+        const acTwitchBtn = controlsPanel.querySelector('#ac-twitch-btn');
+
+        if (!clipData) {
+            if (acTitle) acTitle.textContent = "Выберите клип для воспроизведения";
+            if (acMeta) acMeta.style.display = 'none';
+            if (acActions) acActions.style.display = 'none';
+            return;
+        }
+
+        let cId, cTitle, cViews, cUrl;
+        if (typeof clipData === 'object') {
+            cId = clipData.id;
+            cTitle = clipData.title || `Клип #${index + 1}`;
+            cViews = clipData.views;
+            cUrl = clipData.url || `https://clips.twitch.tv/${cId}`;
+        } else {
+            cId = clipData;
+            cTitle = `Клип #${index + 1}`;
+            cViews = '?';
+            cUrl = `https://clips.twitch.tv/${cId}`;
+        }
+
+        if (acTitle) acTitle.textContent = cTitle;
+        if (acViews) {
+            const formattedViews = cViews !== '?' && cViews > 1000 ? (cViews/1000).toFixed(1) + 'k' : cViews;
+            acViews.innerHTML = `<i class="fas fa-eye"></i> ${formattedViews} просмотров`;
+        }
+        if (acMeta) acMeta.style.display = 'flex';
+        if (acActions) acActions.style.display = 'flex';
+
+        if (acDlDirect) {
+            const apiBase = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                ? '/api/download'
+                : CONFIG.DOWNLOAD_API_URL;
+            acDlDirect.href = `${apiBase}?slug=${cId}`;
+        }
+        if (acDlUntwitch) {
+            acDlUntwitch.href = `https://untwitch.com/?url=${encodeURIComponent(cUrl)}`;
+        }
+        if (acDlStreamsCharts) {
+            acDlStreamsCharts.href = `https://streamscharts.com/twitch-clip-downloader?url=${encodeURIComponent(cUrl)}`;
+        }
+        if (acTwitchBtn) {
+            acTwitchBtn.href = cUrl;
+        }
+
+        if (acCopyBtn) {
+            acCopyBtn.onclick = (e) => {
+                e.stopPropagation();
+                copyToClipboard(cUrl);
+                
+                const originalText = acCopyBtn.innerHTML;
+                acCopyBtn.innerHTML = `<i class="fas fa-check"></i> Скопировано`;
+                acCopyBtn.classList.add('copied');
+                
+                setTimeout(() => {
+                    acCopyBtn.innerHTML = originalText;
+                    acCopyBtn.classList.remove('copied');
+                }, 2000);
+            };
+        }
+    };
 
     // Функция обновления информации об активном клипе и кнопок скачивания
     const updateActiveClipInfo = (clipData, index) => {
@@ -200,9 +318,27 @@ function openGameModal(game) {
     };
 
     if (game.clips.length > 0) {
-        iframe.src = `https://clips.twitch.tv/embed?clip=${firstClipId}${parents}&autoplay=true&muted=false`;
+        iframe.src = `https://clips.twitch.tv/embed?clip=${initialClipId}${parents}&autoplay=true&muted=false`;
     }
 
+    const fallbackEl = document.createElement('div');
+    fallbackEl.className = 'player-fallback';
+    fallbackEl.innerHTML = `
+        <div class="pf-content">
+            <i class="fab fa-twitch pf-icon"></i>
+            <div class="pf-title">Не удается загрузить плеер Twitch?</div>
+            <div class="pf-text">
+                Если у вас черный экран или бесконечная загрузка:
+                <ul>
+                    <li>Отключите блокировщик рекламы (AdBlock / uBlock)</li>
+                    <li>Выключите защиту от трекеров в браузере (иконка щита рядом с URL)</li>
+                    <li>Попробуйте <strong>включить VPN</strong> (или сменить страну в VPN)</li>
+                </ul>
+            </div>
+        </div>
+    `;
+
+    playerWrapper.appendChild(fallbackEl);
     playerWrapper.appendChild(iframe);
     leftCol.appendChild(playerWrapper);
 
@@ -273,7 +409,8 @@ function openGameModal(game) {
 
     // Инициализируем инфо первого клипа
     if (game.clips.length > 0) {
-        updateActiveClipInfo(firstClip, 0);
+        const initialIndex = game.clips.findIndex(c => (typeof c === 'object' ? c.id : c) === initialClipId);
+        updateActiveClipInfo(initialClip, initialIndex !== -1 ? initialIndex : 0);
     } else {
         updateActiveClipInfo(null, 0);
     }
@@ -298,7 +435,8 @@ function openGameModal(game) {
         playlistArea.innerHTML = '';
         clipsList.forEach((clipData, index) => {
             const item = document.createElement('div');
-            item.className = `playlist-item ${index === 0 ? 'active-clip' : ''}`;
+            const isTargetActive = (typeof clipData === 'object' ? clipData.id : clipData) === initialClipId;
+            item.className = `playlist-item ${isTargetActive ? 'active-clip' : ''}`;
             
             // Обработка данных (новый или старый JSON)
             let cId, cTitle, cThumb, cViews;

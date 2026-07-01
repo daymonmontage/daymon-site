@@ -30,11 +30,11 @@ body {
     position: relative;
     -webkit-tap-highlight-color: transparent;
 
-    /* === ЗАПРЕТ ВЫДЕЛЕНИЯ === */
-    -webkit-user-select: none; /* Safari/Chrome */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Стандарт */
+    /* === РАЗРЕШЕНИЕ ВЫДЕЛЕНИЯ === */
+    -webkit-user-select: auto; /* Safari/Chrome */
+    -moz-user-select: auto;    /* Firefox */
+    -ms-user-select: auto;     /* IE/Edge */
+    user-select: auto;         /* Стандарт */
 }
 
 /* === ЗАПРЕТ ПЕРЕТАСКИВАНИЯ КАРТИНОК === */

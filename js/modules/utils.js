@@ -124,10 +124,26 @@ function setupMusicToggle() {
 }
 
 function setupGlobalTriggers() {
-    const triggers = document.querySelectorAll('a, button, .s-btn, .donate-btn, .plastic-card, .system-trigger, .nav-btn, .stream-preview, .hud-btn, .inscryption-card:not(.locked)');
+    const triggers = document.querySelectorAll('a, button, .s-btn, .donate-btn, .system-trigger, .nav-btn, .hud-btn, .inscryption-card:not(.locked)');
     triggers.forEach(el => {
         el.addEventListener('mouseenter', () => playSfx('hover'));
         el.addEventListener('mousedown', () => playSfx('click'));
+    });
+
+    // Делегирование звуков наведения и клика для динамического превью стрима (.stream-preview)
+    document.addEventListener('mouseover', (e) => {
+        const streamPrev = e.target.closest('.stream-preview');
+        if (streamPrev) {
+            const rel = e.relatedTarget;
+            if (!rel || !streamPrev.contains(rel)) {
+                playSfx('hover');
+            }
+        }
+    });
+    document.addEventListener('mousedown', (e) => {
+        if (e.target.closest('.stream-preview')) {
+            playSfx('click');
+        }
     });
 }
 

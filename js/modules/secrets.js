@@ -1,5 +1,5 @@
 import { playSfx, bgMusic } from './utils.js'; 
-import { triggerAchievement } from './achievements.js';
+import { triggerAchievement, unlockDirectAchievement } from './achievements.js';
 
 const SECRET_CODES = {
     'meow':   { type: 'video', src: 'assets/cat-piano.mp4' },
@@ -137,6 +137,8 @@ function setupKeyboardSecrets() {
         Object.keys(SECRET_CODES).forEach(code => {
             if (keyBuffer.includes(code)) {
                 activateSecret(SECRET_CODES[code]);
+                if (code === 'meow') unlockDirectAchievement('secret-meow');
+                if (code === 'daymon') unlockDirectAchievement('secret-barrel');
                 keyBuffer = '';
             }
         });
