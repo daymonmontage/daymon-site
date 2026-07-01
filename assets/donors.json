@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "lilShkeks",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -149,7 +149,7 @@
     },
     {
       "name": "ARCHI_MUST",
-      "amount": "5655 RUB",
+      "amount": "5755 RUB",
       "type": "gold"
     }
   ],
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "ARCHI_MUST",
+      "amount": "100 RUB",
+      "type": "normal"
+    }
+  ]
 }
