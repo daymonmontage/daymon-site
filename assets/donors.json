@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Аноним",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -175,16 +175,10 @@
       "type": "gold"
     },
     {
-      "name": "Аноним",
+      "name": "izack25",
       "amount": "3000 RUB",
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "ARCHI_MUST",
-      "amount": "100 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
