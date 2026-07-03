@@ -61,12 +61,12 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "Аноним",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -180,16 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "izack25",
-      "amount": "1500 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "ARCHI_MUST",
-      "amount": "100 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
