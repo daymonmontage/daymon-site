@@ -185,6 +185,11 @@
       "name": "lilShkeks",
       "amount": "3000 RUB",
       "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "2500 RUB",
+      "type": "gold"
     }
   ]
 }
