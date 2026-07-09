@@ -9441,7 +9441,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1076,
+    "count": 1078,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -18049,6 +18049,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b2442bea-4ec3-4029-8f5d-ff8a0502fd4f/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/IncredulousDullCoyotePoooound-TY8KiXSmi-crVJBc",
         "created_at": "2026-07-08T21:13:51Z"
+      },
+      {
+        "id": "TubularRacyCoffeePrimeMe-NhD3M4xiGIh_R1cX",
+        "title": "Свечку подержали",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/79fdf7af-dac9-43a1-8799-d51c062d6305/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/TubularRacyCoffeePrimeMe-NhD3M4xiGIh_R1cX",
+        "created_at": "2026-07-09T17:38:59Z"
+      },
+      {
+        "id": "BlindingFancyBaguettePastaThat-gqAWfLznsLairwaY",
+        "title": "по ми до ры",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/44f18be2-ea87-45bc-b37b-b5f9f6c180b6/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/BlindingFancyBaguettePastaThat-gqAWfLznsLairwaY",
+        "created_at": "2026-07-09T18:16:55Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"
