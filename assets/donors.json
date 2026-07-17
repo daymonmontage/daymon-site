@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
+      "name": "Аноним",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "какащке",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -155,12 +155,12 @@
   ],
   "month": [
     {
-      "name": "Аноним",
-      "amount": "10000 RUB",
+      "name": "izack25",
+      "amount": "5000 RUB",
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "izack25",
       "amount": "5000 RUB",
       "type": "gold"
     },
@@ -170,13 +170,13 @@
       "type": "gold"
     },
     {
-      "name": "izack25",
+      "name": "CyborgRasty",
       "amount": "5000 RUB",
       "type": "gold"
     },
     {
       "name": "izack25",
-      "amount": "5000 RUB",
+      "amount": "3500 RUB",
       "type": "gold"
     }
   ],
