@@ -1,10 +1,11 @@
-import { playSfx, bgMusic } from './utils.js'; 
+import { playSfx, bgMusic, startConfetti, startBackgroundFireworks } from './utils.js'; 
 import { triggerAchievement, unlockDirectAchievement } from './achievements.js';
 
 const SECRET_CODES = {
     'meow':   { type: 'video', src: 'assets/cat-piano.mp4' },
     'monica':  { type: 'image-peek', src: 'assets/monica.png' },
-    'daymon': { type: 'barrel-roll' }
+    'daymon': { type: 'barrel-roll' },
+    '10years': { type: 'anniversary' }
 };
 
 // === НАСТРОЙКИ ДЕТЕКТОРА ===
@@ -170,4 +171,52 @@ function activateSecret(data) {
         document.body.classList.add('barrel-roll');
         setTimeout(() => document.body.classList.remove('barrel-roll'), 2000);
     }
+    else if (data.type === 'anniversary') {
+        triggerAnniversaryCelebration();
+    }
+}
+
+export function triggerAnniversaryCelebration() {
+    // 1. Play sound
+    const audio = new Audio('assets/complete.mp3');
+    audio.volume = 0.5;
+    audio.play().catch(()=>{});
+
+    // 2. Confetti
+    startConfetti();
+    startBackgroundFireworks();
+
+    // 3. Unlock achievement
+    unlockDirectAchievement('anniversary-10');
+
+    // 4. Modal Overlay
+    if (document.querySelector('.anniversary-overlay')) return;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'anniversary-overlay';
+    overlay.innerHTML = `
+        <div class="anniversary-modal">
+            <span class="anniversary-badge">🎉</span>
+            <h2 class="anniversary-title">Юбилей Канала!</h2>
+            <div class="anniversary-subtitle">10 ЛЕТ В ЭФИРЕ (2016 — 2026)</div>
+            <p class="anniversary-text">
+                Поздравляем Деймона и всё сообщество с десятилетием канала! 
+                Спасибо за потрясающие стримы, эмоции, юмор и ламповую атмосферу. Вы легенда!
+            </p>
+            <button class="anniversary-btn">УРА! 🥂</button>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const closeBtn = overlay.querySelector('.anniversary-btn');
+    const closeModal = () => {
+        overlay.style.transition = 'opacity 0.3s';
+        overlay.style.opacity = '0';
+        setTimeout(() => overlay.remove(), 300);
+    };
+
+    closeBtn.onclick = closeModal;
+    overlay.onclick = (e) => {
+        if (e.target === overlay) closeModal();
+    };
 }

@@ -1,6 +1,8 @@
 import { CONFIG } from './config.js';
 import { unlockDirectAchievement } from './achievements.js';
 import { saveClicksToCloud, isUserLoggedIn } from './auth.js';
+import { triggerAnniversaryCelebration } from './secrets.js';
+import { startBackgroundFireworks } from './utils.js';
 
 let donorDataList = [];
 let isDonorsLoaded = false;
@@ -51,10 +53,20 @@ export function setupUI() {
     setupEasterEgg(); 
     setupStartupSound(); 
     
+    const checkAnniversaryOnLoad = () => {
+        const today = new Date();
+        // July is index 6 (July 19th is the channel anniversary)
+        if (today.getMonth() === 6 && today.getDate() === 19) {
+            triggerAnniversaryCelebration();
+            startBackgroundFireworks();
+        }
+    };
+    
     const removeLoader = () => {
         const loader = document.getElementById('preloader');
         if (loader && !loader.classList.contains('finished')) {
             loader.classList.add('finished');
+            setTimeout(checkAnniversaryOnLoad, 1000);
         }
     };
 

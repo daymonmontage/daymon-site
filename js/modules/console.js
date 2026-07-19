@@ -1,6 +1,7 @@
 import { playSfx } from './utils.js';
 import { getDonorsData, renderLiveDonors } from './donors.js';
 import { unlockDirectAchievement } from './achievements.js';
+import { triggerAnniversaryCelebration } from './secrets.js';
 
 let isConsoleRunning = false;
 const BOOT_SEQUENCE = [
@@ -93,8 +94,14 @@ function processCommand(cmd) {
             printToConsole('coconut    - Core Dependency');
             printToConsole('secret     - ???');
             printToConsole('hack       - Hack the Pentagon');
+            printToConsole('10years    - Celebrate Channel Anniversary');
             printToConsole('clear      - Clear');
             return;
+        case '10years':
+            triggerAnniversaryCelebration();
+            res = "Congratulations! 10 years of DaymonMontage! 🎉";
+            type = 'success';
+            break;
         case 'coconut':
             unlockDirectAchievement('secret-coconut');
             res = 'CRITICAL WARNING: DO NOT DELETE COCONUT.JPG';
