@@ -153,33 +153,7 @@
       "type": "gold"
     }
   ],
-  "month": [
-    {
-      "name": "CyborgRasty",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "3500 RUB",
-      "type": "gold"
-    }
-  ],
+  "month": [],
   "stream": [
     {
       "name": "lilShkeks",
