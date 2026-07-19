@@ -6,6 +6,7 @@ import { initSecrets } from './modules/secrets.js';
 import { initAchievements } from './modules/achievements.js';
 import { initDonorsBackground } from './modules/donors.js';
 import { initAuth } from './modules/auth.js';
+import { initTelegramFeed } from './modules/telegram.js';
 
 window.copyToClipboard = copyToClipboard;
 window.toggleConsole = toggleConsole;
@@ -44,4 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initAchievements();
     initDonorsBackground();
     initAuth();
+    initTelegramFeed();
 });
