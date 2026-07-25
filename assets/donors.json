@@ -71,7 +71,7 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -93,13 +93,13 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "26199 RUB",
+      "name": "CyborgRasty",
+      "amount": "26393 RUB",
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
-      "amount": "25393 RUB",
+      "name": "МиссHorek",
+      "amount": "26199 RUB",
       "type": "gold"
     },
     {
@@ -160,6 +160,11 @@
       "type": "gold"
     },
     {
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "izack25",
       "amount": "5000 RUB",
       "type": "gold"
@@ -171,11 +176,6 @@
     },
     {
       "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
     }
