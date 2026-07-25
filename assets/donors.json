@@ -61,12 +61,12 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "какащке",
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -94,7 +94,7 @@
     },
     {
       "name": "CyborgRasty",
-      "amount": "26393 RUB",
+      "amount": "26893 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "izack25",
-      "amount": "300 RUB",
+      "name": "CyborgRasty",
+      "amount": "500 RUB",
       "type": "normal"
     }
   ]
