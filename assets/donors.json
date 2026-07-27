@@ -61,12 +61,12 @@
       "type": "gold"
     },
     {
-      "name": "Аноним",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -160,6 +160,11 @@
       "type": "gold"
     },
     {
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "izack25",
       "amount": "5000 RUB",
       "type": "gold"
@@ -171,11 +176,6 @@
     },
     {
       "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
       "amount": "5000 RUB",
       "type": "gold"
     }
