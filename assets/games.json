@@ -9465,7 +9465,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1118,
+    "count": 1121,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -18409,6 +18409,30 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4bbd66a8-b738-4d33-9492-abd0d819b808/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/FilthyDifferentShieldRlyTho-lOGMTLX6GDQapLhE",
         "created_at": "2026-07-26T18:19:32Z"
+      },
+      {
+        "id": "CaringColdFrogFeelsBadMan-pnmkchu_WD7FBMqg",
+        "title": "дрифтуем",
+        "views": 3,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6779bb58-703a-4832-a32d-b647851aadcf/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CaringColdFrogFeelsBadMan-pnmkchu_WD7FBMqg",
+        "created_at": "2026-07-27T14:45:19Z"
+      },
+      {
+        "id": "HandsomeCrowdedOwlAMPEnergy-zOeKVquqWGFPqktF",
+        "title": "Музыкальный дроп",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c35579af-b049-4a80-b2cf-da690b25c138/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/HandsomeCrowdedOwlAMPEnergy-zOeKVquqWGFPqktF",
+        "created_at": "2026-07-27T14:58:15Z"
+      },
+      {
+        "id": "OnerousBadOrcaKappaRoss-VNzszRe67kbdpGr4",
+        "title": "ОН СМОГ #nfs #needforspeed #need_for_speed",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a8b5b6aa-465f-4ff8-8610-7269f718c06a/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/OnerousBadOrcaKappaRoss-VNzszRe67kbdpGr4",
+        "created_at": "2026-07-27T14:57:58Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"
