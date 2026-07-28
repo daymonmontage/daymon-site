@@ -40018,5 +40018,21 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1457501816_IGDB-285x380.jpg"
+  },
+  {
+    "id": "201557326",
+    "name": "The Binding of Isaac: Rebirth",
+    "count": 1,
+    "clips": [
+      {
+        "id": "DreamyNiceGrassSwiftRage-Psn5PYoKDpQVyoqO",
+        "title": "все равно",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c3eb87b3-6b03-420e-95fa-f4d60b349055/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/DreamyNiceGrassSwiftRage-Psn5PYoKDpQVyoqO",
+        "created_at": "2026-07-28T21:26:30Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/201557326_IGDB-285x380.jpg"
   }
 ]
