@@ -79,7 +79,7 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "130070 RUB",
+      "amount": "131070 RUB",
       "type": "gold"
     },
     {
@@ -183,8 +183,8 @@
   "stream": [
     {
       "name": "izack25",
-      "amount": "200 RUB",
-      "type": "normal"
+      "amount": "1000 RUB",
+      "type": "gold"
     }
   ]
 }
