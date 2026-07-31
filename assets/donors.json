@@ -79,7 +79,7 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "131570 RUB",
+      "amount": "132070 RUB",
       "type": "gold"
     },
     {
@@ -153,12 +153,38 @@
       "type": "gold"
     }
   ],
-  "month": [],
+  "month": [
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "CyborgRasty",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    }
+  ],
   "stream": [
     {
-      "name": "Листик Базилика",
-      "amount": "1000 RUB",
-      "type": "gold"
+      "name": "Аноним",
+      "amount": "500 RUB",
+      "type": "normal"
     }
   ]
 }
