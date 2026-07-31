@@ -129,7 +129,7 @@
     },
     {
       "name": "TihiyUzh",
-      "amount": "9730 RUB",
+      "amount": "10230 RUB",
       "type": "gold"
     },
     {
@@ -155,7 +155,12 @@
   ],
   "month": [
     {
-      "name": "izack25",
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
     },
@@ -171,11 +176,6 @@
     },
     {
       "name": "CyborgRasty",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
       "amount": "5000 RUB",
       "type": "gold"
     }
