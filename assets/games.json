@@ -22360,7 +22360,7 @@
   {
     "id": "1081998272",
     "name": "PEAK",
-    "count": 417,
+    "count": 419,
     "clips": [
       {
         "id": "IgnorantTubularSproutPJSugar-8303wDvetSm9ULtm",
@@ -25696,6 +25696,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1eff65fd-a594-49d2-9dc8-701c6eb84910/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/EnticingDifficultPoultryShadyLulu--ixZc3iEV1njRcRZ",
         "created_at": "2026-01-10T17:48:22Z"
+      },
+      {
+        "id": "BlazingOptimisticOstrichTBTacoRight-p97KoomRspRPWoUl",
+        "title": "Страшилки",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/09534d73-99bd-4070-a7e1-065cea66233f/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/BlazingOptimisticOstrichTBTacoRight-p97KoomRspRPWoUl",
+        "created_at": "2026-08-01T18:11:41Z"
+      },
+      {
+        "id": "ThoughtfulDreamyBananaLitty-IbYfmjjzLk3DWes8",
+        "title": "Тишина",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6d2a0b5d-4170-4953-a47a-2891d2d8ffed/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ThoughtfulDreamyBananaLitty-IbYfmjjzLk3DWes8",
+        "created_at": "2026-08-01T18:13:42Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1081998272_IGDB-285x380.jpg"
