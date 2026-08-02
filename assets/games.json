@@ -22392,7 +22392,7 @@
   {
     "id": "1081998272",
     "name": "PEAK",
-    "count": 433,
+    "count": 434,
     "clips": [
       {
         "id": "IgnorantTubularSproutPJSugar-8303wDvetSm9ULtm",
@@ -25856,6 +25856,14 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ae046e77-0f1d-407d-b2bc-2f685dd76d45/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/DepressedDreamyChipmunkBCWarrior-Cs_w6cZe82a3YLLr",
         "created_at": "2026-08-02T17:23:42Z"
+      },
+      {
+        "id": "PlayfulExquisiteLousePicoMause-O-dvGSPWALeiqBVR",
+        "title": "Спасибо",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/65b98a7b-b1f6-409f-a285-b08cace03078/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PlayfulExquisiteLousePicoMause-O-dvGSPWALeiqBVR",
+        "created_at": "2026-08-02T20:13:35Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1081998272_IGDB-285x380.jpg"
