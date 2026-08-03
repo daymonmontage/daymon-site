@@ -39572,6 +39572,78 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/30921-285x380.jpg"
   },
   {
+    "id": "32207",
+    "name": "The Binding of Isaac",
+    "count": 8,
+    "clips": [
+      {
+        "id": "WealthyHeadstrongBurritoThisIsSparta-VVmxiqsqrar4jkLN",
+        "title": "Только пример",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6ed6b701-b4a0-435c-987d-d7a022038567/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/WealthyHeadstrongBurritoThisIsSparta-VVmxiqsqrar4jkLN",
+        "created_at": "2026-08-03T03:24:07Z"
+      },
+      {
+        "id": "DelightfulSmallWatercressWOOP-mWClA7tyiPcHyRp7",
+        "title": "сундук",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdd7a718-01f3-4736-8dcc-ecda7557e747/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/DelightfulSmallWatercressWOOP-mWClA7tyiPcHyRp7",
+        "created_at": "2026-08-03T02:57:57Z"
+      },
+      {
+        "id": "ProtectiveObliquePartridgeBleedPurple-nsrr5QlzRMQLn7ST",
+        "title": "Причина отсутвия вебки",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/239b3b7e-b716-42f8-9f52-acce59a9c99a/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ProtectiveObliquePartridgeBleedPurple-nsrr5QlzRMQLn7ST",
+        "created_at": "2026-08-03T03:31:02Z"
+      },
+      {
+        "id": "SleepyBrightPeanutLitFam-eGLFQ6gF5vI2gB1K",
+        "title": "Угрожает",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d72f4e8c-f328-43dc-9101-56497a58d3e9/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SleepyBrightPeanutLitFam-eGLFQ6gF5vI2gB1K",
+        "created_at": "2026-08-03T03:06:50Z"
+      },
+      {
+        "id": "YawningNurturingLeopardUnSane-VFbb3RuyN0V2MvIx",
+        "title": "Вселенные",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4c549f49-378f-4009-a632-c1f684e74937/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/YawningNurturingLeopardUnSane-VFbb3RuyN0V2MvIx",
+        "created_at": "2026-08-03T03:47:12Z"
+      },
+      {
+        "id": "IronicYummyGnatSquadGoals-60WjMZ4zNaWTYvH9",
+        "title": "ДА ИДИ ТЫ",
+        "views": 3,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a7522e72-48e5-4087-9c87-df31d738dfbf/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/IronicYummyGnatSquadGoals-60WjMZ4zNaWTYvH9",
+        "created_at": "2026-08-03T07:59:47Z"
+      },
+      {
+        "id": "EsteemedResilientLarkLeeroyJenkins-zafhSnCXdHpYqFhH",
+        "title": "предсказание",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/673eef97-364c-43d3-86f3-adc20b77501a/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/EsteemedResilientLarkLeeroyJenkins-zafhSnCXdHpYqFhH",
+        "created_at": "2026-08-03T08:02:45Z"
+      },
+      {
+        "id": "FineAbrasiveGarageYouDontSay-ZTpi6jvDaYCEyZ6p",
+        "title": "Стример-затворник",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a03159be-3275-4e31-92d9-92b53d71a24e/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/FineAbrasiveGarageYouDontSay-ZTpi6jvDaYCEyZ6p",
+        "created_at": "2026-08-03T07:58:49Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/32207_IGDB-285x380.jpg"
+  },
+  {
     "id": "506089309",
     "name": "SIFU",
     "count": 6,
@@ -39954,54 +40026,6 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-285x380.jpg"
-  },
-  {
-    "id": "32207",
-    "name": "The Binding of Isaac",
-    "count": 5,
-    "clips": [
-      {
-        "id": "WealthyHeadstrongBurritoThisIsSparta-VVmxiqsqrar4jkLN",
-        "title": "Только пример",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6ed6b701-b4a0-435c-987d-d7a022038567/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/WealthyHeadstrongBurritoThisIsSparta-VVmxiqsqrar4jkLN",
-        "created_at": "2026-08-03T03:24:07Z"
-      },
-      {
-        "id": "DelightfulSmallWatercressWOOP-mWClA7tyiPcHyRp7",
-        "title": "сундук",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cdd7a718-01f3-4736-8dcc-ecda7557e747/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/DelightfulSmallWatercressWOOP-mWClA7tyiPcHyRp7",
-        "created_at": "2026-08-03T02:57:57Z"
-      },
-      {
-        "id": "ProtectiveObliquePartridgeBleedPurple-nsrr5QlzRMQLn7ST",
-        "title": "Причина отсутвия вебки",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/239b3b7e-b716-42f8-9f52-acce59a9c99a/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/ProtectiveObliquePartridgeBleedPurple-nsrr5QlzRMQLn7ST",
-        "created_at": "2026-08-03T03:31:02Z"
-      },
-      {
-        "id": "SleepyBrightPeanutLitFam-eGLFQ6gF5vI2gB1K",
-        "title": "Угрожает",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d72f4e8c-f328-43dc-9101-56497a58d3e9/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SleepyBrightPeanutLitFam-eGLFQ6gF5vI2gB1K",
-        "created_at": "2026-08-03T03:06:50Z"
-      },
-      {
-        "id": "YawningNurturingLeopardUnSane-VFbb3RuyN0V2MvIx",
-        "title": "Вселенные",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4c549f49-378f-4009-a632-c1f684e74937/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/YawningNurturingLeopardUnSane-VFbb3RuyN0V2MvIx",
-        "created_at": "2026-08-03T03:47:12Z"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/32207_IGDB-285x380.jpg"
   },
   {
     "id": "853664424",
