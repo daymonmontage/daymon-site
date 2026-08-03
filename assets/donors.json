@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "MEGA_LZGYZKA",
-      "amount": "500 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
