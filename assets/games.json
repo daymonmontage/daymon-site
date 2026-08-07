@@ -37574,7 +37574,7 @@
   {
     "id": "201557326",
     "name": "The Binding of Isaac: Rebirth",
-    "count": 20,
+    "count": 21,
     "clips": [
       {
         "id": "DreamyNiceGrassSwiftRage-Psn5PYoKDpQVyoqO",
@@ -37731,10 +37731,18 @@
       {
         "id": "GleamingLazyJayOneHand-sPjhgXrSu233N06z",
         "title": "Это...",
-        "views": 6,
+        "views": 8,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ef4e75f0-5072-4803-9bf8-2c51877890be/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/GleamingLazyJayOneHand-sPjhgXrSu233N06z",
         "created_at": "2026-08-06T09:32:13Z"
+      },
+      {
+        "id": "PiliableVivaciousRamenPanicBasket-EvKpUaQQCLPKXtQ7",
+        "title": "его мнение",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4021eb96-fa7c-48b0-b3b5-1a4666c33930/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PiliableVivaciousRamenPanicBasket-EvKpUaQQCLPKXtQ7",
+        "created_at": "2026-08-07T17:35:35Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/201557326_IGDB-285x380.jpg"
