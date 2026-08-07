@@ -104,7 +104,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23128.82 RUB",
+      "amount": "23158.5 RUB",
       "type": "gold"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13477.99 RUB",
+      "amount": "13480.97 RUB",
       "type": "gold"
     },
     {
@@ -160,7 +160,12 @@
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
     },
@@ -170,12 +175,7 @@
       "type": "gold"
     },
     {
-      "name": "TihiyUzh",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
+      "name": "CyborgRasty",
       "amount": "5000 RUB",
       "type": "gold"
     }
