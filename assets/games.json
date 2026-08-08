@@ -22400,7 +22400,7 @@
   {
     "id": "1081998272",
     "name": "PEAK",
-    "count": 440,
+    "count": 442,
     "clips": [
       {
         "id": "IgnorantTubularSproutPJSugar-8303wDvetSm9ULtm",
@@ -25920,6 +25920,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f0e05690-41ff-4d0a-9f30-44471f3c24b3/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/AmazonianOddBeefCopyThis-FVWtcZqSRGzzTf0l",
         "created_at": "2026-08-07T15:41:55Z"
+      },
+      {
+        "id": "ComfortableCovertLatteBatChest-tOTgkVXu5tS-a93R",
+        "title": "разговоры о важном #PEAK",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a6e9c629-bd18-4bb0-bef6-57630fe09270/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ComfortableCovertLatteBatChest-tOTgkVXu5tS-a93R",
+        "created_at": "2026-08-08T05:32:53Z"
+      },
+      {
+        "id": "PreciousSmallMartenMVGame-FmNgKk33LvepcajG",
+        "title": "ну жук... #PEAK",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5c4b6e1f-27d9-43bd-867d-e585b58490cc/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PreciousSmallMartenMVGame-FmNgKk33LvepcajG",
+        "created_at": "2026-08-08T05:59:49Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1081998272_IGDB-285x380.jpg"
