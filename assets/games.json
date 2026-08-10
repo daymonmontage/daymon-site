@@ -9465,7 +9465,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1146,
+    "count": 1148,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -18633,6 +18633,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/64e85bb6-fd51-4e99-9043-e8ba04757f1a/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/ClearScaryDillRuleFive-ptvD6QJYU1s4dOok",
         "created_at": "2026-08-09T15:25:12Z"
+      },
+      {
+        "id": "HomelyUgliestBaguetteCclamChamp-NhRbA-DaP28oIIqJ",
+        "title": "помогите",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/907d6653-66f9-4d00-a8f2-818cbe30de00/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/HomelyUgliestBaguetteCclamChamp-NhRbA-DaP28oIIqJ",
+        "created_at": "2026-08-10T19:03:53Z"
+      },
+      {
+        "id": "EndearingExuberantEndiveBCWarrior-A1K5XhHRq0oJSzPf",
+        "title": "специальный соус",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3b6f5804-2d82-48b5-a92a-d6d019558bf0/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/EndearingExuberantEndiveBCWarrior-A1K5XhHRq0oJSzPf",
+        "created_at": "2026-08-10T19:29:28Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"

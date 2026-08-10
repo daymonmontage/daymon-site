@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "EGR",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -88,13 +88,13 @@
       "type": "gold"
     },
     {
-      "name": "PanterA",
-      "amount": "27495 RUB",
+      "name": "CyborgRasty",
+      "amount": "27893 RUB",
       "type": "gold"
     },
     {
-      "name": "CyborgRasty",
-      "amount": "26893 RUB",
+      "name": "PanterA",
+      "amount": "27495 RUB",
       "type": "gold"
     },
     {
@@ -165,7 +165,7 @@
       "type": "gold"
     },
     {
-      "name": "TihiyUzh",
+      "name": "izack25",
       "amount": "5000 RUB",
       "type": "gold"
     },
@@ -175,10 +175,16 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "TihiyUzh",
       "amount": "5000 RUB",
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "CyborgRasty",
+      "amount": "1000 RUB",
+      "type": "gold"
+    }
+  ]
 }
