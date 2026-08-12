@@ -9465,7 +9465,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1149,
+    "count": 1151,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -18657,6 +18657,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/62a9f409-58be-412a-92fb-df50b5ad1c2d/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/CuriousCrispySproutThisIsSparta-FbphY-hMPT4CrEgG",
         "created_at": "2026-08-10T19:51:55Z"
+      },
+      {
+        "id": "FamousArtisticGuanacoAMPEnergy-Lpgas2aXDhc_D6t3",
+        "title": "на ушко",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e649536d-42d0-4332-b86e-9a9c416c0945/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/FamousArtisticGuanacoAMPEnergy-Lpgas2aXDhc_D6t3",
+        "created_at": "2026-08-12T14:51:38Z"
+      },
+      {
+        "id": "ClearAntsyDragonflySquadGoals-LM4Tyrbhg1oZKViw",
+        "title": "что он там делает?",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/986aa38f-66a4-49ea-9001-04cd08643acc/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ClearAntsyDragonflySquadGoals-LM4Tyrbhg1oZKViw",
+        "created_at": "2026-08-12T14:47:34Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"
