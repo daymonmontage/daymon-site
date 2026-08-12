@@ -1,5 +1,81 @@
 {
-  "all_time": [],
+  "all_time": [
+    {
+      "name": "Пиво Махно(gamenew_joy)",
+      "amount": "72752 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "DeStarInd",
+      "amount": "50000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
+      "amount": "50000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "DeStarInd",
+      "amount": "30000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
+      "amount": "25000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Пиво Махно(gamenew_joy)",
+      "amount": "25000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
+      "amount": "20000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
+      "amount": "20000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "DeS",
+      "amount": "20000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "HellDream",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "PanterA",
+      "amount": "14400 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TheSoul",
+      "amount": "11000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "МиссHorek",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "какащке",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "10000 RUB",
+      "type": "gold"
+    }
+  ],
   "year": [
     {
       "name": "izack25",
@@ -77,6 +153,32 @@
       "type": "gold"
     }
   ],
-  "month": [],
+  "month": [
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "5000 RUB",
+      "type": "gold"
+    }
+  ],
   "stream": []
 }
