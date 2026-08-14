@@ -61,12 +61,12 @@
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "Аноним",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -118,6 +118,11 @@
       "type": "gold"
     },
     {
+      "name": "TihiyUzh",
+      "amount": "15388 RUB",
+      "type": "gold"
+    },
+    {
       "name": "UnkAut",
       "amount": "14000 RUB",
       "type": "gold"
@@ -125,11 +130,6 @@
     {
       "name": "Какащке",
       "amount": "13482.7 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "13251 RUB",
       "type": "gold"
     },
     {
@@ -143,13 +143,13 @@
       "type": "gold"
     },
     {
-      "name": "12voron35",
-      "amount": "6300 RUB",
+      "name": "Cmerty1",
+      "amount": "6465 RUB",
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
-      "amount": "6274 RUB",
+      "name": "12voron35",
+      "amount": "6300 RUB",
       "type": "gold"
     }
   ],
@@ -182,7 +182,7 @@
   ],
   "stream": [
     {
-      "name": "CyborgRasty",
+      "name": "BERSERK138Rus",
       "amount": "1000 RUB",
       "type": "gold"
     }
