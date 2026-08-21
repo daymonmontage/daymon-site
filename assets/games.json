@@ -40516,6 +40516,62 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1706971195_IGDB-285x380.jpg"
   },
   {
+    "id": "490377",
+    "name": "Sea of Thieves",
+    "count": 6,
+    "clips": [
+      {
+        "id": "OriginalGorgeousGaurCeilingCat-9N7ChVChAZhvpo-t",
+        "title": "счет скину",
+        "views": 3,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8f39777b-f81f-4ea7-b723-09cc175cb12d/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/OriginalGorgeousGaurCeilingCat-9N7ChVChAZhvpo-t",
+        "created_at": "2026-08-13T16:58:50Z"
+      },
+      {
+        "id": "SpotlessCorrectCrabKappaClaus-ucs3B4LHs2S-ApBD",
+        "title": "мечта",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fc8f65a3-26ec-44c7-a2b2-856d69ff65b2/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SpotlessCorrectCrabKappaClaus-ucs3B4LHs2S-ApBD",
+        "created_at": "2026-08-13T17:03:35Z"
+      },
+      {
+        "id": "ElatedSpineyParrotPogChamp-iN_c0n-9qdmu6w0a",
+        "title": "сразу оба варианта",
+        "views": 4,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bb31282d-3954-4e21-8dfc-b43ecd7d06e8/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ElatedSpineyParrotPogChamp-iN_c0n-9qdmu6w0a",
+        "created_at": "2026-08-13T17:11:07Z"
+      },
+      {
+        "id": "AntsyAgitatedAnacondaWutFace-g3x0yk3xIHHBUy82",
+        "title": "отличный пират",
+        "views": 4,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1adf52c0-b3b2-4e97-add5-e6664453ee4f/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AntsyAgitatedAnacondaWutFace-g3x0yk3xIHHBUy82",
+        "created_at": "2026-08-14T19:54:09Z"
+      },
+      {
+        "id": "PatientSpinelessBurritoJebaited-wAnMQGAB3cjq0dsf",
+        "title": "*ультра оригинальное название*",
+        "views": 4,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/28373086-0d91-4c7e-9ec3-e613645259a8/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PatientSpinelessBurritoJebaited-wAnMQGAB3cjq0dsf",
+        "created_at": "2026-08-16T17:54:51Z"
+      },
+      {
+        "id": "VictoriousTentativeMomGrammarKing-6-H9yS7FCzorkDs4",
+        "title": "Утяжеленный клинок",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ee48d440-9208-453e-b156-8dccdf873405/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/VictoriousTentativeMomGrammarKing-6-H9yS7FCzorkDs4",
+        "created_at": "2026-08-21T23:05:44Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg"
+  },
+  {
     "id": "490744",
     "name": "Stardew Valley",
     "count": 5,
@@ -40562,54 +40618,6 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-285x380.jpg"
-  },
-  {
-    "id": "490377",
-    "name": "Sea of Thieves",
-    "count": 5,
-    "clips": [
-      {
-        "id": "OriginalGorgeousGaurCeilingCat-9N7ChVChAZhvpo-t",
-        "title": "счет скину",
-        "views": 3,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8f39777b-f81f-4ea7-b723-09cc175cb12d/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/OriginalGorgeousGaurCeilingCat-9N7ChVChAZhvpo-t",
-        "created_at": "2026-08-13T16:58:50Z"
-      },
-      {
-        "id": "SpotlessCorrectCrabKappaClaus-ucs3B4LHs2S-ApBD",
-        "title": "мечта",
-        "views": 2,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fc8f65a3-26ec-44c7-a2b2-856d69ff65b2/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SpotlessCorrectCrabKappaClaus-ucs3B4LHs2S-ApBD",
-        "created_at": "2026-08-13T17:03:35Z"
-      },
-      {
-        "id": "ElatedSpineyParrotPogChamp-iN_c0n-9qdmu6w0a",
-        "title": "сразу оба варианта",
-        "views": 4,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bb31282d-3954-4e21-8dfc-b43ecd7d06e8/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/ElatedSpineyParrotPogChamp-iN_c0n-9qdmu6w0a",
-        "created_at": "2026-08-13T17:11:07Z"
-      },
-      {
-        "id": "AntsyAgitatedAnacondaWutFace-g3x0yk3xIHHBUy82",
-        "title": "отличный пират",
-        "views": 4,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1adf52c0-b3b2-4e97-add5-e6664453ee4f/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AntsyAgitatedAnacondaWutFace-g3x0yk3xIHHBUy82",
-        "created_at": "2026-08-14T19:54:09Z"
-      },
-      {
-        "id": "PatientSpinelessBurritoJebaited-wAnMQGAB3cjq0dsf",
-        "title": "*ультра оригинальное название*",
-        "views": 4,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/28373086-0d91-4c7e-9ec3-e613645259a8/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/PatientSpinelessBurritoJebaited-wAnMQGAB3cjq0dsf",
-        "created_at": "2026-08-16T17:54:51Z"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg"
   },
   {
     "id": "853664424",
