@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -138,6 +138,11 @@
       "type": "gold"
     },
     {
+      "name": "Alan_wert",
+      "amount": "7051 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Листик Базилика",
       "amount": "7000 RUB",
       "type": "gold"
@@ -146,14 +151,19 @@
       "name": "Cmerty1",
       "amount": "6465 RUB",
       "type": "gold"
-    },
-    {
-      "name": "12voron35",
-      "amount": "6300 RUB",
-      "type": "gold"
     }
   ],
   "month": [
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
     {
       "name": "izack25",
       "amount": "5000 RUB",
@@ -168,17 +178,13 @@
       "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Alan_wert",
+      "amount": "777 RUB",
+      "type": "normal"
+    }
+  ]
 }
