@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -71,7 +71,7 @@
       "type": "gold"
     },
     {
-      "name": "EGR",
+      "name": "HellDream",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -79,7 +79,7 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "176420 RUB",
+      "amount": "177920 RUB",
       "type": "gold"
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23185.54 RUB",
+      "amount": "23186.42 RUB",
       "type": "gold"
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13484.18 RUB",
+      "amount": "13484 RUB",
       "type": "gold"
     },
     {
@@ -138,13 +138,13 @@
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
-      "amount": "7051 RUB",
+      "name": "Листик Базилика",
+      "amount": "7500 RUB",
       "type": "gold"
     },
     {
-      "name": "Листик Базилика",
-      "amount": "7000 RUB",
+      "name": "Alan_wert",
+      "amount": "7051 RUB",
       "type": "gold"
     },
     {
@@ -154,6 +154,16 @@
     }
   ],
   "month": [
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "izack25",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
     {
       "name": "TihiyUzh",
       "amount": "5000 RUB",
@@ -168,17 +178,13 @@
       "name": "lilShkeks",
       "amount": "5000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "izack25",
-      "amount": "5000 RUB",
-      "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Листик Базилика",
+      "amount": "500 RUB",
+      "type": "normal"
+    }
+  ]
 }
