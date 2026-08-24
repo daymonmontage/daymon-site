@@ -88,16 +88,23 @@ def main():
 
     total_donors = sum(len(v) for v in final_data.values())
 
-    try:
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(final_data, f, ensure_ascii=False, indent=2)
-        
-        elapsed = time.time() - start_time
-        print(f"\n💾 Готово за {elapsed:.2f} сек! Файл сохранен: {OUTPUT_FILE}")
-        print(f"📊 Всего записей: {total_donors}")
-        
-    except Exception as e:
-        print(f"🔥 Ошибка сохранения файла: {e}")
+    output_paths = [
+        "assets/donors.json",
+        "../daymon-sitev2/public/assets/donors.json",
+        "../daymon-sitev2/assets/donors.json"
+    ]
+
+    for out_path in output_paths:
+        try:
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(final_data, f, ensure_ascii=False, indent=2)
+            print(f"💾 Сохранено в: {out_path}")
+        except Exception as e:
+            print(f"⚠️ Не удалось сохранить в {out_path}: {e}")
+
+    elapsed = time.time() - start_time
+    print(f"\n✨ Готово за {elapsed:.2f} сек! Всего записей: {total_donors}")
 
 if __name__ == "__main__":
     main()

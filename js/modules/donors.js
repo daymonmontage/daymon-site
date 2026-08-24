@@ -122,14 +122,14 @@ function renderDonorsList(container, list) {
     setTimeout(() => {
         container.innerHTML = '';
 
-        // === СПЕЦИАЛЬНЫЙ ВИД ДЛЯ ПУСТОГО СТРИМА ===
-        if (list.length === 0 && currentTab === 'stream') {
+        // === СПЕЦИАЛЬНЫЙ ВИД ДЛЯ СТРИМА (LIVE WIDGET) ===
+        if (currentTab === 'stream') {
             container.innerHTML = `
-                <div class="empty-wallet-state">
-                    <i class="fas fa-wallet wallet-icon"></i>
-                    <div class="fly-container"></div>
-                    <span class="empty-text">ПОКА ПУСТО...</span>
-                </div>
+                <iframe
+                    src="/api/widget?type=stream"
+                    title="Текущий стрим (DonationAlerts Live)"
+                    style="width:100%; height:100%; min-height:260px; border:none; background:transparent; display:block;"
+                ></iframe>
             `;
             container.style.opacity = 1;
             return;
