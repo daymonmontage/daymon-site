@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -76,83 +76,7 @@
       "type": "gold"
     }
   ],
-  "year": [
-    {
-      "name": "izack25",
-      "amount": "178920 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "lilShkeks",
-      "amount": "82335.9 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "CyborgRasty",
-      "amount": "28893 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "PanterA",
-      "amount": "27495 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "МиссHorek",
-      "amount": "26199 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
-      "amount": "23186.42 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "какащке",
-      "amount": "21100 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TentriheR",
-      "amount": "16980 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "15388 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "UnkAut",
-      "amount": "14000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Какащке",
-      "amount": "13484 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Kristalix2015",
-      "amount": "8000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Листик Базилика",
-      "amount": "7500 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "7072 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Alan_wert",
-      "amount": "7051 RUB",
-      "type": "gold"
-    }
-  ],
+  "year": [],
   "month": [
     {
       "name": "izack25",
