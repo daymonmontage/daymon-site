@@ -18768,7 +18768,7 @@
   {
     "id": "27471",
     "name": "Minecraft",
-    "count": 494,
+    "count": 496,
     "clips": [
       {
         "id": "PricklySpotlessHamNerfBlueBlaster-GiTuQUVMgnO4jQ-S",
@@ -22721,6 +22721,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3d4e06b-ad75-4fa2-bff3-f4de064e0bb8/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/BetterSquareSeahorseHotPokket-TtIY0fwd6Lan0xaI",
         "created_at": "2026-08-26T16:46:59Z"
+      },
+      {
+        "id": "AffluentPhilanthropicRutabagaRuleFive-K_woiAwfk2Ale-K6",
+        "title": "Европа",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bff9359f-7787-41c8-83cf-1cb515365fb4/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AffluentPhilanthropicRutabagaRuleFive-K_woiAwfk2Ale-K6",
+        "created_at": "2026-08-26T18:48:38Z"
+      },
+      {
+        "id": "RepleteHonorableFennelKAPOW-qQZ9X_tNxqNhvYlZ",
+        "title": "Лес, да гора",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5e8085bb-ad32-424d-98e8-6acee1e1afee/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/RepleteHonorableFennelKAPOW-qQZ9X_tNxqNhvYlZ",
+        "created_at": "2026-08-26T19:09:31Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg"
