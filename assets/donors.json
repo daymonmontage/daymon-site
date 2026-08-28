@@ -79,12 +79,12 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "182920 RUB",
+      "amount": "183920 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "83135.9 RUB",
+      "amount": "83912.9 RUB",
       "type": "gold"
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23283.75 RUB",
+      "amount": "23286.42 RUB",
       "type": "gold"
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13483.65 RUB",
+      "amount": "13484 RUB",
       "type": "gold"
     },
     {
@@ -166,12 +166,12 @@
     },
     {
       "name": "izack25",
-      "amount": "5000 RUB",
+      "amount": "3000 RUB",
       "type": "gold"
     },
     {
       "name": "izack25",
-      "amount": "3000 RUB",
+      "amount": "2500 RUB",
       "type": "gold"
     },
     {
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "lilShkeks",
+      "amount": "777 RUB",
+      "type": "normal"
+    }
+  ]
 }
