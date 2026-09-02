@@ -9465,7 +9465,7 @@
   {
     "id": "509658",
     "name": "Just Chatting",
-    "count": 1178,
+    "count": 1180,
     "clips": [
       {
         "id": "ShySecretiveDiamondGrammarKing-TRQEtgZvnMQLZonY",
@@ -18889,6 +18889,22 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/816a64f3-aaf8-423f-b8bc-9ba7c1236ef3/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/SlickCallousTeaSwiftRage-2bovB_dzINeu5fXh",
         "created_at": "2026-09-02T17:22:33Z"
+      },
+      {
+        "id": "OriginalInventiveOryxNotLikeThis-A9q9fnsSAQrq7wyC",
+        "title": "ротище",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dbd07394-4710-416b-97d5-fe2c3f58a7ee/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/OriginalInventiveOryxNotLikeThis-A9q9fnsSAQrq7wyC",
+        "created_at": "2026-09-02T19:33:05Z"
+      },
+      {
+        "id": "BlatantDelightfulPlumagePeteZarollTie-J4eYShX_xWtoQ8AC",
+        "title": "немного сквизи",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d1bdad12-2836-4523-93ea-eec6a104595d/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/BlatantDelightfulPlumagePeteZarollTie-J4eYShX_xWtoQ8AC",
+        "created_at": "2026-09-02T19:06:43Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509658-285x380.jpg"
