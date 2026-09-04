@@ -39811,7 +39811,7 @@
       {
         "id": "LittleSoftBatteryFreakinStinkin-P2Z1uk-pYC4pU6y8",
         "title": "Поступило предложение",
-        "views": 4,
+        "views": 5,
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8b93bfcb-dd0a-45d1-8c9d-008d5b5550ca/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/LittleSoftBatteryFreakinStinkin-P2Z1uk-pYC4pU6y8",
         "created_at": "2026-09-03T18:17:33Z"
@@ -40988,6 +40988,70 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509672-285x380.jpg"
   },
   {
+    "id": "130942",
+    "name": "Factorio",
+    "count": 7,
+    "clips": [
+      {
+        "id": "AbstemiousTubularAsteriskCmonBruh-vlo6qBkRGcVKShHK",
+        "title": "жертва арбузинга",
+        "views": 8,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/57b4ecc4-f4ef-4e31-acee-c967f9488d09/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AbstemiousTubularAsteriskCmonBruh-vlo6qBkRGcVKShHK",
+        "created_at": "2026-08-23T06:26:49Z"
+      },
+      {
+        "id": "PoliteDistinctBadgerDxAbomb-ANhpONogh9cFd4Sh",
+        "title": "кто Деймон?",
+        "views": 4,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dea166e8-2ab3-4e56-b3b3-0602038dccdb/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PoliteDistinctBadgerDxAbomb-ANhpONogh9cFd4Sh",
+        "created_at": "2026-08-23T06:25:33Z"
+      },
+      {
+        "id": "WealthyAbstemiousFinchTebowing-6_fK05c0hrirWmSH",
+        "title": "цирк с жуками",
+        "views": 6,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/58993d30-3e07-41f1-aedf-270a195d55a2/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/WealthyAbstemiousFinchTebowing-6_fK05c0hrirWmSH",
+        "created_at": "2026-08-23T14:57:16Z"
+      },
+      {
+        "id": "PoisedPunchyPuppyPhilosoraptor-cvPcx6tf8qR8HyJq",
+        "title": "да будет жарко",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f08d5724-9dcb-46ec-85a9-3ad955689457/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/PoisedPunchyPuppyPhilosoraptor-cvPcx6tf8qR8HyJq",
+        "created_at": "2026-08-23T15:05:26Z"
+      },
+      {
+        "id": "BillowingEnchantingFungusYouWHY-16hjvrAN4jAMbN4s",
+        "title": "машинку жалко",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6340613e-01ea-4202-8c4e-7e725057091b/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/BillowingEnchantingFungusYouWHY-16hjvrAN4jAMbN4s",
+        "created_at": "2026-08-23T14:59:19Z"
+      },
+      {
+        "id": "AverageFunnyDelicataAliens-TNKw5SLyYn60PFol",
+        "title": "Преступление и наказание",
+        "views": 113,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7c65721b-2a4a-45f8-a258-f7366549d9cf/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AverageFunnyDelicataAliens-TNKw5SLyYn60PFol",
+        "created_at": "2026-08-24T03:54:19Z"
+      },
+      {
+        "id": "EnticingAgilePastaNerfBlueBlaster-qB3uoDPoVClERpLo",
+        "title": "максимально впитал",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/600edfdf-240d-4977-9af9-6b7a127ada6d/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/EnticingAgilePastaNerfBlueBlaster-qB3uoDPoVClERpLo",
+        "created_at": "2026-09-04T01:53:48Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/130942_IGDB-285x380.jpg"
+  },
+  {
     "id": "506089309",
     "name": "SIFU",
     "count": 6,
@@ -41322,62 +41386,6 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg"
-  },
-  {
-    "id": "130942",
-    "name": "Factorio",
-    "count": 6,
-    "clips": [
-      {
-        "id": "AbstemiousTubularAsteriskCmonBruh-vlo6qBkRGcVKShHK",
-        "title": "жертва арбузинга",
-        "views": 8,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/57b4ecc4-f4ef-4e31-acee-c967f9488d09/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AbstemiousTubularAsteriskCmonBruh-vlo6qBkRGcVKShHK",
-        "created_at": "2026-08-23T06:26:49Z"
-      },
-      {
-        "id": "PoliteDistinctBadgerDxAbomb-ANhpONogh9cFd4Sh",
-        "title": "кто Деймон?",
-        "views": 4,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dea166e8-2ab3-4e56-b3b3-0602038dccdb/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/PoliteDistinctBadgerDxAbomb-ANhpONogh9cFd4Sh",
-        "created_at": "2026-08-23T06:25:33Z"
-      },
-      {
-        "id": "WealthyAbstemiousFinchTebowing-6_fK05c0hrirWmSH",
-        "title": "цирк с жуками",
-        "views": 6,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/58993d30-3e07-41f1-aedf-270a195d55a2/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/WealthyAbstemiousFinchTebowing-6_fK05c0hrirWmSH",
-        "created_at": "2026-08-23T14:57:16Z"
-      },
-      {
-        "id": "PoisedPunchyPuppyPhilosoraptor-cvPcx6tf8qR8HyJq",
-        "title": "да будет жарко",
-        "views": 2,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f08d5724-9dcb-46ec-85a9-3ad955689457/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/PoisedPunchyPuppyPhilosoraptor-cvPcx6tf8qR8HyJq",
-        "created_at": "2026-08-23T15:05:26Z"
-      },
-      {
-        "id": "BillowingEnchantingFungusYouWHY-16hjvrAN4jAMbN4s",
-        "title": "машинку жалко",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6340613e-01ea-4202-8c4e-7e725057091b/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/BillowingEnchantingFungusYouWHY-16hjvrAN4jAMbN4s",
-        "created_at": "2026-08-23T14:59:19Z"
-      },
-      {
-        "id": "AverageFunnyDelicataAliens-TNKw5SLyYn60PFol",
-        "title": "Преступление и наказание",
-        "views": 113,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7c65721b-2a4a-45f8-a258-f7366549d9cf/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AverageFunnyDelicataAliens-TNKw5SLyYn60PFol",
-        "created_at": "2026-08-24T03:54:19Z"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/130942_IGDB-285x380.jpg"
   },
   {
     "id": "490744",
