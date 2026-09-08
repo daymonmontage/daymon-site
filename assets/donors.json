@@ -144,7 +144,7 @@
     },
     {
       "name": "ARCHI_MUST",
-      "amount": "7255 RUB",
+      "amount": "7355 RUB",
       "type": "gold"
     },
     {
@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "lilShkeks",
-      "amount": "1000 RUB",
-      "type": "gold"
-    }
-  ]
+  "stream": []
 }
