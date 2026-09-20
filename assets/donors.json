@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "TihiyUzh",
-      "amount": "500 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
