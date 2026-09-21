@@ -84,7 +84,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "89912.9 RUB",
+      "amount": "90689.9 RUB",
       "type": "gold"
     },
     {
@@ -160,11 +160,6 @@
       "type": "gold"
     },
     {
-      "name": "izack25",
-      "amount": "3000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "TihiyUzh",
       "amount": "3000 RUB",
       "type": "gold"
@@ -178,13 +173,12 @@
       "name": "izack25",
       "amount": "2000 RUB",
       "type": "gold"
+    },
+    {
+      "name": "lilShkeks",
+      "amount": "2000 RUB",
+      "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "Depo",
-      "amount": "500 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
