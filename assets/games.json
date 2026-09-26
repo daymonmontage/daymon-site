@@ -42020,6 +42020,62 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg"
   },
   {
+    "id": "263490",
+    "name": "Rust",
+    "count": 6,
+    "clips": [
+      {
+        "id": "ResoluteGenerousLouseTF2John-Kk9fh1zHJ5AyggMa",
+        "title": "1 дед 1 конь",
+        "views": 4,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2840567a-432b-4ce8-a371-972078fecdd1/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ResoluteGenerousLouseTF2John-Kk9fh1zHJ5AyggMa",
+        "created_at": "2026-09-25T08:23:33Z"
+      },
+      {
+        "id": "EnchantingCourteousOrangeEagleEye-k1ICWMTDAkAqBjqw",
+        "title": "не надо",
+        "views": 6,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d344a171-816e-4df1-ad04-665d46b544ca/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/EnchantingCourteousOrangeEagleEye-k1ICWMTDAkAqBjqw",
+        "created_at": "2026-09-25T07:22:49Z"
+      },
+      {
+        "id": "SassySullenSharkDxCat-y7aJeNMyp1-zBKd3",
+        "title": "развлеченик дедушки",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/39a3677e-5f7f-41a8-9d45-24b5df5233b2/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SassySullenSharkDxCat-y7aJeNMyp1-zBKd3",
+        "created_at": "2026-09-25T08:17:51Z"
+      },
+      {
+        "id": "CredulousBusyCockroachYouWHY-qgvloRTQOxaw6QLx",
+        "title": "кабан злодей",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/47a6726b-7903-4790-83a2-ca86526fb971/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CredulousBusyCockroachYouWHY-qgvloRTQOxaw6QLx",
+        "created_at": "2026-09-25T08:08:03Z"
+      },
+      {
+        "id": "GoldenEsteemedYogurtSpicyBoy-mUgfFJvEaCoXhybC",
+        "title": "кобан",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/679f4df0-2aa0-4075-87f2-d1976605ad12/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/GoldenEsteemedYogurtSpicyBoy-mUgfFJvEaCoXhybC",
+        "created_at": "2026-09-25T08:08:23Z"
+      },
+      {
+        "id": "ClearCourageousCucumberKippa-U7VveWSxQ7gKuRcF",
+        "title": "Банан проказник",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ce6f0fbb-908c-41d5-b866-f7e56bf11833/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/ClearCourageousCucumberKippa-U7VveWSxQ7gKuRcF",
+        "created_at": "2026-09-26T12:18:58Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/263490_IGDB-285x380.jpg"
+  },
+  {
     "id": "490744",
     "name": "Stardew Valley",
     "count": 5,
@@ -42066,54 +42122,6 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-285x380.jpg"
-  },
-  {
-    "id": "263490",
-    "name": "Rust",
-    "count": 5,
-    "clips": [
-      {
-        "id": "ResoluteGenerousLouseTF2John-Kk9fh1zHJ5AyggMa",
-        "title": "1 дед 1 конь",
-        "views": 4,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ebb5a4a4-765e-4e02-8df6-9cee8673335b/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/ResoluteGenerousLouseTF2John-Kk9fh1zHJ5AyggMa",
-        "created_at": "2026-09-25T08:23:33Z"
-      },
-      {
-        "id": "EnchantingCourteousOrangeEagleEye-k1ICWMTDAkAqBjqw",
-        "title": "не надо",
-        "views": 6,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b67aa5ff-e507-466d-9475-1cc04c847bf4/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/EnchantingCourteousOrangeEagleEye-k1ICWMTDAkAqBjqw",
-        "created_at": "2026-09-25T07:22:49Z"
-      },
-      {
-        "id": "SassySullenSharkDxCat-y7aJeNMyp1-zBKd3",
-        "title": "развлеченик дедушки",
-        "views": 2,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/595e6406-305d-4267-9978-2d7269a9a682/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SassySullenSharkDxCat-y7aJeNMyp1-zBKd3",
-        "created_at": "2026-09-25T08:17:51Z"
-      },
-      {
-        "id": "CredulousBusyCockroachYouWHY-qgvloRTQOxaw6QLx",
-        "title": "кабан злодей",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2cb800b2-24c0-443d-81da-fbce8fe63801/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CredulousBusyCockroachYouWHY-qgvloRTQOxaw6QLx",
-        "created_at": "2026-09-25T08:08:03Z"
-      },
-      {
-        "id": "GoldenEsteemedYogurtSpicyBoy-mUgfFJvEaCoXhybC",
-        "title": "кобан",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/679f4df0-2aa0-4075-87f2-d1976605ad12/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/GoldenEsteemedYogurtSpicyBoy-mUgfFJvEaCoXhybC",
-        "created_at": "2026-09-25T08:08:23Z"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/263490_IGDB-285x380.jpg"
   },
   {
     "id": "853664424",
