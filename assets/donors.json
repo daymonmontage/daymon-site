@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -61,17 +61,17 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "МиссHorek",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "lilShkeks",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "какащке",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -79,12 +79,12 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "199920 RUB",
+      "amount": "204920 RUB",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "91689.9 RUB",
+      "amount": "94689.9 RUB",
       "type": "gold"
     },
     {
@@ -119,7 +119,7 @@
     },
     {
       "name": "TentriheR",
-      "amount": "17580 RUB",
+      "amount": "18080 RUB",
       "type": "gold"
     },
     {
@@ -156,29 +156,35 @@
   "month": [
     {
       "name": "izack25",
-      "amount": "3000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "3000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "2500 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "2500 RUB",
+      "amount": "5000 RUB",
       "type": "gold"
     },
     {
       "name": "izack25",
-      "amount": "2000 RUB",
+      "amount": "3000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "3000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "2500 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "TihiyUzh",
+      "amount": "2500 RUB",
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "lilShkeks",
+      "amount": "2000 RUB",
+      "type": "gold"
+    }
+  ]
 }
