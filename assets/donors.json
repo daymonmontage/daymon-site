@@ -133,6 +133,11 @@
       "type": "gold"
     },
     {
+      "name": "Cmerty1",
+      "amount": "8865 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Kristalix2015",
       "amount": "8000 RUB",
       "type": "gold"
@@ -145,11 +150,6 @@
     {
       "name": "ARCHI_MUST",
       "amount": "7355 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "7072 RUB",
       "type": "gold"
     }
   ],
@@ -165,6 +165,11 @@
       "type": "gold"
     },
     {
+      "name": "DarkPV",
+      "amount": "4000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "TihiyUzh",
       "amount": "3000 RUB",
       "type": "gold"
@@ -173,12 +178,13 @@
       "name": "izack25",
       "amount": "3000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "TihiyUzh",
-      "amount": "2500 RUB",
-      "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Cmerty1",
+      "amount": "2000 RUB",
+      "type": "gold"
+    }
+  ]
 }
