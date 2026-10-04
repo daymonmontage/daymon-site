@@ -9857,7 +9857,7 @@
   {
     "id": "1330093788",
     "name": "Voices of the Void",
-    "count": 1200,
+    "count": 1204,
     "clips": [
       {
         "id": "HappySassyAdminDxCat-fAP6Bizfukdyatgj",
@@ -19457,6 +19457,38 @@
         "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fde3d6a3-d324-40dd-9611-71c5806d732a/landscape/thumb/thumb-0000000000-480x272.jpg",
         "url": "https://www.twitch.tv/daymonmontage/clip/VibrantTriumphantWaterPunchTrees-OeFPOhlFpaS8fW1n",
         "created_at": "2026-09-30T20:29:10Z"
+      },
+      {
+        "id": "TiredEnthusiasticHerringPipeHype-_pAoxubj75_Z_I0z",
+        "title": "чистая драка",
+        "views": 2,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/778ce4c9-773a-47b6-8ea7-5445484c3bba/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/TiredEnthusiasticHerringPipeHype-_pAoxubj75_Z_I0z",
+        "created_at": "2026-10-04T15:29:07Z"
+      },
+      {
+        "id": "SparklingAffluentPoxGingerPower-Ml3BdfMAXdJpsu92",
+        "title": "таракан",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6b9f0d8b-f57a-4ced-8e43-a32ce3b82ff4/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SparklingAffluentPoxGingerPower-Ml3BdfMAXdJpsu92",
+        "created_at": "2026-10-04T17:22:01Z"
+      },
+      {
+        "id": "KindApatheticOctopusTriHard-Uss8NmSU83Ppg4iD",
+        "title": "где уголь анан?",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d82d8e47-7245-43f7-bdc8-0e9603f34bb3/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/KindApatheticOctopusTriHard-Uss8NmSU83Ppg4iD",
+        "created_at": "2026-10-04T16:06:17Z"
+      },
+      {
+        "id": "AcceptableSpunkyPuffinCharlietheUnicorn-YhwMgg1tsugNs3Gp",
+        "title": "сКОНЧАЛся",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/280b7d8f-d803-4271-b291-6c815c33ffe0/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AcceptableSpunkyPuffinCharlietheUnicorn-YhwMgg1tsugNs3Gp",
+        "created_at": "2026-10-04T16:07:28Z"
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/1330093788_IGDB-285x380.jpg"
