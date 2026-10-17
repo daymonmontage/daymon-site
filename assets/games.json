@@ -41132,6 +41132,110 @@
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/512953_IGDB-285x380.jpg"
   },
   {
+    "id": "506089309",
+    "name": "SIFU",
+    "count": 12,
+    "clips": [
+      {
+        "id": "CallousDrabKimchiSoonerLater-jeNIvYOrBD1aaTi4",
+        "title": "хоя а самооборону",
+        "views": 16,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d6397ef5-d558-46a8-a26f-54409b5d97db/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CallousDrabKimchiSoonerLater-jeNIvYOrBD1aaTi4",
+        "created_at": "2023-06-10T14:25:40Z"
+      },
+      {
+        "id": "SuaveMoistHyenaBlargNaut-CFjxU6tPXATzwq4H",
+        "title": "ахахах флики кончают",
+        "views": 12,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/77e8f1e0-432e-44c1-b742-b0f80a9bf3c2/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SuaveMoistHyenaBlargNaut-CFjxU6tPXATzwq4H",
+        "created_at": "2023-06-10T14:22:50Z"
+      },
+      {
+        "id": "DepressedMiniatureAnacondaRaccAttack-JgB718ynaTuatOQJ",
+        "title": "*Какое-то сверх-оригинальное название*",
+        "views": 9,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/44ece7ac-5132-494f-ada8-f2b9a0d711ee/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/DepressedMiniatureAnacondaRaccAttack-JgB718ynaTuatOQJ",
+        "created_at": "2023-06-10T14:36:05Z"
+      },
+      {
+        "id": "OnerousGiftedTermiteNerfBlueBlaster-IjaE796ePOPUI86H",
+        "title": "*Какое-то сверх-оригинальное название*",
+        "views": 7,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/839a8866-54d5-47c8-a66a-f1517ca237bc/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/OnerousGiftedTermiteNerfBlueBlaster-IjaE796ePOPUI86H",
+        "created_at": "2023-06-10T14:30:00Z"
+      },
+      {
+        "id": "AnimatedNurturingReubenTinyFace-iLZyiebfM_7cZLgC",
+        "title": "*Какое-то сверх-оригинальное название*",
+        "views": 5,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cff43833-69bd-444f-b8f2-12d239139b72/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/AnimatedNurturingReubenTinyFace-iLZyiebfM_7cZLgC",
+        "created_at": "2023-06-10T14:35:14Z"
+      },
+      {
+        "id": "MushyColorfulCrocodileMrDestructoid-JlF3ANNBFKzJYBdC",
+        "title": "Ох уж эти тайминги!",
+        "views": 10,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e83aac8f-1e2c-4e8e-846e-681d49f4d1da/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/MushyColorfulCrocodileMrDestructoid-JlF3ANNBFKzJYBdC",
+        "created_at": "2024-12-01T09:18:26Z"
+      },
+      {
+        "id": "SteamyGentleGrassAMPEnergyCherry-IvH5MvhMDoIDujhe",
+        "title": "как папа учил",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/880d21ec-ea1d-47ca-89fc-7340be794dbb/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SteamyGentleGrassAMPEnergyCherry-IvH5MvhMDoIDujhe",
+        "created_at": "2026-10-17T20:04:25Z"
+      },
+      {
+        "id": "TiredCutePeafowlDxCat-7WmixC4pJD84F89y",
+        "title": "Классический уборщик в Шаолине",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e75b4994-473b-4ea4-9a35-319cb367727b/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/TiredCutePeafowlDxCat-7WmixC4pJD84F89y",
+        "created_at": "2026-10-17T19:59:20Z"
+      },
+      {
+        "id": "SmokyNiceLasagnaPicoMause-foKOZOdg0P9-dU_e",
+        "title": "однако неплохое оружие",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/20bb4fd9-d526-4a5f-ad92-b7b3c642121c/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/SmokyNiceLasagnaPicoMause-foKOZOdg0P9-dU_e",
+        "created_at": "2026-10-17T21:20:18Z"
+      },
+      {
+        "id": "CoweringFancyQuailOptimizePrime-HeZkPwdTfF9eXm_X",
+        "title": "генератор бл",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7de554b9-3650-4f25-a020-94f469ba6533/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/CoweringFancyQuailOptimizePrime-HeZkPwdTfF9eXm_X",
+        "created_at": "2026-10-17T21:36:02Z"
+      },
+      {
+        "id": "StrongBlatantRedpandaBudStar-rOY6j_Rhkj_8sNVr",
+        "title": "ну и боров",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/74016237-cd2e-4705-acc0-7370f90d0167/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/StrongBlatantRedpandaBudStar-rOY6j_Rhkj_8sNVr",
+        "created_at": "2026-10-17T20:05:00Z"
+      },
+      {
+        "id": "EnthusiasticAlluringBillDancingBaby-JwDNQ0eP3sZu7Hj3",
+        "title": "расставил",
+        "views": 1,
+        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/54863aef-b1df-4ef5-888a-764a5bcba8fe/landscape/thumb/thumb-0000000000-480x272.jpg",
+        "url": "https://www.twitch.tv/daymonmontage/clip/EnthusiasticAlluringBillDancingBaby-JwDNQ0eP3sZu7Hj3",
+        "created_at": "2026-10-17T20:37:37Z"
+      }
+    ],
+    "art": "https://static-cdn.jtvnw.net/ttv-boxart/506089309_IGDB-285x380.jpg"
+  },
+  {
     "id": "1590205158",
     "name": "Mage Arena",
     "count": 11,
@@ -42114,78 +42218,6 @@
       }
     ],
     "art": "https://static-cdn.jtvnw.net/ttv-boxart/509672-285x380.jpg"
-  },
-  {
-    "id": "506089309",
-    "name": "SIFU",
-    "count": 8,
-    "clips": [
-      {
-        "id": "CallousDrabKimchiSoonerLater-jeNIvYOrBD1aaTi4",
-        "title": "хоя а самооборону",
-        "views": 16,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d6397ef5-d558-46a8-a26f-54409b5d97db/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/CallousDrabKimchiSoonerLater-jeNIvYOrBD1aaTi4",
-        "created_at": "2023-06-10T14:25:40Z"
-      },
-      {
-        "id": "SuaveMoistHyenaBlargNaut-CFjxU6tPXATzwq4H",
-        "title": "ахахах флики кончают",
-        "views": 12,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/77e8f1e0-432e-44c1-b742-b0f80a9bf3c2/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SuaveMoistHyenaBlargNaut-CFjxU6tPXATzwq4H",
-        "created_at": "2023-06-10T14:22:50Z"
-      },
-      {
-        "id": "DepressedMiniatureAnacondaRaccAttack-JgB718ynaTuatOQJ",
-        "title": "*Какое-то сверх-оригинальное название*",
-        "views": 9,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/44ece7ac-5132-494f-ada8-f2b9a0d711ee/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/DepressedMiniatureAnacondaRaccAttack-JgB718ynaTuatOQJ",
-        "created_at": "2023-06-10T14:36:05Z"
-      },
-      {
-        "id": "OnerousGiftedTermiteNerfBlueBlaster-IjaE796ePOPUI86H",
-        "title": "*Какое-то сверх-оригинальное название*",
-        "views": 7,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/839a8866-54d5-47c8-a66a-f1517ca237bc/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/OnerousGiftedTermiteNerfBlueBlaster-IjaE796ePOPUI86H",
-        "created_at": "2023-06-10T14:30:00Z"
-      },
-      {
-        "id": "AnimatedNurturingReubenTinyFace-iLZyiebfM_7cZLgC",
-        "title": "*Какое-то сверх-оригинальное название*",
-        "views": 5,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cff43833-69bd-444f-b8f2-12d239139b72/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/AnimatedNurturingReubenTinyFace-iLZyiebfM_7cZLgC",
-        "created_at": "2023-06-10T14:35:14Z"
-      },
-      {
-        "id": "MushyColorfulCrocodileMrDestructoid-JlF3ANNBFKzJYBdC",
-        "title": "Ох уж эти тайминги!",
-        "views": 10,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e83aac8f-1e2c-4e8e-846e-681d49f4d1da/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/MushyColorfulCrocodileMrDestructoid-JlF3ANNBFKzJYBdC",
-        "created_at": "2024-12-01T09:18:26Z"
-      },
-      {
-        "id": "SteamyGentleGrassAMPEnergyCherry-IvH5MvhMDoIDujhe",
-        "title": "как папа учил",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/880d21ec-ea1d-47ca-89fc-7340be794dbb/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/SteamyGentleGrassAMPEnergyCherry-IvH5MvhMDoIDujhe",
-        "created_at": "2026-10-17T20:04:25Z"
-      },
-      {
-        "id": "TiredCutePeafowlDxCat-7WmixC4pJD84F89y",
-        "title": "Классический уборщик в Шаолине",
-        "views": 1,
-        "thumb": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e75b4994-473b-4ea4-9a35-319cb367727b/landscape/thumb/thumb-0000000000-480x272.jpg",
-        "url": "https://www.twitch.tv/daymonmontage/clip/TiredCutePeafowlDxCat-7WmixC4pJD84F89y",
-        "created_at": "2026-10-17T19:59:20Z"
-      }
-    ],
-    "art": "https://static-cdn.jtvnw.net/ttv-boxart/506089309_IGDB-285x380.jpg"
   },
   {
     "id": "130942",
