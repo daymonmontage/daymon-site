@@ -84,7 +84,7 @@
     },
     {
       "name": "lilShkeks",
-      "amount": "96766.9 RUB",
+      "amount": "97066.9 RUB",
       "type": "gold"
     },
     {
@@ -109,7 +109,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23469.53 RUB",
+      "amount": "23466.97 RUB",
       "type": "gold"
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13483.62 RUB",
+      "amount": "13483.07 RUB",
       "type": "gold"
     },
     {
@@ -182,8 +182,8 @@
   ],
   "stream": [
     {
-      "name": "Kot",
-      "amount": "100 RUB",
+      "name": "lilShkeks",
+      "amount": "300 RUB",
       "type": "normal"
     }
   ]
