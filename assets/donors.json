@@ -66,7 +66,7 @@
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "Alan_wert",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -109,7 +109,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23466.97 RUB",
+      "amount": "23566.97 RUB",
       "type": "gold"
     },
     {
@@ -123,6 +123,11 @@
       "type": "gold"
     },
     {
+      "name": "Alan_wert",
+      "amount": "19051 RUB",
+      "type": "gold"
+    },
+    {
       "name": "UnkAut",
       "amount": "14000 RUB",
       "type": "gold"
@@ -133,23 +138,18 @@
       "type": "gold"
     },
     {
+      "name": "MEGA_LZGYZKA",
+      "amount": "10249.1 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Cmerty1",
       "amount": "9365 RUB",
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
-      "amount": "9051 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Пиво Махно(gamenew_joy)",
       "amount": "8993 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "MEGA_LZGYZKA",
-      "amount": "8700 RUB",
       "type": "gold"
     }
   ],
@@ -160,8 +160,8 @@
       "type": "gold"
     },
     {
-      "name": "izack25",
-      "amount": "5000 RUB",
+      "name": "Alan_wert",
+      "amount": "10000 RUB",
       "type": "gold"
     },
     {
@@ -170,21 +170,15 @@
       "type": "gold"
     },
     {
-      "name": "DarkPV",
-      "amount": "4000 RUB",
+      "name": "izack25",
+      "amount": "5000 RUB",
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
-      "amount": "3500 RUB",
+      "name": "DarkPV",
+      "amount": "4000 RUB",
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "TentriheR",
-      "amount": "750 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
