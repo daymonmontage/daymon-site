@@ -89,7 +89,7 @@
     },
     {
       "name": "TihiyUzh",
-      "amount": "38689 RUB",
+      "amount": "44189 RUB",
       "type": "gold"
     },
     {
@@ -113,13 +113,13 @@
       "type": "gold"
     },
     {
-      "name": "какащке",
-      "amount": "21100 RUB",
+      "name": "TentriheR",
+      "amount": "21680 RUB",
       "type": "gold"
     },
     {
-      "name": "TentriheR",
-      "amount": "19730 RUB",
+      "name": "какащке",
+      "amount": "21100 RUB",
       "type": "gold"
     },
     {
@@ -165,6 +165,11 @@
       "type": "gold"
     },
     {
+      "name": "TihiyUzh",
+      "amount": "5000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "DarkPV",
       "amount": "4000 RUB",
       "type": "gold"
@@ -173,12 +178,13 @@
       "name": "Alan_wert",
       "amount": "3500 RUB",
       "type": "gold"
-    },
-    {
-      "name": "MEGA_LZGYZKA",
-      "amount": "3000 RUB",
-      "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "TentriheR",
+      "amount": "750 RUB",
+      "type": "normal"
+    }
+  ]
 }
