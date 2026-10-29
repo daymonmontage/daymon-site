@@ -109,7 +109,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23545.43 RUB",
+      "amount": "23545.98 RUB",
       "type": "gold"
     },
     {
@@ -134,12 +134,12 @@
     },
     {
       "name": "Какащке",
-      "amount": "13480.64 RUB",
+      "amount": "13480.79 RUB",
       "type": "gold"
     },
     {
       "name": "MEGA_LZGYZKA",
-      "amount": "10249.1 RUB",
+      "amount": "10449.1 RUB",
       "type": "gold"
     },
     {
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "TihiyUzh",
+      "amount": "1000 RUB",
+      "type": "gold"
+    }
+  ]
 }
