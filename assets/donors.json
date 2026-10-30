@@ -21,12 +21,12 @@
       "type": "gold"
     },
     {
-      "name": "HellDream",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "25000 RUB",
       "type": "gold"
     },
     {
-      "name": "Пиво Махно(gamenew_joy)",
+      "name": "HellDream",
       "amount": "25000 RUB",
       "type": "gold"
     },
@@ -165,11 +165,6 @@
       "type": "gold"
     },
     {
-      "name": "DarkPV",
-      "amount": "4000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "Alan_wert",
       "amount": "3500 RUB",
       "type": "gold"
@@ -177,6 +172,11 @@
     {
       "name": "MEGA_LZGYZKA",
       "amount": "3000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "mtk",
+      "amount": "2500 RUB",
       "type": "gold"
     }
   ],
