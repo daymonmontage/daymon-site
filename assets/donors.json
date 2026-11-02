@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "lilShkeks",
-      "amount": "300 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
