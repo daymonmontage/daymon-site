@@ -66,12 +66,12 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
+      "name": "Alan_wert",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "lilShkeks",
+      "name": "Пиво Махно(gamenew_joy)",
       "amount": "10000 RUB",
       "type": "gold"
     }
@@ -139,7 +139,7 @@
     },
     {
       "name": "Cmerty1",
-      "amount": "12365 RUB",
+      "amount": "13365 RUB",
       "type": "gold"
     },
     {
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Lenok_67",
+      "amount": "100 RUB",
+      "type": "normal"
+    }
+  ]
 }
