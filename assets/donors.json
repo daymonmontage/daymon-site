@@ -109,7 +109,7 @@
     },
     {
       "name": "TentriheR",
-      "amount": "25180 RUB",
+      "amount": "25930 RUB",
       "type": "gold"
     },
     {
@@ -180,5 +180,11 @@
       "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Lenok_67",
+      "amount": "100 RUB",
+      "type": "normal"
+    }
+  ]
 }
