@@ -114,7 +114,7 @@
     },
     {
       "name": "Аноним",
-      "amount": "23659.68 RUB",
+      "amount": "23658.74 RUB",
       "type": "gold"
     },
     {
@@ -134,7 +134,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13482.8 RUB",
+      "amount": "13482.76 RUB",
       "type": "gold"
     },
     {
@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "Lenok_67",
-      "amount": "100 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
