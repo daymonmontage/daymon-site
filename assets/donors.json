@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "Lenok_67",
-      "amount": "100 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
