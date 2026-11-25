@@ -79,78 +79,78 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "209470 RUB",
+      "amount": "7601.39 BYN",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "102200.9 RUB",
+      "amount": "3708.92 BYN",
       "type": "gold"
     },
     {
       "name": "Аноним",
-      "amount": "63798.74 RUB",
+      "amount": "2315.26 BYN",
       "type": "gold"
     },
     {
       "name": "TihiyUzh",
-      "amount": "44189 RUB",
+      "amount": "1603.55 BYN",
       "type": "gold"
     },
     {
       "name": "CyborgRasty",
-      "amount": "32393 RUB",
+      "amount": "1175.52 BYN",
       "type": "gold"
     },
     {
       "name": "PanterA",
-      "amount": "30832 RUB",
+      "amount": "1118.94 BYN",
       "type": "gold"
     },
     {
       "name": "МиссHorek",
-      "amount": "26199 RUB",
-      "type": "gold"
+      "amount": "950.8 BYN",
+      "type": "normal"
     },
     {
       "name": "TentriheR",
-      "amount": "25930 RUB",
-      "type": "gold"
+      "amount": "940.87 BYN",
+      "type": "normal"
     },
     {
       "name": "какащке",
-      "amount": "21100 RUB",
-      "type": "gold"
+      "amount": "765.74 BYN",
+      "type": "normal"
     },
     {
       "name": "Alan_wert",
-      "amount": "19051 RUB",
-      "type": "gold"
+      "amount": "691.31 BYN",
+      "type": "normal"
     },
     {
       "name": "Cmerty1",
-      "amount": "16041.7 RUB",
-      "type": "gold"
+      "amount": "582.05 BYN",
+      "type": "normal"
     },
     {
       "name": "UnkAut",
-      "amount": "14000 RUB",
-      "type": "gold"
+      "amount": "508.09 BYN",
+      "type": "normal"
     },
     {
       "name": "Какащке",
-      "amount": "13482.76 RUB",
-      "type": "gold"
+      "amount": "489.28 BYN",
+      "type": "normal"
     },
     {
       "name": "MEGA_LZGYZKA",
-      "amount": "10449.1 RUB",
-      "type": "gold"
+      "amount": "379.15 BYN",
+      "type": "normal"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
-      "amount": "8993 RUB",
-      "type": "gold"
+      "amount": "326.37 BYN",
+      "type": "normal"
     }
   ],
   "month": [
@@ -165,12 +165,12 @@
       "type": "gold"
     },
     {
-      "name": "Alan_wert",
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
     {
-      "name": "Аноним",
+      "name": "Alan_wert",
       "amount": "10000 RUB",
       "type": "gold"
     },
