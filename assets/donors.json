@@ -51,6 +51,16 @@
       "type": "gold"
     },
     {
+      "name": "Аноним",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "PanterA",
       "amount": "14400 RUB",
       "type": "gold"
@@ -64,16 +74,6 @@
       "name": "TihiyUzh",
       "amount": "10001 RUB",
       "type": "gold"
-    },
-    {
-      "name": "Alan_wert",
-      "amount": "10000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Пиво Махно(gamenew_joy)",
-      "amount": "10000 RUB",
-      "type": "gold"
     }
   ],
   "year": [
@@ -85,6 +85,11 @@
     {
       "name": "lilShkeks",
       "amount": "102200.9 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "63798.74 RUB",
       "type": "gold"
     },
     {
@@ -113,11 +118,6 @@
       "type": "gold"
     },
     {
-      "name": "Аноним",
-      "amount": "23786.49 RUB",
-      "type": "gold"
-    },
-    {
       "name": "какащке",
       "amount": "21100 RUB",
       "type": "gold"
@@ -139,7 +139,7 @@
     },
     {
       "name": "Какащке",
-      "amount": "13481.56 RUB",
+      "amount": "13482.76 RUB",
       "type": "gold"
     },
     {
@@ -155,7 +155,22 @@
   ],
   "month": [
     {
+      "name": "Аноним",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
       "name": "Alan_wert",
+      "amount": "10000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
       "amount": "10000 RUB",
       "type": "gold"
     },
@@ -163,22 +178,13 @@
       "name": "TihiyUzh",
       "amount": "5000 RUB",
       "type": "gold"
-    },
-    {
-      "name": "mtk",
-      "amount": "2500 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Cmerty1",
-      "amount": "2000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Dalecko",
-      "amount": "2000 RUB",
-      "type": "gold"
     }
   ],
-  "stream": []
+  "stream": [
+    {
+      "name": "Аноним",
+      "amount": "10000 RUB",
+      "type": "gold"
+    }
+  ]
 }
