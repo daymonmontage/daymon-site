@@ -79,77 +79,77 @@
   "year": [
     {
       "name": "izack25",
-      "amount": "7695.94 BYN",
+      "amount": "7646.09 BYN",
       "type": "gold"
     },
     {
       "name": "lilShkeks",
-      "amount": "3755.08 BYN",
+      "amount": "3730.67 BYN",
       "type": "gold"
     },
     {
       "name": "Аноним",
-      "amount": "2343.58 BYN",
+      "amount": "2328.6 BYN",
       "type": "gold"
     },
     {
       "name": "TihiyUzh",
-      "amount": "1623.49 BYN",
+      "amount": "1613 BYN",
       "type": "gold"
     },
     {
       "name": "CyborgRasty",
-      "amount": "1190.15 BYN",
+      "amount": "1182.4 BYN",
       "type": "gold"
     },
     {
       "name": "PanterA",
-      "amount": "1132.84 BYN",
+      "amount": "1125.52 BYN",
       "type": "gold"
     },
     {
       "name": "TentriheR",
-      "amount": "1020.51 BYN",
+      "amount": "1043.21 BYN",
       "type": "gold"
     },
     {
       "name": "МиссHorek",
-      "amount": "962.6 BYN",
+      "amount": "956.35 BYN",
       "type": "normal"
     },
     {
       "name": "какащке",
-      "amount": "775.27 BYN",
+      "amount": "770.24 BYN",
       "type": "normal"
     },
     {
       "name": "Alan_wert",
-      "amount": "699.9 BYN",
+      "amount": "695.35 BYN",
       "type": "normal"
     },
     {
       "name": "Cmerty1",
-      "amount": "589.32 BYN",
+      "amount": "585.47 BYN",
       "type": "normal"
     },
     {
       "name": "UnkAut",
-      "amount": "514.4 BYN",
+      "amount": "511.06 BYN",
       "type": "normal"
     },
     {
       "name": "Какащке",
-      "amount": "495.32 BYN",
+      "amount": "492.14 BYN",
       "type": "normal"
     },
     {
       "name": "MEGA_LZGYZKA",
-      "amount": "383.9 BYN",
+      "amount": "381.42 BYN",
       "type": "normal"
     },
     {
       "name": "Пиво Махно(gamenew_joy)",
-      "amount": "330.41 BYN",
+      "amount": "328.29 BYN",
       "type": "normal"
     }
   ],
@@ -180,11 +180,5 @@
       "type": "gold"
     }
   ],
-  "stream": [
-    {
-      "name": "TentriheR",
-      "amount": "350 RUB",
-      "type": "normal"
-    }
-  ]
+  "stream": []
 }
