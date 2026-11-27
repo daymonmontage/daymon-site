@@ -46,17 +46,17 @@
       "type": "gold"
     },
     {
-      "name": "Аноним",
-      "amount": "15000 RUB",
-      "type": "gold"
-    },
-    {
-      "name": "Аноним",
-      "amount": "15000 RUB",
-      "type": "gold"
-    },
-    {
       "name": "HellDream",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
+      "amount": "15000 RUB",
+      "type": "gold"
+    },
+    {
+      "name": "Аноним",
       "amount": "15000 RUB",
       "type": "gold"
     },
@@ -108,13 +108,13 @@
       "type": "gold"
     },
     {
-      "name": "МиссHorek",
-      "amount": "962.6 BYN",
-      "type": "normal"
+      "name": "TentriheR",
+      "amount": "1020.51 BYN",
+      "type": "gold"
     },
     {
-      "name": "TentriheR",
-      "amount": "952.55 BYN",
+      "name": "МиссHorek",
+      "amount": "962.6 BYN",
       "type": "normal"
     },
     {
@@ -182,9 +182,9 @@
   ],
   "stream": [
     {
-      "name": "Аноним",
-      "amount": "10000 RUB",
-      "type": "gold"
+      "name": "TentriheR",
+      "amount": "350 RUB",
+      "type": "normal"
     }
   ]
 }
